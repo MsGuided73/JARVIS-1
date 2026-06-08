@@ -862,9 +862,10 @@ export const Graph3D = forwardRef<Graph3DHandle, Graph3DProps>(({
 
     if (mesh.instanceColor) mesh.instanceColor.needsUpdate = true
 
-    // Link fade opacity (raised for clearer connections)
-    const linkFade = graphShape === 'milkyway' ? 0.28 : graphShape === 'saturn' ? 0.45 : 0.85
-    ;(lines.material as THREE.LineBasicMaterial).opacity = nodeOpacity * linkFade
+    // Base (inactive) link brightness — user-controlled via the LINK BRIGHTNESS slider.
+    // Re-applied here because this effect also runs on hover/selection; without it,
+    // interaction would reset the links to a hardcoded opacity.
+    ;(lines.material as THREE.LineBasicMaterial).opacity = linkOpacity
 
     // Node material opacity
     ;(mesh.material as THREE.MeshBasicMaterial).opacity = nodeOpacity
@@ -908,7 +909,7 @@ export const Graph3D = forwardRef<Graph3DHandle, Graph3DProps>(({
     }
 
     isDirtyRef.current = true
-  }, [graphData, hoveredNodeId, selectedNodeId, searchResults, nodeOpacity, flashNodeId, visibleNodes, timeFilterIds, tagIsolationIds, focusModeNodeIds, graphShape])
+  }, [graphData, hoveredNodeId, selectedNodeId, searchResults, nodeOpacity, linkOpacity, flashNodeId, visibleNodes, timeFilterIds, tagIsolationIds, focusModeNodeIds, graphShape])
 
   // Animate loop
   useEffect(() => {
