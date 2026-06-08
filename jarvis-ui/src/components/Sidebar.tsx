@@ -6,7 +6,10 @@ import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import type { GraphNode } from '../hooks/useVaultGraph'
 import { NoteEditor } from './NoteEditor'
-import { printNodeReport } from '../lib/pdfReport'
+import { printNodeReport, printArticleReport } from '../lib/pdfReport'
+
+// Top-level folders whose notes are articles (vs. entity dossiers / hubs / cases).
+const ARTICLE_FOLDERS = new Set(['Reporting', 'Investigations', 'Documents', 'Opinion', 'Guest-Views', 'Satire'])
 
 interface SidebarProps {
   node: GraphNode | null
@@ -285,6 +288,21 @@ export function Sidebar({ node, fullView, allNodes, onClose, onNavigate, onTagFi
       markdown: md,
     })
   }, [node, events, markdownContent])
+
+  // Export just the article's full text (no timeline) as a clean reading PDF.
+  const exportArticlePdf = useCallback(async () => {
+    if (!node) return
+    let md = markdownContent
+    if (!md) {
+      try {
+        const r = await fetch(`/api/note?path=${encodeURIComponent(node.path)}`)
+        md = (await r.json()).content ?? null
+      } catch { md = null }
+    }
+    if (md) printArticleReport(node.label, md)
+  }, [node, markdownContent])
+
+  const isArticle = !!node && ARTICLE_FOLDERS.has(node.folder)
 
   // Drag to resize
   useEffect(() => {
@@ -959,6 +977,17 @@ export function Sidebar({ node, fullView, allNodes, onClose, onNavigate, onTagFi
 
           {fullView && !editMode && (
             <div ref={contentRef} style={{ padding: '16px 20px 32px', lineHeight: 1.7, fontSize: 15, color: '#dcddde' }}>
+              {isArticle && processedMd && (
+                <button
+                  onClick={exportArticlePdf}
+                  title="Export the full article text as PDF"
+                  style={{
+                    background: 'transparent', border: '1px solid #00d4ff55', color: '#00d4ff',
+                    borderRadius: 4, padding: '4px 10px', fontSize: 11, cursor: 'pointer',
+                    fontFamily: '"Courier New", monospace', letterSpacing: 1, marginBottom: 14,
+                  }}
+                >⤓ EXPORT ARTICLE (PDF)</button>
+              )}
               {loadingMd ? (
                 <div style={{ color: '#a6adc8' }}>Loading…</div>
               ) : processedMd ? (

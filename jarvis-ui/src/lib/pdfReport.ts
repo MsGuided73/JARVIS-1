@@ -113,6 +113,14 @@ export function printCaseOverview(cases: CaseReport[], previewPerCase = 6): void
   openPrintReport(title, shell(title, subtitle, body))
 }
 
+// A single article's full text only (no timeline) — a clean reading document.
+// The note body already opens with its own `# Title` and byline, so we render it
+// directly rather than wrapping it in a separate report header.
+export function printArticleReport(title: string, markdown: string): void {
+  const body = `${markdownToHtml(markdown)}<div class="report-foot">${escapeHtml(generatedLine())}</div>`
+  openPrintReport(title, body)
+}
+
 // A single node: its relevant timeline plus the note summary/body.
 export function printNodeReport(opts: {
   title: string
