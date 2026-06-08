@@ -55,6 +55,14 @@ function extractTextFromChildren(children: React.ReactNode): string {
   return ''
 }
 
+interface NodeEvent {
+  date: string
+  display: string
+  precision: 'day' | 'month'
+  description: string
+  source: string
+}
+
 interface HeadingItem {
   level: 1 | 2 | 3
   text: string
@@ -205,6 +213,7 @@ function preprocessWikilinks(md: string): string {
 export function Sidebar({ node, fullView, allNodes, onClose, onNavigate, onTagFilter, isFavourite, onToggleFavourite }: SidebarProps) {
   const [markdownContent, setMarkdownContent] = useState<string | null>(null)
   const [loadingMd, setLoadingMd] = useState(false)
+  const [events, setEvents] = useState<NodeEvent[]>([])
   const [editMode, setEditMode] = useState(false)
   const [saveStatus, setSaveStatus] = useState<'saving' | 'saved' | null>(null)
   const [width, setWidth] = useState(getPersistedWidth)
@@ -245,6 +254,18 @@ export function Sidebar({ node, fullView, allNodes, onClose, onNavigate, onTagFi
       .then(d => { setMarkdownContent(d.content); setLoadingMd(false) })
       .catch(() => setLoadingMd(false))
   }, [node, fullView])
+
+  // Dated events relevant to this node (sidebar timeline). Loads for any node type.
+  useEffect(() => {
+    if (!node?.path) { setEvents([]); return }
+    const controller = new AbortController()
+    setEvents([])
+    fetch(`/api/note-events?path=${encodeURIComponent(node.path)}`, { signal: controller.signal })
+      .then(r => r.json())
+      .then(d => setEvents(Array.isArray(d.events) ? d.events : []))
+      .catch((e: unknown) => { if (!(e instanceof Error && e.name === 'AbortError')) setEvents([]) })
+    return () => controller.abort()
+  }, [node?.path])
 
   // Drag to resize
   useEffect(() => {
@@ -743,6 +764,43 @@ export function Sidebar({ node, fullView, allNodes, onClose, onNavigate, onTagFi
                   )}
                 </div>
               )}
+            </div>
+          )}
+
+          {/* ── Timeline of events ─────────────────────────────────────────── */}
+          {events.length > 0 && (
+            <div style={{ padding: '12px 20px', borderBottom: '1px solid #181825' }}>
+              <div style={{ color: '#a6adc8', fontSize: 11, textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: 10 }}>
+                Timeline ({events.length})
+              </div>
+              <div style={{ borderLeft: '1px solid #00d4ff33', marginLeft: 4, paddingLeft: 14 }}>
+                {events.map((ev, i) => (
+                  <div key={`${ev.date}-${i}`} style={{ position: 'relative', paddingBottom: 12 }}>
+                    <span style={{
+                      position: 'absolute', left: -19, top: 4, width: 6, height: 6,
+                      borderRadius: '50%', background: '#00d4ff', boxShadow: '0 0 5px #00d4ff',
+                    }} />
+                    <div style={{
+                      fontFamily: '"Courier New", monospace', fontSize: 11,
+                      color: ev.precision === 'day' ? '#00d4ff' : '#7fb8c9', marginBottom: 2,
+                    }}>
+                      {ev.display}
+                    </div>
+                    <div style={{ fontSize: 12.5, lineHeight: 1.45, color: '#cdd0d8' }}>
+                      {ev.description}
+                    </div>
+                    {ev.source && ev.source !== node.label && (
+                      <span
+                        onClick={() => onNavigate(ev.source)}
+                        title="Open source article"
+                        style={{ display: 'inline-block', marginTop: 2, fontSize: 10.5, color: '#7a7f95', cursor: 'pointer', borderBottom: '1px dotted #7a7f9555' }}
+                      >
+                        ↳ {ev.source}
+                      </span>
+                    )}
+                  </div>
+                ))}
+              </div>
             </div>
           )}
 

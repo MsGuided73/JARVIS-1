@@ -440,6 +440,29 @@ app.get('/api/timeline', (req, res) => {
   res.json(payload)
 })
 
+// Per-note dated events for the sidebar timeline (from vault/_events.json).
+// Keyed by the note's relative path (matches GraphNode.path). Returns [] when none.
+app.get('/api/note-events', (req, res) => {
+  const notePath = (req.query.path as string || '').trim()
+  if (!notePath) {
+    res.status(400).json({ error: 'path query param required', events: [] })
+    return
+  }
+
+  const vaultPath = loadConfig().vaultPath
+  const eventsPath = path.join(vaultPath, '_events.json')
+
+  let byPath: Record<string, unknown[]>
+  try {
+    byPath = JSON.parse(fs.readFileSync(eventsPath, 'utf-8')).byPath ?? {}
+  } catch {
+    res.json({ events: [] }) // no index yet (vault not rebuilt) — treat as "no events"
+    return
+  }
+
+  res.json({ events: byPath[notePath] ?? [] })
+})
+
 app.get('/api/search', (req, res) => {
   const q = (req.query.q as string || '').toLowerCase().trim()
   if (!q || !cachedGraph) {

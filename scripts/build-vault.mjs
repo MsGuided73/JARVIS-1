@@ -220,6 +220,9 @@ async function main() {
 
   // 11. Case files (parties + timeline of events + articles).
   const timelinesOut = {}
+  // Per-note event index for the sidebar timeline, keyed by relative note path.
+  const eventsByPath = {}
+  const EVENTS_PER_NODE = 80
   for (const caseDef of CASES) {
     const matched = [...meta].filter(([, m]) => articleInCase(caseDef, m.cats, m.ents))
     if (!matched.length) continue
@@ -276,6 +279,9 @@ async function main() {
       span: span(first, last),
       events: events.map((e) => ({ date: e.iso, display: e.display, precision: e.precision, description: e.description, note: e.note })),
     }
+    // Same events power the sidebar timeline when a Case node is selected.
+    eventsByPath[`Cases/${sanitize(caseDef.name + ' — Case File')}.md`] =
+      events.slice(0, EVENTS_PER_NODE).map((e) => ({ date: e.iso, display: e.display, precision: e.precision, description: e.description, source: e.note }))
   }
   console.log(`Wrote ${CASES.length} case files`)
 
@@ -284,6 +290,57 @@ async function main() {
   const cases = Object.values(timelinesOut)
   await fs.writeFile(path.join(VAULT, 'Cases', '_timeline.json'), JSON.stringify({ cases }, null, 2), 'utf-8')
   console.log(`Wrote _timeline.json — ${cases.length} cases, ${cases.reduce((n, c) => n + c.events.length, 0)} events`)
+
+  // 11b. Per-note event index for the sidebar timeline (keyed by relative note path,
+  // matching GraphNode.path). Article = its own dated events; entity = dated sentences
+  // (across mentioning articles) that name the entity; case = the case timeline above.
+  const dedupeSort = (evs) => {
+    const seen = new Set()
+    return evs
+      .sort((a, b) => (a.date < b.date ? -1 : a.date > b.date ? 1 : 0))
+      .filter((e) => {
+        const k = `${e.date}|${e.description.slice(0, 70).toLowerCase().replace(/[^a-z0-9 ]/g, '')}`
+        if (seen.has(k)) return false
+        seen.add(k)
+        return true
+      })
+      .slice(0, EVENTS_PER_NODE)
+  }
+
+  // Articles — every dated sentence in the article belongs to it.
+  for (const [, m] of meta) {
+    if (!m.events.length) continue
+    const relPath = `${contentFolder(m.type)}/${m.noteName}.md`
+    eventsByPath[relPath] = m.events.map((e) => ({ date: e.iso, display: e.display, precision: e.precision, description: e.description, source: m.noteName }))
+  }
+
+  // Entities — dated sentences (from any mentioning article) that name the entity.
+  const entityKeywords = (name, info) => {
+    const kw = new Set([name.toLowerCase()])
+    for (const a of (info.aliases || [])) kw.add(String(a).toLowerCase())
+    const surname = name.toLowerCase().split(/\s+/).pop()
+    if (surname && surname.length >= 4) kw.add(surname)
+    return [...kw]
+  }
+  for (const [name, info] of entities) {
+    const kw = entityKeywords(name, info)
+    const evs = []
+    for (const [, m] of meta) {
+      if (!m.ents.includes(name)) continue
+      for (const ev of m.events) {
+        if (!kw.some((k) => ev.description.toLowerCase().includes(k))) continue
+        evs.push({ date: ev.iso, display: ev.display, precision: ev.precision, description: ev.description, source: m.noteName })
+      }
+    }
+    if (!evs.length) continue
+    const relPath = `${TYPE_FOLDER[info.type] || 'Organizations'}/${sanitize(name)}.md`
+    eventsByPath[relPath] = dedupeSort(evs)
+  }
+
+  await fs.writeFile(path.join(VAULT, '_events.json'), JSON.stringify({ byPath: eventsByPath }, null, 2), 'utf-8')
+  const nodeCount = Object.keys(eventsByPath).length
+  const evTotal = Object.values(eventsByPath).reduce((n, e) => n + e.length, 0)
+  console.log(`Wrote _events.json — ${nodeCount} nodes, ${evTotal} events`)
 
   // 12. Dashboard.
   const topCats = [...catArticles.entries()].sort((a, b) => b[1].length - a[1].length)
