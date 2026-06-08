@@ -6,6 +6,7 @@ import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import type { GraphNode } from '../hooks/useVaultGraph'
 import { NoteEditor } from './NoteEditor'
+import { printNodeReport } from '../lib/pdfReport'
 
 interface SidebarProps {
   node: GraphNode | null
@@ -266,6 +267,24 @@ export function Sidebar({ node, fullView, allNodes, onClose, onNavigate, onTagFi
       .catch((e: unknown) => { if (!(e instanceof Error && e.name === 'AbortError')) setEvents([]) })
     return () => controller.abort()
   }, [node?.path])
+
+  // Export this node's breakdown (timeline + summary/body) as a PDF.
+  const exportNodePdf = useCallback(async () => {
+    if (!node) return
+    let md = markdownContent
+    if (!md) {
+      try {
+        const r = await fetch(`/api/note?path=${encodeURIComponent(node.path)}`)
+        md = (await r.json()).content ?? null
+      } catch { md = null }
+    }
+    printNodeReport({
+      title: node.label,
+      subtitle: `${node.type.toUpperCase()} · ${node.path}`,
+      events,
+      markdown: md,
+    })
+  }, [node, events, markdownContent])
 
   // Drag to resize
   useEffect(() => {
@@ -634,6 +653,25 @@ export function Sidebar({ node, fullView, allNodes, onClose, onNavigate, onTagFi
                 </span>
               )}
             </div>
+            <button
+              style={{
+                position: 'absolute',
+                top: 16,
+                right: 46,
+                background: 'transparent',
+                border: '1px solid #00d4ff55',
+                color: '#00d4ff',
+                cursor: 'pointer',
+                fontSize: 11,
+                padding: '3px 8px',
+                borderRadius: 4,
+                lineHeight: 1.3,
+                fontFamily: '"Courier New", monospace',
+                letterSpacing: 1,
+              }}
+              onClick={exportNodePdf}
+              title="Export this node (summary + timeline) as PDF"
+            >⤓ PDF</button>
             <button
               style={{
                 position: 'absolute',

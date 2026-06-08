@@ -7,5 +7,6 @@ jarvis-ui/test-results/
 jarvis-ui/_shot*.mjs
 *.log
 .env
-# Root-level dev screenshots (kept locally, regenerable)
+# Root-level dev screenshots / exported test PDFs (kept locally, regenerable)
 /*.png
+/*.pdf

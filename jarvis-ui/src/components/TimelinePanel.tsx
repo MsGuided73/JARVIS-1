@@ -2,6 +2,8 @@
 // Copyright (C) 2025 Prompt-Surfer (https://github.com/Prompt-Surfer)
 
 import { useEffect, useMemo, useState } from 'react'
+import type { CSSProperties } from 'react'
+import { printCaseTimeline, printCaseOverview } from '../lib/pdfReport'
 
 interface TimelineEvent {
   date: string        // sortable ISO 'YYYY-MM-DD'
@@ -27,6 +29,12 @@ interface TimelinePanelProps {
 }
 
 const ACCENT = '#00d4ff'
+
+const pdfBtnStyle: CSSProperties = {
+  background: 'transparent', border: `1px solid ${ACCENT}55`, color: ACCENT,
+  borderRadius: 4, padding: '3px 9px', fontSize: 11, cursor: 'pointer',
+  fontFamily: '"Courier New", monospace', letterSpacing: 1,
+}
 
 const surface = (alpha: number) => `rgba(17, 19, 28, ${alpha})`
 
@@ -127,14 +135,30 @@ export function TimelinePanel({ open, initialCase, onClose, onNavigate }: Timeli
             }}>
               ⏱ Case Timeline
             </div>
-            <button
-              onClick={onClose}
-              title="Close (Esc)"
-              style={{
-                background: 'transparent', border: 'none', color: '#a6adc8',
-                fontSize: 20, lineHeight: 1, cursor: 'pointer', padding: 4,
-              }}
-            >×</button>
+            <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+              {current && (
+                <button
+                  onClick={() => printCaseTimeline(current)}
+                  title="Export this case timeline as PDF"
+                  style={pdfBtnStyle}
+                >⤓ PDF</button>
+              )}
+              {cases && cases.length > 1 && (
+                <button
+                  onClick={() => printCaseOverview(cases)}
+                  title="Export an overview of all cases as PDF"
+                  style={pdfBtnStyle}
+                >⤓ All</button>
+              )}
+              <button
+                onClick={onClose}
+                title="Close (Esc)"
+                style={{
+                  background: 'transparent', border: 'none', color: '#a6adc8',
+                  fontSize: 20, lineHeight: 1, cursor: 'pointer', padding: 4,
+                }}
+              >×</button>
+            </div>
           </div>
 
           {/* Case selector */}
