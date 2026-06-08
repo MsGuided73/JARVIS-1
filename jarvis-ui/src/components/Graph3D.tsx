@@ -67,6 +67,11 @@ const NODE_SEGMENTS = 8
 const DEBUG = import.meta.env.DEV && typeof window !== 'undefined' &&
   new URLSearchParams(window.location.search).has('perf')
 
+// Selective-bloom: label sprites live on this layer, which the bloom pass skips.
+// They are drawn in a second pass on top of the bloomed frame, so text stays crisp
+// (depthTest:false already lets them composite over everything).
+const BLOOM_EXCLUDE_LAYER = 1
+
 function createSelectedTitleSprite(text: string): THREE.Sprite {
   const W = 512, H = 64
   const canvas = document.createElement('canvas')
@@ -84,6 +89,7 @@ function createSelectedTitleSprite(text: string): THREE.Sprite {
   const mat = new THREE.SpriteMaterial({ map: texture, transparent: true, depthTest: false, depthWrite: false })
   const sprite = new THREE.Sprite(mat)
   sprite.scale.set(80, 12, 1)
+  sprite.layers.set(BLOOM_EXCLUDE_LAYER)
   return sprite
 }
 
@@ -104,6 +110,7 @@ function createLabelSprite(text: string): THREE.Sprite {
   const mat = new THREE.SpriteMaterial({ map: texture, transparent: true, depthTest: false, depthWrite: false })
   const sprite = new THREE.Sprite(mat)
   sprite.scale.set(40, 7.5, 1)
+  sprite.layers.set(BLOOM_EXCLUDE_LAYER)
   return sprite
 }
 
@@ -127,6 +134,7 @@ function createTagBoxLabelSprite(tag: string, count: number): THREE.Sprite {
   const sprite = new THREE.Sprite(mat)
   // Scale to match box width (TAG_BOX_HALF=180 → box width=360); height proportional
   sprite.scale.set(720, 144, 1)
+  sprite.layers.set(BLOOM_EXCLUDE_LAYER)
   return sprite
 }
 
@@ -915,7 +923,10 @@ export const Graph3D = forwardRef<Graph3DHandle, Graph3DProps>(({
   useEffect(() => {
     const composer = composerRef.current
     const controls = controlsRef.current
-    if (!composer || !controls) {
+    const renderer = rendererRef.current
+    const scene = sceneRef.current
+    const camera = cameraRef.current
+    if (!composer || !controls || !renderer || !scene || !camera) {
       console.warn('[Graph3D] RAF loop skipped — composer:', !!composer, 'controls:', !!controls, 'sceneReady:', sceneReady)
       return
     }
@@ -931,6 +942,9 @@ export const Graph3D = forwardRef<Graph3DHandle, Graph3DProps>(({
     let renderCount = 0
     const localControls = controls
     const localComposer = composer
+    const localRenderer = renderer
+    const localScene = scene
+    const localCamera = camera
 
     // Reusable objects for entrance animation and lerp (avoid per-frame allocation)
     const animDummy = new THREE.Object3D()
@@ -1102,6 +1116,10 @@ export const Graph3D = forwardRef<Graph3DHandle, Graph3DProps>(({
         isDirtyRef.current = false
         renderCount++
 
+        // Bloom/main pass renders layer 0 only — labels (layer 1) are excluded so
+        // they don't glow, then drawn on top in the overlay pass below.
+        localCamera.layers.set(0)
+
         if (DEBUG) {
           // --- Render FPS tracking ---
           const renderNow = performance.now()
@@ -1149,6 +1167,15 @@ export const Graph3D = forwardRef<Graph3DHandle, Graph3DProps>(({
         } else {
           localComposer.render()
         }
+
+        // Overlay pass: draw labels (layer 1) on top of the bloomed frame without bloom.
+        const prevAutoClear = localRenderer.autoClear
+        localRenderer.autoClear = false
+        localRenderer.clearDepth()
+        localCamera.layers.set(BLOOM_EXCLUDE_LAYER)
+        localRenderer.render(localScene, localCamera)
+        localCamera.layers.set(0)
+        localRenderer.autoClear = prevAutoClear
 
         // Periodic draw-call profiling (only in dev with ?perf flag)
         if (DEBUG && renderCount % 60 === 0) {
