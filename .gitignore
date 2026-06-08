@@ -1,0 +1,11 @@
+node_modules/
+data/raw/
+vault/.obsidian/workspace*.json
+jarvis-ui/node_modules/
+jarvis-ui/dist/
+jarvis-ui/test-results/
+jarvis-ui/_shot*.mjs
+*.log
+.env
+# Root-level dev screenshots (kept locally, regenerable)
+/*.png

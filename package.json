@@ -1,0 +1,12 @@
+{
+  "name": "frank-report-vault",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Build an Obsidian vault from FrankReport.com (Payload CMS) articles for 3D Jarvis graph viewing",
+  "scripts": {
+    "ingest": "node scripts/ingest.mjs",
+    "build": "node scripts/build-vault.mjs",
+    "all": "npm run ingest && npm run build"
+  }
+}

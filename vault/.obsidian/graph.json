@@ -1,0 +1,42 @@
+{
+  "collapse": false,
+  "showTags": false,
+  "showAttachments": false,
+  "hideUnresolved": true,
+  "colorGroups": [
+    {
+      "query": "path:Satire",
+      "color": {
+        "a": 1,
+        "rgb": 16729156
+      }
+    },
+    {
+      "query": "path:Documents",
+      "color": {
+        "a": 1,
+        "rgb": 16744448
+      }
+    },
+    {
+      "query": "path:Cases OR path:Series",
+      "color": {
+        "a": 1,
+        "rgb": 16766720
+      }
+    },
+    {
+      "query": "path:People",
+      "color": {
+        "a": 1,
+        "rgb": 2272250
+      }
+    }
+  ],
+  "nodeSizeMultiplier": 1.2,
+  "lineSizeMultiplier": 1,
+  "centerStrength": 0.4,
+  "repelStrength": 12,
+  "linkStrength": 1,
+  "linkDistance": 250
+}
