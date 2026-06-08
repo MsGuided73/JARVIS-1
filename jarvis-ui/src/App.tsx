@@ -155,6 +155,13 @@ function App() {
   const [starsEnabled, setStarsEnabled] = useState(false)
   const [labelsEnabled, setLabelsEnabled] = useState(false)
   const [linksEnabled, setLinksEnabled] = useState(true)
+  const [linkOpacity, setLinkOpacityState] = useState(() => {
+    try { const v = localStorage.getItem('jarvis-link-opacity'); return v !== null ? parseFloat(v) : 0.12 } catch { return 0.12 }
+  })
+  const handleLinkOpacityChange = useCallback((v: number) => {
+    setLinkOpacityState(v)
+    try { localStorage.setItem('jarvis-link-opacity', String(v)) } catch { /* storage unavailable */ }
+  }, [])
   const [spread, setSpreadState] = useState(4.0)
   const [textSize, setTextSizeState] = useState(() => {
     try { const v = localStorage.getItem('jarvis-text-size'); return v ? parseFloat(v) : 1.0 } catch { return 1.0 }
@@ -661,7 +668,7 @@ function App() {
 
   const handlePresetSave = useCallback((name: string) => {
     const settings: PresetSettings = {
-      bloomStrength, nodeOpacity, starsEnabled, labelsEnabled, linksEnabled,
+      bloomStrength, nodeOpacity, starsEnabled, labelsEnabled, linksEnabled, linkOpacity,
       spread, minNodeSize, maxNodeSize, ultraNodeSize, zoomToNode,
       graphShape, tagBoxTopN, tagBoxSizeScale,
     }
@@ -685,7 +692,7 @@ function App() {
     } else {
       showToast(result.warning ? `Preset saved (${result.warning})` : 'Preset saved')
     }
-  }, [bloomStrength, nodeOpacity, starsEnabled, labelsEnabled, linksEnabled,
+  }, [bloomStrength, nodeOpacity, starsEnabled, labelsEnabled, linksEnabled, linkOpacity,
     spread, minNodeSize, maxNodeSize, ultraNodeSize, zoomToNode,
     graphShape, tagBoxTopN, tagBoxSizeScale, tagIsolationTags, favourites, savePreset, showToast])
 
@@ -699,6 +706,10 @@ function App() {
     setStarsEnabled(s.starsEnabled)
     setLabelsEnabled(s.labelsEnabled)
     setLinksEnabled(s.linksEnabled)
+    if (typeof s.linkOpacity === 'number') {
+      setLinkOpacityState(s.linkOpacity)
+      try { localStorage.setItem('jarvis-link-opacity', String(s.linkOpacity)) } catch { /* storage unavailable */ }
+    }
     setSpreadState(s.spread)
     setSpread(s.spread)
     setMinNodeSize(s.minNodeSize)
@@ -878,6 +889,7 @@ function App() {
           starsEnabled={starsEnabled}
           labelsEnabled={labelsEnabled}
           linksEnabled={linksEnabled}
+          linkOpacity={linkOpacity}
           textSize={textSize}
           nodeDegrees={nodeDegrees}
           minNodeSize={minNodeSize}
@@ -917,6 +929,7 @@ function App() {
         starsEnabled={starsEnabled}
         labelsEnabled={labelsEnabled}
         linksEnabled={linksEnabled}
+        linkOpacity={linkOpacity}
         spread={spread}
         minNodeSize={minNodeSize}
         maxNodeSize={maxNodeSize}
@@ -926,6 +939,7 @@ function App() {
         onStarsToggle={setStarsEnabled}
         onLabelsToggle={setLabelsEnabled}
         onLinksToggle={setLinksEnabled}
+        onLinkOpacityChange={handleLinkOpacityChange}
         textSize={textSize}
         onTextSizeChange={(v) => {
           setTextSizeState(v)

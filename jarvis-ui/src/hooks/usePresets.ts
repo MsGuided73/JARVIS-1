@@ -9,6 +9,7 @@ export interface PresetSettings {
   starsEnabled: boolean
   labelsEnabled: boolean
   linksEnabled: boolean
+  linkOpacity?: number
   spread: number
   minNodeSize: number
   maxNodeSize: number

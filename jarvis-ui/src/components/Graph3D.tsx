@@ -43,6 +43,7 @@ interface Graph3DProps {
   graphShape?: 'sun' | 'saturn' | 'milkyway' | 'brain' | 'natural' | 'tagboxes'
   tagBoxes?: TagBox[]
   linksEnabled?: boolean
+  linkOpacity?: number
   timeFilterActive?: boolean
   textSize?: number
   perfRef?: React.RefObject<PerfMetrics>
@@ -158,6 +159,7 @@ export const Graph3D = forwardRef<Graph3DHandle, Graph3DProps>(({
   graphShape,
   tagBoxes,
   linksEnabled = true,
+  linkOpacity = 0.12,
   timeFilterActive = false,
   textSize = 1.0,
   perfRef: simPerfRef,
@@ -463,6 +465,18 @@ export const Graph3D = forwardRef<Graph3DHandle, Graph3DProps>(({
     }
   }, [linksEnabled])
 
+  // Live brightness of the base (inactive) link lines. The bright cyan overlay for
+  // a selected node's edges is a separate material (hlMat) and is unaffected.
+  useEffect(() => {
+    const lines = lineSegmentsRef.current
+    if (lines) {
+      const mat = lines.material as THREE.LineBasicMaterial
+      mat.opacity = linkOpacity
+      mat.needsUpdate = true
+      isDirtyRef.current = true
+    }
+  }, [linkOpacity])
+
   // Build instanced mesh when graph data is ready
   useEffect(() => {
     const scene = sceneRef.current
@@ -512,7 +526,7 @@ export const Graph3D = forwardRef<Graph3DHandle, Graph3DProps>(({
     const linkPositions = new Float32Array(graphData.links.length * 6)
     const linkGeo = new THREE.BufferGeometry()
     linkGeo.setAttribute('position', new THREE.BufferAttribute(linkPositions, 3))
-    const linkMat = new THREE.LineBasicMaterial({ color: 0x4a8aa6, transparent: true, opacity: 0.5 })
+    const linkMat = new THREE.LineBasicMaterial({ color: 0x4a8aa6, transparent: true, opacity: linkOpacity })
     const lines = new THREE.LineSegments(linkGeo, linkMat)
     lines.frustumCulled = false
     scene.add(lines)

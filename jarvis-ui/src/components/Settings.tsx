@@ -11,6 +11,7 @@ interface SettingsProps {
   starsEnabled: boolean
   labelsEnabled: boolean
   linksEnabled: boolean
+  linkOpacity: number
   spread: number
   minNodeSize: number
   maxNodeSize: number
@@ -20,6 +21,7 @@ interface SettingsProps {
   onStarsToggle: (enabled: boolean) => void
   onLabelsToggle: (enabled: boolean) => void
   onLinksToggle: (enabled: boolean) => void
+  onLinkOpacityChange: (value: number) => void
   onSpreadChange: (value: number) => void
   onMinSizeChange: (value: number) => void
   onMaxSizeChange: (value: number) => void
@@ -51,6 +53,7 @@ export function Settings({
   starsEnabled,
   labelsEnabled,
   linksEnabled,
+  linkOpacity,
   spread,
   minNodeSize,
   maxNodeSize,
@@ -60,6 +63,7 @@ export function Settings({
   onStarsToggle,
   onLabelsToggle,
   onLinksToggle,
+  onLinkOpacityChange,
   onSpreadChange,
   onMinSizeChange,
   onMaxSizeChange,
@@ -206,6 +210,12 @@ export function Settings({
             <div style={{ marginBottom: 6, letterSpacing: '0.08em', fontSize: 10, color: '#a6adc8' }}>LINKS</div>
             {toggleBtn(linksEnabled, `[ LINKS ${linksEnabled ? 'ON' : 'OFF'} ]`, () => onLinksToggle(!linksEnabled), 'Show or hide the connection lines between nodes.')}
           </div>
+
+          {linksEnabled && sliderRow(
+            `LINK BRIGHTNESS: ${linkOpacity.toFixed(2)}`,
+            linkOpacity, 0, 1, 0.02, onLinkOpacityChange,
+            'Brightness of the background connection lines. Lower this if the links wash out the nodes — the bright cyan links for a selected node are unaffected.',
+          )}
 
           <div style={{ marginBottom: 14 }}>
             <div style={{ marginBottom: 6, letterSpacing: '0.08em', fontSize: 10, color: '#a6adc8' }}>ZOOM TO NODE</div>
