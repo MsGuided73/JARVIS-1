@@ -473,8 +473,7 @@ export const Graph3D = forwardRef<Graph3DHandle, Graph3DProps>(({
     isDirtyRef.current = true
   }, [bloomStrength, themeMode])
 
-  // Live theme update — recolor 3D accent materials, swap the canvas background, and
-  // refresh labels (so their baked-in text color matches the theme) when the theme changes.
+  // Live theme update — recolor 3D accent materials and swap the canvas background.
   useEffect(() => {
     rendererRef.current?.setClearColor(new THREE.Color(canvasBg), 1)
     const setColor = (lines: THREE.LineSegments | THREE.Line | null) => {
@@ -483,7 +482,13 @@ export const Graph3D = forwardRef<Graph3DHandle, Graph3DProps>(({
     setColor(selectedEdgeLinesRef.current)
     setColor(selectedBracketRef.current)
     setColor(annotLineRef.current)
-    // Drop cached label sprites so they're recreated with theme-appropriate text color.
+    isDirtyRef.current = true
+  }, [accent3d, canvasBg])
+
+  // Label text color is baked into each sprite's canvas, so when the light/dark mode
+  // flips we must drop the cached sprites; the label-creation effect (which depends on
+  // themeMode) then recreates them with the correct color.
+  useEffect(() => {
     const scene = sceneRef.current
     for (const sprite of labelsMapRef.current.values()) {
       scene?.remove(sprite)
@@ -492,7 +497,7 @@ export const Graph3D = forwardRef<Graph3DHandle, Graph3DProps>(({
     }
     labelsMapRef.current.clear()
     isDirtyRef.current = true
-  }, [accent3d, canvasBg, themeMode])
+  }, [themeMode])
 
   // Toggle link line visibility
   useEffect(() => {
@@ -861,7 +866,7 @@ export const Graph3D = forwardRef<Graph3DHandle, Graph3DProps>(({
     }
 
     isDirtyRef.current = true
-  }, [positions, graphData, visibleNodes, minNodeSize, maxNodeSize, ultraNodeSize, timeFilterIds, tagIsolationIds, focusModeNodeIds, labelsEnabled, timeFilterActive])
+  }, [positions, graphData, visibleNodes, minNodeSize, maxNodeSize, ultraNodeSize, timeFilterIds, tagIsolationIds, focusModeNodeIds, labelsEnabled, timeFilterActive, themeMode])
 
   // Effect 2: Color/interaction updates — lightweight, runs on hover/selection/search/opacity changes.
   // Avoids triggering heavy matrix/link/label work on every mouse-move hover event.
