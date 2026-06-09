@@ -1,3 +1,26 @@
+/* Theme tokens — defaults (Jarvis Cyan). applyTheme() overrides these on :root
+   at runtime; defining them here keeps the first paint correct before JS runs. */
+:root {
+  --accent: #00d4ff;
+  --accent-rgb: 0 212 255;
+  --accent-dim: #00a8cc;
+  --accent-bright: #00ccff;
+  --surface: #1e1e2e;
+  --surface-2: #181825;
+  --surface-raised: #2a2a3a;
+  --border: #313244;
+  --border-accent: #1a3a4a;
+  --panel: rgba(0, 0, 0, 0.7);
+  --panel-strong: rgba(10, 11, 18, 0.92);
+  --text: #cdd6f4;
+  --text-muted: #a6adc8;
+  --text-faint: #585b70;
+  --success: #a6e3a1;
+  --warn: #f38ba8;
+  --purple: #c4a7e7;
+  --bg: #000000;
+}
+
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
@@ -7,30 +30,30 @@
 html, body, #root {
   width: 100%;
   height: 100%;
-  background: #000000;
+  background: var(--bg);
   overflow: hidden;
 }
 
-/* Custom scrollbar — thin, always visible, cyan accent */
+/* Custom scrollbar — thin, always visible, accent on hover */
 ::-webkit-scrollbar {
   width: 5px;
 }
 ::-webkit-scrollbar-track {
-  background: #1a1a2e;
+  background: var(--surface-2);
   border-radius: 5px;
 }
 ::-webkit-scrollbar-thumb {
-  background: #45475a;
+  background: var(--border);
   border-radius: 5px;
   transition: background 0.2s ease, box-shadow 0.2s ease;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #00d4ff;
-  box-shadow: 0 0 6px #00d4ff88;
+  background: var(--accent);
+  box-shadow: 0 0 6px rgb(var(--accent-rgb) / 0.53);
 }
 ::-webkit-scrollbar-thumb:active {
-  background: #00d4ff;
-  box-shadow: 0 0 10px #00d4ff;
+  background: var(--accent);
+  box-shadow: 0 0 10px var(--accent);
 }
 
 /* Smooth scroll for all scrollable containers */
@@ -49,7 +72,7 @@ input[type="range"] {
   -webkit-appearance: none;
   height: 4px;
   border-radius: 2px;
-  background: #1a3a4a;
+  background: var(--border-accent);
   outline: none;
 }
 
@@ -59,18 +82,18 @@ input[type="range"]::-webkit-slider-thumb {
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background: #00d4ff;
+  background: var(--accent);
   cursor: pointer;
-  border: 2px solid #000;
+  border: 2px solid var(--surface-2);
 }
 
 input[type="range"]::-moz-range-thumb {
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background: #00d4ff;
+  background: var(--accent);
   cursor: pointer;
-  border: 2px solid #000;
+  border: 2px solid var(--surface-2);
 }
 
 /* Timelapse HUD indicator pulse */
@@ -91,8 +114,8 @@ body::after {
     0deg,
     transparent,
     transparent 2px,
-    rgba(0, 212, 255, 0.015) 2px,
-    rgba(0, 212, 255, 0.015) 4px
+    rgb(var(--accent-rgb) / 0.015) 2px,
+    rgb(var(--accent-rgb) / 0.015) 4px
   );
   pointer-events: none;
   z-index: 9999;

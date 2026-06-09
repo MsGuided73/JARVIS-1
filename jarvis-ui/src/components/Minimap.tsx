@@ -71,7 +71,8 @@ export function Minimap({ nodes, cameraPosition, cameraTarget, onClickPosition }
       const { cx: ccx, cy: ccy } = toCanvas(cameraPosition.x, cameraPosition.z)
       const hw = Math.max(8, Math.min(40, 20))
       const hh = Math.max(6, Math.min(30, 15))
-      ctx.strokeStyle = '#00d4ff'
+      // Canvas 2D can't read CSS vars — resolve the theme accent to a concrete color.
+      ctx.strokeStyle = getComputedStyle(document.documentElement).getPropertyValue('--accent').trim() || '#00d4ff'
       ctx.lineWidth = 1
       ctx.strokeRect(ccx - hw, ccy - hh, hw * 2, hh * 2)
     }
@@ -101,7 +102,7 @@ export function Minimap({ nodes, cameraPosition, cameraTarget, onClickPosition }
         height: HEIGHT,
         zIndex: 150,
         borderRadius: 4,
-        border: '1px solid #00d4ff',
+        border: '1px solid var(--accent)',
         boxShadow: '0 0 8px rgba(0,212,255,0.3)',
         cursor: 'crosshair',
         background: 'rgba(10,15,30,0.85)',

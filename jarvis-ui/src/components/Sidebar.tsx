@@ -160,9 +160,9 @@ const CALLOUT_CONFIG: Record<string, { icon: string; color: string; bg: string }
   warning:   { icon: '⚠️',  color: '#f59e0b', bg: 'rgba(245,158,11,0.10)' },
   caution:   { icon: '⚠️',  color: '#f59e0b', bg: 'rgba(245,158,11,0.10)' },
   tip:       { icon: '💡',  color: '#22c55e', bg: 'rgba(34,197,94,0.10)' },
-  important: { icon: '❗',  color: '#7c5cbf', bg: 'rgba(124,92,191,0.10)' },
+  important: { icon: '❗',  color: 'var(--purple)', bg: 'rgba(124,92,191,0.10)' },
   danger:    { icon: '🔥',  color: '#ef4444', bg: 'rgba(239,68,68,0.10)' },
-  callout:   { icon: '📌',  color: '#a6adc8', bg: 'rgba(107,114,128,0.10)' },
+  callout:   { icon: '📌',  color: 'var(--text-muted)', bg: 'rgba(107,114,128,0.10)' },
 }
 
 /**
@@ -400,7 +400,7 @@ export function Sidebar({ node, fullView, allNodes, onClose, onNavigate, onTagFi
         <Tag
           id={id}
           style={{
-            color: '#e0e0e0',
+            color: 'var(--text)',
             fontSize: baseSize,
             fontWeight: Tag === 'h3' ? 600 : 700,
             marginTop: topMargin,
@@ -418,7 +418,7 @@ export function Sidebar({ node, fullView, allNodes, onClose, onNavigate, onTagFi
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     a: ({ href, children, ...props }: any) => {
       const wikilinkStyle = {
-        color: '#7c5cbf',
+        color: 'var(--purple)',
         cursor: 'pointer',
         textDecoration: 'none' as const,
       }
@@ -454,7 +454,7 @@ export function Sidebar({ node, fullView, allNodes, onClose, onNavigate, onTagFi
         }
       }
       return (
-        <a href={href} target="_blank" rel="noopener noreferrer" style={{ color: '#7c5cbf', textDecoration: 'none' }} {...props}>
+        <a href={href} target="_blank" rel="noopener noreferrer" style={{ color: 'var(--purple)', textDecoration: 'none' }} {...props}>
           {children}
         </a>
       )
@@ -472,7 +472,7 @@ export function Sidebar({ node, fullView, allNodes, onClose, onNavigate, onTagFi
       }
       return (
         <pre
-          style={{ background: '#2a2a3a', borderRadius: 6, padding: '12px 16px', overflowX: 'auto', margin: '12px 0', fontSize: 13 }}
+          style={{ background: 'var(--surface-raised)', borderRadius: 6, padding: '12px 16px', overflowX: 'auto', margin: '12px 0', fontSize: 13 }}
           {...props}
         >
           {children}
@@ -499,21 +499,21 @@ export function Sidebar({ node, fullView, allNodes, onClose, onNavigate, onTagFi
             <div style={{ fontWeight: 600, color: config.color, marginBottom: content ? 6 : 0 }}>
               {config.icon} {title}
             </div>
-            {content && <div style={{ color: '#dcddde', lineHeight: 1.6, fontSize: 14 }}>{content}</div>}
+            {content && <div style={{ color: 'var(--text)', lineHeight: 1.6, fontSize: 14 }}>{content}</div>}
           </div>
         )
       }
       const isBlock = !!className?.startsWith('language-')
       return isBlock ? (
         <code
-          style={{ background: '#2a2a3a', color: '#98c379', padding: 0, display: 'block', fontSize: 13 }}
+          style={{ background: 'var(--surface-raised)', color: '#98c379', padding: 0, display: 'block', fontSize: 13 }}
           className={className}
           {...props}
         >
           {children}
         </code>
       ) : (
-        <code style={{ background: '#2a2a3a', color: '#e06c75', padding: '2px 6px', borderRadius: 3, fontSize: '0.85em' }} {...props}>
+        <code style={{ background: 'var(--surface-raised)', color: '#e06c75', padding: '2px 6px', borderRadius: 3, fontSize: '0.85em' }} {...props}>
           {children}
         </code>
       )
@@ -523,7 +523,7 @@ export function Sidebar({ node, fullView, allNodes, onClose, onNavigate, onTagFi
     h2: makeHeading('h2', '1.4em', 16),
     h3: makeHeading('h3', '1.15em', 12),
     p: ({ children, ...props }: { children?: React.ReactNode; [k: string]: unknown }) => (
-      <p style={{ marginBottom: 12, color: '#dcddde', lineHeight: 1.7 }} {...props}>{children}</p>
+      <p style={{ marginBottom: 12, color: 'var(--text)', lineHeight: 1.7 }} {...props}>{children}</p>
     ),
     ul: ({ children, ...props }: { children?: React.ReactNode; [k: string]: unknown }) => (
       <ul style={{ paddingLeft: 24, marginBottom: 10 }} {...props}>{children}</ul>
@@ -536,7 +536,7 @@ export function Sidebar({ node, fullView, allNodes, onClose, onNavigate, onTagFi
     ),
     blockquote: ({ children, ...props }: { children?: React.ReactNode; [k: string]: unknown }) => (
       <blockquote
-        style={{ borderLeft: '3px solid #585b70', paddingLeft: 14, color: '#9399b2', margin: '12px 0', fontStyle: 'italic' }}
+        style={{ borderLeft: '3px solid var(--text-faint)', paddingLeft: 14, color: 'var(--text-muted)', margin: '12px 0', fontStyle: 'italic' }}
         {...props}
       >
         {children}
@@ -551,12 +551,12 @@ export function Sidebar({ node, fullView, allNodes, onClose, onNavigate, onTagFi
       </div>
     ),
     th: ({ children, ...props }: { children?: React.ReactNode; [k: string]: unknown }) => (
-      <th style={{ background: '#2a2a3a', padding: '6px 12px', textAlign: 'left', borderBottom: '1px solid #444', color: '#e0e0e0', fontWeight: 600 }} {...props}>
+      <th style={{ background: 'var(--surface-raised)', padding: '6px 12px', textAlign: 'left', borderBottom: '1px solid #444', color: 'var(--text)', fontWeight: 600 }} {...props}>
         {children}
       </th>
     ),
     td: ({ children, ...props }: { children?: React.ReactNode; [k: string]: unknown }) => (
-      <td style={{ padding: '6px 12px', borderBottom: '1px solid #2a2a3a', color: '#dcddde' }} {...props}>
+      <td style={{ padding: '6px 12px', borderBottom: '1px solid var(--surface-raised)', color: 'var(--text)' }} {...props}>
         {children}
       </td>
     ),
@@ -571,9 +571,9 @@ export function Sidebar({ node, fullView, allNodes, onClose, onNavigate, onTagFi
       right: 0,
       width,
       height: '100%',
-      background: '#1e1e2e',
-      borderLeft: '1px solid #313244',
-      color: '#dcddde',
+      background: 'var(--surface)',
+      borderLeft: '1px solid var(--border)',
+      color: 'var(--text)',
       fontFamily: '"Inter", "Segoe UI", sans-serif',
       fontSize: 14,
       overflowY: 'scroll',
@@ -631,7 +631,7 @@ export function Sidebar({ node, fullView, allNodes, onClose, onNavigate, onTagFi
           height: '100%',
           cursor: 'col-resize',
           zIndex: 10,
-          background: handleHovered || dragging ? '#00d4ff44' : 'transparent',
+          background: handleHovered || dragging ? 'rgb(var(--accent-rgb) / 0.27)' : 'transparent',
           transition: 'background 0.15s',
         }}
       />
@@ -641,14 +641,14 @@ export function Sidebar({ node, fullView, allNodes, onClose, onNavigate, onTagFi
           {/* ── Header ─────────────────────────────────────────────────────── */}
           <div style={{
             padding: '20px 20px 12px',
-            borderBottom: '1px solid #313244',
+            borderBottom: '1px solid var(--border)',
             position: 'sticky',
             top: 0,
-            background: '#1e1e2e',
+            background: 'var(--surface)',
             zIndex: 1,
           }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: 6, paddingRight: 36 }}>
-              <h2 style={{ color: '#e0e0e0', fontSize: 17, fontWeight: 600, margin: 0, lineHeight: 1.4 }}>
+              <h2 style={{ color: 'var(--text)', fontSize: 17, fontWeight: 600, margin: 0, lineHeight: 1.4 }}>
                 {node.label}
               </h2>
               {onToggleFavourite && (
@@ -657,15 +657,15 @@ export function Sidebar({ node, fullView, allNodes, onClose, onNavigate, onTagFi
                   title={isFavourite ? 'Remove from favourites' : 'Add to favourites'}
                   style={{
                     cursor: 'pointer',
-                    color: isFavourite ? '#00d4ff' : '#8892a4',
+                    color: isFavourite ? 'var(--accent)' : 'var(--text-faint)',
                     fontSize: 20,
                     lineHeight: 1,
                     flexShrink: 0,
                     marginLeft: 4,
                     transition: 'color 0.15s',
                   }}
-                  onMouseEnter={e => { (e.currentTarget as HTMLElement).style.color = '#00d4ff' }}
-                  onMouseLeave={e => { (e.currentTarget as HTMLElement).style.color = isFavourite ? '#00d4ff' : '#8892a4' }}
+                  onMouseEnter={e => { (e.currentTarget as HTMLElement).style.color = 'var(--accent)' }}
+                  onMouseLeave={e => { (e.currentTarget as HTMLElement).style.color = isFavourite ? 'var(--accent)' : 'var(--text-faint)' }}
                 >
                   {isFavourite ? '♥' : '♡'}
                 </span>
@@ -677,8 +677,8 @@ export function Sidebar({ node, fullView, allNodes, onClose, onNavigate, onTagFi
                 top: 16,
                 right: 46,
                 background: 'transparent',
-                border: '1px solid #00d4ff55',
-                color: '#00d4ff',
+                border: '1px solid rgb(var(--accent-rgb) / 0.33)',
+                color: 'var(--accent)',
                 cursor: 'pointer',
                 fontSize: 11,
                 padding: '3px 8px',
@@ -697,7 +697,7 @@ export function Sidebar({ node, fullView, allNodes, onClose, onNavigate, onTagFi
                 right: 16,
                 background: 'none',
                 border: 'none',
-                color: '#a6adc8',
+                color: 'var(--text-muted)',
                 cursor: 'pointer',
                 fontSize: 18,
                 padding: '4px 8px',
@@ -707,7 +707,7 @@ export function Sidebar({ node, fullView, allNodes, onClose, onNavigate, onTagFi
               onClick={onClose}
               title="Close (Escape)"
             >✕</button>
-            <div style={{ color: '#a6adc8', fontSize: 11, marginTop: 6 }}>
+            <div style={{ color: 'var(--text-muted)', fontSize: 11, marginTop: 6 }}>
               {node.type.toUpperCase()} · {node.path}
             </div>
           </div>
@@ -716,18 +716,18 @@ export function Sidebar({ node, fullView, allNodes, onClose, onNavigate, onTagFi
           {fullView && (
             <div style={{
               display: 'flex',
-              borderBottom: '1px solid #313244',
-              background: '#181825',
+              borderBottom: '1px solid var(--border)',
+              background: 'var(--surface-2)',
             }}>
               <button
                 onClick={() => setEditMode(false)}
                 style={{
                   flex: 1,
                   padding: '8px 0',
-                  background: !editMode ? '#1e1e2e' : 'transparent',
+                  background: !editMode ? 'var(--surface)' : 'transparent',
                   border: 'none',
-                  borderBottom: !editMode ? '2px solid #00d4ff' : '2px solid transparent',
-                  color: !editMode ? '#00d4ff' : '#585b70',
+                  borderBottom: !editMode ? '2px solid var(--accent)' : '2px solid transparent',
+                  color: !editMode ? 'var(--accent)' : 'var(--text-faint)',
                   cursor: 'pointer',
                   fontFamily: '"Courier New", monospace',
                   fontSize: 11,
@@ -739,10 +739,10 @@ export function Sidebar({ node, fullView, allNodes, onClose, onNavigate, onTagFi
                 style={{
                   flex: 1,
                   padding: '8px 0',
-                  background: editMode ? '#1e1e2e' : 'transparent',
+                  background: editMode ? 'var(--surface)' : 'transparent',
                   border: 'none',
-                  borderBottom: editMode ? '2px solid #00d4ff' : '2px solid transparent',
-                  color: editMode ? '#00d4ff' : '#585b70',
+                  borderBottom: editMode ? '2px solid var(--accent)' : '2px solid transparent',
+                  color: editMode ? 'var(--accent)' : 'var(--text-faint)',
                   cursor: 'pointer',
                   fontFamily: '"Courier New", monospace',
                   fontSize: 11,
@@ -755,7 +755,7 @@ export function Sidebar({ node, fullView, allNodes, onClose, onNavigate, onTagFi
                   alignItems: 'center',
                   padding: '0 12px',
                   fontSize: 11,
-                  color: saveStatus === 'saving' ? '#585b70' : '#a6e3a1',
+                  color: saveStatus === 'saving' ? 'var(--text-faint)' : 'var(--success)',
                   fontFamily: '"Courier New", monospace',
                 }}>
                   {saveStatus === 'saving' ? 'Saving…' : 'Saved ✓'}
@@ -766,11 +766,11 @@ export function Sidebar({ node, fullView, allNodes, onClose, onNavigate, onTagFi
 
           {/* ── Tag pills + frontmatter metadata ───────────────────────────── */}
           {(allTags.length > 0 || metadata.created || metadata.modified) && (
-            <div style={{ padding: '12px 20px', borderBottom: '1px solid #181825' }}>
+            <div style={{ padding: '12px 20px', borderBottom: '1px solid var(--surface-2)' }}>
               {allTags.length > 0 && (
                 <div style={{ marginBottom: metadata.created || metadata.modified ? 10 : 0 }}>
                   <div style={{
-                    color: '#a6adc8',
+                    color: 'var(--text-muted)',
                     fontSize: 11,
                     textTransform: 'uppercase',
                     letterSpacing: '0.08em',
@@ -787,7 +787,7 @@ export function Sidebar({ node, fullView, allNodes, onClose, onNavigate, onTagFi
                         display: 'inline-block',
                         background: 'rgba(124,92,191,0.15)',
                         border: '1px solid rgba(124,92,191,0.4)',
-                        color: '#7c5cbf',
+                        color: 'var(--purple)',
                         borderRadius: 12,
                         padding: '2px 10px',
                         fontSize: 12,
@@ -808,14 +808,14 @@ export function Sidebar({ node, fullView, allNodes, onClose, onNavigate, onTagFi
                 <div style={{ display: 'flex', gap: 16, flexWrap: 'wrap' }}>
                   {metadata.created && (
                     <div>
-                      <span style={{ color: '#a6adc8', fontSize: 11 }}>Created </span>
-                      <span style={{ color: '#9399b2', fontSize: 11 }}>{formatDate(metadata.created)}</span>
+                      <span style={{ color: 'var(--text-muted)', fontSize: 11 }}>Created </span>
+                      <span style={{ color: 'var(--text-muted)', fontSize: 11 }}>{formatDate(metadata.created)}</span>
                     </div>
                   )}
                   {metadata.modified && (
                     <div>
-                      <span style={{ color: '#a6adc8', fontSize: 11 }}>Modified </span>
-                      <span style={{ color: '#9399b2', fontSize: 11 }}>{formatDate(metadata.modified)}</span>
+                      <span style={{ color: 'var(--text-muted)', fontSize: 11 }}>Modified </span>
+                      <span style={{ color: 'var(--text-muted)', fontSize: 11 }}>{formatDate(metadata.modified)}</span>
                     </div>
                   )}
                 </div>
@@ -825,31 +825,31 @@ export function Sidebar({ node, fullView, allNodes, onClose, onNavigate, onTagFi
 
           {/* ── Timeline of events ─────────────────────────────────────────── */}
           {events.length > 0 && (
-            <div style={{ padding: '12px 20px', borderBottom: '1px solid #181825' }}>
-              <div style={{ color: '#a6adc8', fontSize: 11, textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: 10 }}>
+            <div style={{ padding: '12px 20px', borderBottom: '1px solid var(--surface-2)' }}>
+              <div style={{ color: 'var(--text-muted)', fontSize: 11, textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: 10 }}>
                 Timeline ({events.length})
               </div>
-              <div style={{ borderLeft: '1px solid #00d4ff33', marginLeft: 4, paddingLeft: 14 }}>
+              <div style={{ borderLeft: '1px solid rgb(var(--accent-rgb) / 0.2)', marginLeft: 4, paddingLeft: 14 }}>
                 {events.map((ev, i) => (
                   <div key={`${ev.date}-${i}`} style={{ position: 'relative', paddingBottom: 12 }}>
                     <span style={{
                       position: 'absolute', left: -19, top: 4, width: 6, height: 6,
-                      borderRadius: '50%', background: '#00d4ff', boxShadow: '0 0 5px #00d4ff',
+                      borderRadius: '50%', background: 'var(--accent)', boxShadow: '0 0 5px var(--accent)',
                     }} />
                     <div style={{
                       fontFamily: '"Courier New", monospace', fontSize: 11,
-                      color: ev.precision === 'day' ? '#00d4ff' : '#7fb8c9', marginBottom: 2,
+                      color: ev.precision === 'day' ? 'var(--accent)' : '#7fb8c9', marginBottom: 2,
                     }}>
                       {ev.display}
                     </div>
-                    <div style={{ fontSize: 12.5, lineHeight: 1.45, color: '#cdd0d8' }}>
+                    <div style={{ fontSize: 12.5, lineHeight: 1.45, color: 'var(--text)' }}>
                       {ev.description}
                     </div>
                     {ev.source && ev.source !== node.label && (
                       <span
                         onClick={() => onNavigate(ev.source)}
                         title="Open source article"
-                        style={{ display: 'inline-block', marginTop: 2, fontSize: 10.5, color: '#7a7f95', cursor: 'pointer', borderBottom: '1px dotted #7a7f9555' }}
+                        style={{ display: 'inline-block', marginTop: 2, fontSize: 10.5, color: 'var(--text-faint)', cursor: 'pointer', borderBottom: '1px dotted color-mix(in srgb, var(--text-faint) 33%, transparent)' }}
                       >
                         ↳ {ev.source}
                       </span>
@@ -862,8 +862,8 @@ export function Sidebar({ node, fullView, allNodes, onClose, onNavigate, onTagFi
 
           {/* ── Backlinks ──────────────────────────────────────────────────── */}
           {backlinks.length > 0 && (
-            <div style={{ padding: '12px 20px', borderBottom: '1px solid #181825' }}>
-              <div style={{ color: '#a6adc8', fontSize: 11, textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: 6 }}>
+            <div style={{ padding: '12px 20px', borderBottom: '1px solid var(--surface-2)' }}>
+              <div style={{ color: 'var(--text-muted)', fontSize: 11, textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: 6 }}>
                 Backlinks ({backlinks.length})
               </div>
               {backlinks.slice(0, 20).map(bl => (
@@ -880,8 +880,8 @@ export function Sidebar({ node, fullView, allNodes, onClose, onNavigate, onTagFi
 
           {/* ── Similar Notes (Semantic) ────────────────────────────────── */}
           {similarNotes.length > 0 && (
-            <div style={{ padding: '12px 20px', borderBottom: '1px solid #181825' }}>
-              <div style={{ color: '#c4a7e7', fontSize: 11, textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: 6 }}>
+            <div style={{ padding: '12px 20px', borderBottom: '1px solid var(--surface-2)' }}>
+              <div style={{ color: 'var(--purple)', fontSize: 11, textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: 6 }}>
                 Similar Notes
               </div>
               {similarNotes.map(sn => (
@@ -900,10 +900,10 @@ export function Sidebar({ node, fullView, allNodes, onClose, onNavigate, onTagFi
                     {sn.label}
                   </span>
                   <span style={{
-                    color: '#c4a7e7',
+                    color: 'var(--purple)',
                     fontSize: 10,
-                    background: '#c4a7e711',
-                    border: '1px solid #c4a7e722',
+                    background: 'color-mix(in srgb, var(--purple) 7%, transparent)',
+                    border: '1px solid color-mix(in srgb, var(--purple) 13%, transparent)',
                     borderRadius: 3,
                     padding: '0 5px',
                     flexShrink: 0,
@@ -918,9 +918,9 @@ export function Sidebar({ node, fullView, allNodes, onClose, onNavigate, onTagFi
 
           {/* ── TOC: On This Page ──────────────────────────────────────────── */}
           {fullView && headings.length > 0 && (
-            <div style={{ padding: '12px 20px', borderBottom: '1px solid #181825' }}>
+            <div style={{ padding: '12px 20px', borderBottom: '1px solid var(--surface-2)' }}>
               <div style={{
-                color: '#a6adc8',
+                color: 'var(--text-muted)',
                 fontSize: 11,
                 textTransform: 'uppercase',
                 letterSpacing: '0.1em',
@@ -947,15 +947,15 @@ export function Sidebar({ node, fullView, allNodes, onClose, onNavigate, onTagFi
                       paddingBottom: 3,
                       paddingRight: 0,
                       fontSize: 13,
-                      color: isActive ? '#7c5cbf' : '#9399b2',
+                      color: isActive ? 'var(--purple)' : 'var(--text-muted)',
                       textDecoration: 'none',
-                      borderLeft: isActive ? '2px solid #7c5cbf' : '2px solid transparent',
+                      borderLeft: isActive ? '2px solid var(--purple)' : '2px solid transparent',
                       marginLeft: -2,
                       transition: 'color 0.15s',
                       lineHeight: 1.4,
                     }}
-                    onMouseEnter={e => { if (!isActive) (e.currentTarget as HTMLElement).style.color = '#cdd6f4' }}
-                    onMouseLeave={e => { if (!isActive) (e.currentTarget as HTMLElement).style.color = '#9399b2' }}
+                    onMouseEnter={e => { if (!isActive) (e.currentTarget as HTMLElement).style.color = 'var(--text)' }}
+                    onMouseLeave={e => { if (!isActive) (e.currentTarget as HTMLElement).style.color = 'var(--text-muted)' }}
                   >
                     {h.text}
                   </a>
@@ -976,20 +976,20 @@ export function Sidebar({ node, fullView, allNodes, onClose, onNavigate, onTagFi
           )}
 
           {fullView && !editMode && (
-            <div ref={contentRef} style={{ padding: '16px 20px 32px', lineHeight: 1.7, fontSize: 15, color: '#dcddde' }}>
+            <div ref={contentRef} style={{ padding: '16px 20px 32px', lineHeight: 1.7, fontSize: 15, color: 'var(--text)' }}>
               {isArticle && processedMd && (
                 <button
                   onClick={exportArticlePdf}
                   title="Export the full article text as PDF"
                   style={{
-                    background: 'transparent', border: '1px solid #00d4ff55', color: '#00d4ff',
+                    background: 'transparent', border: '1px solid rgb(var(--accent-rgb) / 0.33)', color: 'var(--accent)',
                     borderRadius: 4, padding: '4px 10px', fontSize: 11, cursor: 'pointer',
                     fontFamily: '"Courier New", monospace', letterSpacing: 1, marginBottom: 14,
                   }}
                 >⤓ EXPORT ARTICLE (PDF)</button>
               )}
               {loadingMd ? (
-                <div style={{ color: '#a6adc8' }}>Loading…</div>
+                <div style={{ color: 'var(--text-muted)' }}>Loading…</div>
               ) : processedMd ? (
                 <ReactMarkdown
                   remarkPlugins={[remarkGfm]}
@@ -999,16 +999,16 @@ export function Sidebar({ node, fullView, allNodes, onClose, onNavigate, onTagFi
                   {processedMd}
                 </ReactMarkdown>
               ) : (
-                <div style={{ color: '#a6adc8' }}>{node.excerpt}</div>
+                <div style={{ color: 'var(--text-muted)' }}>{node.excerpt}</div>
               )}
             </div>
           )}
 
           {/* ── Excerpt (non-full-view) ────────────────────────────────────── */}
           {!fullView && node.excerpt && (
-            <div style={{ padding: '12px 20px', color: '#9399b2', lineHeight: 1.6, borderTop: '1px solid #181825' }}>
+            <div style={{ padding: '12px 20px', color: 'var(--text-muted)', lineHeight: 1.6, borderTop: '1px solid var(--surface-2)' }}>
               {node.excerpt}
-              <div style={{ marginTop: 8, color: '#a6adc8', fontSize: 12 }}>
+              <div style={{ marginTop: 8, color: 'var(--text-muted)', fontSize: 12 }}>
                 Double-click node to open full note
               </div>
             </div>

@@ -37,7 +37,7 @@ export class ErrorBoundary extends Component<Props, State> {
           alignItems: 'center',
           justifyContent: 'center',
           fontFamily: '"Courier New", monospace',
-          color: '#00d4ff',
+          color: 'var(--accent)',
           padding: '20px',
         }}>
           <div style={{ textAlign: 'center', maxWidth: 600 }}>
@@ -52,19 +52,19 @@ export class ErrorBoundary extends Component<Props, State> {
             <div style={{
               fontSize: 13,
               lineHeight: 1.8,
-              color: '#00a8cc',
+              color: 'var(--accent-dim)',
               marginBottom: 16,
             }}>
               WebGL failed to initialize. Please try a GPU-enabled browser or ensure WebGL is enabled in your settings.
             </div>
             <div style={{
               fontSize: 11,
-              color: '#a6adc8',
+              color: 'var(--text-muted)',
               marginTop: 20,
               padding: '12px',
               background: 'rgba(0,0,0,0.5)',
               borderRadius: 4,
-              border: '1px solid #1a3a4a',
+              border: '1px solid var(--border-accent)',
             }}>
               Error: {this.state.error?.message || 'Unknown error'}
             </div>

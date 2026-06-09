@@ -47,6 +47,9 @@ interface Graph3DProps {
   timeFilterActive?: boolean
   textSize?: number
   perfRef?: React.RefObject<PerfMetrics>
+  accent3d?: number          // theme accent (links/highlights/labels)
+  canvasBg?: string          // scene clear color (hex string)
+  themeMode?: 'dark' | 'light'
 }
 
 export interface Graph3DHandle {
@@ -72,7 +75,7 @@ const DEBUG = import.meta.env.DEV && typeof window !== 'undefined' &&
 // (depthTest:false already lets them composite over everything).
 const BLOOM_EXCLUDE_LAYER = 1
 
-function createSelectedTitleSprite(text: string): THREE.Sprite {
+function createSelectedTitleSprite(text: string, color = '#00ccff'): THREE.Sprite {
   const W = 512, H = 64
   const canvas = document.createElement('canvas')
   canvas.width = W
@@ -82,7 +85,7 @@ function createSelectedTitleSprite(text: string): THREE.Sprite {
   ctx.font = 'bold 16px "Inter", "Segoe UI", sans-serif'
   ctx.textAlign = 'center'
   ctx.textBaseline = 'middle'
-  ctx.fillStyle = '#00ccff'
+  ctx.fillStyle = color
   ctx.globalAlpha = 0.95
   ctx.fillText(label, W / 2, H / 2)
   const texture = new THREE.CanvasTexture(canvas)
@@ -93,7 +96,7 @@ function createSelectedTitleSprite(text: string): THREE.Sprite {
   return sprite
 }
 
-function createLabelSprite(text: string): THREE.Sprite {
+function createLabelSprite(text: string, color = '#00a8cc'): THREE.Sprite {
   const W = 256, H = 48
   const canvas = document.createElement('canvas')
   canvas.width = W
@@ -103,7 +106,7 @@ function createLabelSprite(text: string): THREE.Sprite {
   ctx.font = '14px "Inter", "Segoe UI", sans-serif'
   ctx.textAlign = 'center'
   ctx.textBaseline = 'middle'
-  ctx.fillStyle = '#00a8cc'
+  ctx.fillStyle = color
   ctx.globalAlpha = 0.8
   ctx.fillText(label, W / 2, H / 2)
   const texture = new THREE.CanvasTexture(canvas)
@@ -171,6 +174,9 @@ export const Graph3D = forwardRef<Graph3DHandle, Graph3DProps>(({
   timeFilterActive = false,
   textSize = 1.0,
   perfRef: simPerfRef,
+  accent3d = 0x00d4ff,
+  canvasBg = '#000000',
+  themeMode = 'dark',
 }, ref) => {
   const canvasRef = useRef<HTMLCanvasElement>(null)
   const rendererRef = useRef<THREE.WebGLRenderer | null>(null)
@@ -307,7 +313,7 @@ export const Graph3D = forwardRef<Graph3DHandle, Graph3DProps>(({
     // No manual throttling. setPixelRatio cap only affects resolution, not frame rate.
     renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
     renderer.setSize(canvas.clientWidth, canvas.clientHeight)
-    renderer.setClearColor(0x000000, 1)
+    renderer.setClearColor(new THREE.Color(canvasBg), 1)
     renderer.toneMapping = THREE.ACESFilmicToneMapping
     renderer.toneMappingExposure = 1.2
     rendererRef.current = renderer
@@ -409,7 +415,7 @@ export const Graph3D = forwardRef<Graph3DHandle, Graph3DProps>(({
     // Annotation line: cursor → closest proximity node (solid cyan, drawn on top)
     const annotGeo = new THREE.BufferGeometry()
     annotGeo.setAttribute('position', new THREE.BufferAttribute(new Float32Array(6), 3))
-    const annotMat = new THREE.LineBasicMaterial({ color: 0x00d4ff, depthTest: false })
+    const annotMat = new THREE.LineBasicMaterial({ color: accent3d, depthTest: false })
     const annotLine = new THREE.Line(annotGeo, annotMat)
     annotLine.visible = false
     annotLine.renderOrder = 999
@@ -418,7 +424,7 @@ export const Graph3D = forwardRef<Graph3DHandle, Graph3DProps>(({
 
     // Selected node bracket (wireframe cube, thin cyan, low opacity)
     const bracketGeo = new THREE.EdgesGeometry(new THREE.BoxGeometry(1, 1, 1))
-    const bracketMat = new THREE.LineBasicMaterial({ color: 0x00ccff, transparent: true, opacity: 0.4, depthTest: false })
+    const bracketMat = new THREE.LineBasicMaterial({ color: accent3d, transparent: true, opacity: 0.4, depthTest: false })
     const selectedBracket = new THREE.LineSegments(bracketGeo, bracketMat)
     selectedBracket.visible = false
     selectedBracket.renderOrder = 997
@@ -456,14 +462,37 @@ export const Graph3D = forwardRef<Graph3DHandle, Graph3DProps>(({
     isDirtyRef.current = true
   }, [starsEnabled])
 
-  // Update bloom — disable the pass entirely when off (avoids running expensive blur shaders)
+  // Update bloom — disable the pass entirely when off (avoids running expensive blur shaders).
+  // Bloom is scaled down in light mode, where heavy glow washes out a light background.
   useEffect(() => {
     if (bloomPassRef.current) {
-      bloomPassRef.current.enabled = bloomStrength > 0
-      bloomPassRef.current.strength = bloomStrength
+      const strength = bloomStrength * (themeMode === 'light' ? 0.4 : 1)
+      bloomPassRef.current.enabled = strength > 0
+      bloomPassRef.current.strength = strength
     }
     isDirtyRef.current = true
-  }, [bloomStrength])
+  }, [bloomStrength, themeMode])
+
+  // Live theme update — recolor 3D accent materials, swap the canvas background, and
+  // refresh labels (so their baked-in text color matches the theme) when the theme changes.
+  useEffect(() => {
+    rendererRef.current?.setClearColor(new THREE.Color(canvasBg), 1)
+    const setColor = (lines: THREE.LineSegments | THREE.Line | null) => {
+      if (lines) (lines.material as THREE.LineBasicMaterial).color.set(accent3d)
+    }
+    setColor(selectedEdgeLinesRef.current)
+    setColor(selectedBracketRef.current)
+    setColor(annotLineRef.current)
+    // Drop cached label sprites so they're recreated with theme-appropriate text color.
+    const scene = sceneRef.current
+    for (const sprite of labelsMapRef.current.values()) {
+      scene?.remove(sprite)
+      ;(sprite.material as THREE.SpriteMaterial).map?.dispose()
+      sprite.material.dispose()
+    }
+    labelsMapRef.current.clear()
+    isDirtyRef.current = true
+  }, [accent3d, canvasBg, themeMode])
 
   // Toggle link line visibility
   useEffect(() => {
@@ -549,7 +578,7 @@ export const Graph3D = forwardRef<Graph3DHandle, Graph3DProps>(({
     const hlGeo = new THREE.BufferGeometry()
     hlGeo.setAttribute('position', new THREE.BufferAttribute(hlPositions, 3))
     hlGeo.setDrawRange(0, 0) // hidden until a node is selected
-    const hlMat = new THREE.LineBasicMaterial({ color: 0x00ccff, transparent: true, opacity: 0.95, blending: THREE.AdditiveBlending, depthWrite: false })
+    const hlMat = new THREE.LineBasicMaterial({ color: accent3d, transparent: true, opacity: 0.95, blending: THREE.AdditiveBlending, depthWrite: false })
     const hlLines = new THREE.LineSegments(hlGeo, hlMat)
     hlLines.frustumCulled = false
     hlLines.renderOrder = 1
@@ -591,7 +620,7 @@ export const Graph3D = forwardRef<Graph3DHandle, Graph3DProps>(({
     }
 
     // Create floating title sprite
-    const sprite = createSelectedTitleSprite(node.label)
+    const sprite = createSelectedTitleSprite(node.label, '#' + accent3d.toString(16).padStart(6, '0'))
     sprite.visible = false
     scene.add(sprite)
     selectedTitleSpriteRef.current = sprite
@@ -803,7 +832,7 @@ export const Graph3D = forwardRef<Graph3DHandle, Graph3DProps>(({
       const shouldShow = labelsEnabled && inTimeF && visibleNodes.has(nodeId) && inTagIso && inFocusM
       let sprite = labelsMapRef.current.get(nodeId)
       if (!sprite && shouldShow && labelScene) {
-        sprite = createLabelSprite(node.label)
+        sprite = createLabelSprite(node.label, themeMode === 'light' ? '#2a2f3a' : '#9fb0c0')
         sprite.scale.set(40 * textSizeRef.current, 7.5 * textSizeRef.current, 1)
         sprite.visible = false
         labelScene.add(sprite)

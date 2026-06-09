@@ -15,15 +15,15 @@ interface NoteEditorProps {
 }
 
 const jarvisDark: Extension = EditorView.theme({
-  '&': { background: '#1e1e2e', color: '#dcddde', height: '100%' },
+  '&': { background: 'var(--surface)', color: 'var(--text)', height: '100%' },
   '.cm-editor': { height: '100%' },
   '.cm-scroller': { fontFamily: '"Inter", "Segoe UI", sans-serif', fontSize: '14px', lineHeight: '1.7' },
   '.cm-focused': { outline: 'none' },
-  '.cm-gutters': { background: '#181825', color: '#a6adc8', border: 'none' },
-  '.cm-activeLineGutter': { background: '#1e1e2e' },
-  '.cm-activeLine': { background: '#1e1e2e22' },
-  '.cm-cursor': { borderLeftColor: '#00d4ff' },
-  '.cm-selectionBackground': { background: '#00d4ff22 !important' },
+  '.cm-gutters': { background: 'var(--surface-2)', color: 'var(--text-muted)', border: 'none' },
+  '.cm-activeLineGutter': { background: 'var(--surface)' },
+  '.cm-activeLine': { background: 'color-mix(in srgb, var(--surface) 13%, transparent)' },
+  '.cm-cursor': { borderLeftColor: 'var(--accent)' },
+  '.cm-selectionBackground': { background: 'rgb(var(--accent-rgb) / 0.13) !important' },
   '.cm-line': { paddingLeft: '8px' },
 }, { dark: true })
 

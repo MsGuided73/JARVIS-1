@@ -4,8 +4,11 @@
 import { useState, useRef } from 'react'
 import { PresetManager } from './PresetManager'
 import type { Preset } from '../hooks/usePresets'
+import { THEMES } from '../lib/themes'
 
 interface SettingsProps {
+  themeId: string
+  onThemeChange: (id: string) => void
   bloomStrength: number
   nodeOpacity: number
   starsEnabled: boolean
@@ -48,6 +51,8 @@ interface SettingsProps {
 }
 
 export function Settings({
+  themeId,
+  onThemeChange,
   bloomStrength,
   nodeOpacity,
   starsEnabled,
@@ -104,9 +109,9 @@ export function Settings({
       onClick={onClick}
       title={tooltip}
       style={{
-        background: active ? '#00d4ff22' : 'rgba(0,0,0,0.5)',
-        border: `1px solid ${active ? '#00d4ff' : '#1a3a4a'}`,
-        color: active ? '#00d4ff' : '#585b70',
+        background: active ? 'rgb(var(--accent-rgb) / 0.13)' : 'rgba(0,0,0,0.5)',
+        border: `1px solid ${active ? 'var(--accent)' : 'var(--border-accent)'}`,
+        color: active ? 'var(--accent)' : 'var(--text-faint)',
         borderRadius: 4,
         padding: '4px 12px',
         cursor: 'pointer',
@@ -120,7 +125,7 @@ export function Settings({
 
   const sliderRow = (label: string, value: number, min: number, max: number, step: number, onChange: (v: number) => void, tooltip?: string) => (
     <div style={{ marginBottom: 14 }} title={tooltip}>
-      <div style={{ marginBottom: 6, letterSpacing: '0.08em', fontSize: 10, color: '#a6adc8' }}>
+      <div style={{ marginBottom: 6, letterSpacing: '0.08em', fontSize: 10, color: 'var(--text-muted)' }}>
         {label}
       </div>
       <input
@@ -130,7 +135,7 @@ export function Settings({
         step={step}
         value={value}
         onChange={e => onChange(Number(e.target.value))}
-        style={{ width: '100%', accentColor: '#00d4ff', cursor: 'pointer' }}
+        style={{ width: '100%', accentColor: 'var(--accent)', cursor: 'pointer' }}
       />
     </div>
   )
@@ -148,9 +153,9 @@ export function Settings({
         onClick={() => toggleOpen(!open)}
         title="Settings"
         style={{
-          background: open ? '#00d4ff22' : 'rgba(0,0,0,0.7)',
-          border: `1px solid ${open ? '#00d4ff' : '#1a3a4a'}`,
-          color: open ? '#00d4ff' : '#00a8cc',
+          background: open ? 'rgb(var(--accent-rgb) / 0.13)' : 'var(--panel)',
+          border: `1px solid ${open ? 'var(--accent)' : 'var(--border-accent)'}`,
+          color: open ? 'var(--accent)' : 'var(--accent-dim)',
           borderRadius: 4,
           padding: '6px 10px',
           cursor: 'pointer',
@@ -164,20 +169,50 @@ export function Settings({
           top: 0,
           left: '100%',
           marginLeft: 8,
-          background: 'rgba(0,0,0,0.92)',
-          border: '1px solid #1a3a4a',
+          background: 'var(--panel-strong)',
+          border: '1px solid var(--border-accent)',
           borderRadius: 6,
           padding: '14px 16px',
           width: 224,
-          boxShadow: '0 0 15px #00d4ff22',
-          color: '#00a8cc',
+          boxShadow: '0 0 15px rgb(var(--accent-rgb) / 0.13)',
+          color: 'var(--accent-dim)',
           maxHeight: '80vh',
           overflowY: 'auto',
         }}>
+          <div style={{ marginBottom: 14 }} title="Switch the overall look of Jarvis.">
+            <div style={{ marginBottom: 6, letterSpacing: '0.08em', fontSize: 10, color: 'var(--text-muted)' }}>THEME</div>
+            <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6 }}>
+              {THEMES.map(t => {
+                const active = t.id === themeId
+                return (
+                  <button
+                    key={t.id}
+                    onClick={() => onThemeChange(t.id)}
+                    title={`${t.name} (${t.mode})`}
+                    style={{
+                      display: 'flex', alignItems: 'center', gap: 6, padding: '4px 8px',
+                      background: active ? 'rgb(var(--accent-rgb) / 0.13)' : 'rgba(0,0,0,0.25)',
+                      border: `1px solid ${active ? 'var(--accent)' : 'var(--border)'}`,
+                      borderRadius: 4, cursor: 'pointer', fontSize: 10,
+                      color: active ? 'var(--accent)' : 'var(--text-muted)',
+                      fontFamily: 'inherit',
+                    }}
+                  >
+                    <span style={{
+                      width: 10, height: 10, borderRadius: '50%', flexShrink: 0,
+                      background: t.tokens.accent, border: '1px solid rgba(128,128,128,0.4)',
+                    }} />
+                    {t.name}
+                  </button>
+                )
+              })}
+            </div>
+          </div>
+
           <div style={{ marginBottom: 14 }} title="Glow/bloom intensity around nodes (the cyberpunk halo). Click the label to toggle off.">
             <div
               onClick={() => onBloomStrengthChange(bloomStrength > 0 ? 0 : (prevBloom.current || 1.5))}
-              style={{ marginBottom: 6, letterSpacing: '0.08em', fontSize: 10, color: '#a6adc8', cursor: 'pointer', userSelect: 'none' }}
+              style={{ marginBottom: 6, letterSpacing: '0.08em', fontSize: 10, color: 'var(--text-muted)', cursor: 'pointer', userSelect: 'none' }}
             >
               BLOOM: {bloomStrength > 0 ? bloomStrength.toFixed(1) : 'OFF'}
             </div>
@@ -192,22 +227,22 @@ export function Settings({
                 if (v > 0) prevBloom.current = v
                 onBloomStrengthChange(v)
               }}
-              style={{ width: '100%', accentColor: '#00d4ff', cursor: 'pointer' }}
+              style={{ width: '100%', accentColor: 'var(--accent)', cursor: 'pointer' }}
             />
           </div>
 
           <div style={{ marginBottom: 14 }}>
-            <div style={{ marginBottom: 6, letterSpacing: '0.08em', fontSize: 10, color: '#a6adc8' }}>STARS</div>
+            <div style={{ marginBottom: 6, letterSpacing: '0.08em', fontSize: 10, color: 'var(--text-muted)' }}>STARS</div>
             {toggleBtn(starsEnabled, `[ STARS ${starsEnabled ? 'ON' : 'OFF'} ]`, () => onStarsToggle(!starsEnabled), 'Toggle the background star field and galaxy backdrops.')}
           </div>
 
           <div style={{ marginBottom: 14 }}>
-            <div style={{ marginBottom: 6, letterSpacing: '0.08em', fontSize: 10, color: '#a6adc8' }}>LABELS</div>
+            <div style={{ marginBottom: 6, letterSpacing: '0.08em', fontSize: 10, color: 'var(--text-muted)' }}>LABELS</div>
             {toggleBtn(labelsEnabled, `[ LABELS ${labelsEnabled ? 'ON' : 'OFF'} ]`, () => onLabelsToggle(!labelsEnabled), 'Show or hide the text label on each node.')}
           </div>
 
           <div style={{ marginBottom: 14 }}>
-            <div style={{ marginBottom: 6, letterSpacing: '0.08em', fontSize: 10, color: '#a6adc8' }}>LINKS</div>
+            <div style={{ marginBottom: 6, letterSpacing: '0.08em', fontSize: 10, color: 'var(--text-muted)' }}>LINKS</div>
             {toggleBtn(linksEnabled, `[ LINKS ${linksEnabled ? 'ON' : 'OFF'} ]`, () => onLinksToggle(!linksEnabled), 'Show or hide the connection lines between nodes.')}
           </div>
 
@@ -218,12 +253,12 @@ export function Settings({
           )}
 
           <div style={{ marginBottom: 14 }}>
-            <div style={{ marginBottom: 6, letterSpacing: '0.08em', fontSize: 10, color: '#a6adc8' }}>ZOOM TO NODE</div>
+            <div style={{ marginBottom: 6, letterSpacing: '0.08em', fontSize: 10, color: 'var(--text-muted)' }}>ZOOM TO NODE</div>
             {toggleBtn(zoomToNode, `[ ZOOM TO NODE ${zoomToNode ? 'ON' : 'OFF'} ]`, () => onZoomToNodeToggle(!zoomToNode), 'When ON, the camera flies to a node when you click it.')}
           </div>
 
           <div style={{ marginBottom: 14 }}>
-            <div style={{ marginBottom: 6, letterSpacing: '0.08em', fontSize: 10, color: '#a6adc8' }}>ISOLATE ON SELECT</div>
+            <div style={{ marginBottom: 6, letterSpacing: '0.08em', fontSize: 10, color: 'var(--text-muted)' }}>ISOLATE ON SELECT</div>
             {toggleBtn(isolateOnSelect, `[ ISOLATE ${isolateOnSelect ? 'ON' : 'OFF'} ]`, () => onIsolateToggle(!isolateOnSelect), 'When ON, selecting a node hides everything except it and its directly-connected neighbours. Press ESC to clear.')}
           </div>
 
@@ -235,7 +270,7 @@ export function Settings({
           {sliderRow(`NODE SIZE: ${minNodeSize.toFixed(1)}x`, minNodeSize, 1.0, 2.0, 0.1, onMinSizeChange, 'Base size of regular nodes.')}
 
           <div style={{ marginBottom: 14 }} title="Size of supernodes — the top 15% most-connected nodes (major hubs).">
-            <div style={{ marginBottom: 6, letterSpacing: '0.08em', fontSize: 10, color: '#a6adc8' }}>
+            <div style={{ marginBottom: 6, letterSpacing: '0.08em', fontSize: 10, color: 'var(--text-muted)' }}>
               SUPERNODE SIZE: {maxNodeSize.toFixed(1)}x
             </div>
             <input
@@ -245,12 +280,12 @@ export function Settings({
               step={0.1}
               value={maxNodeSize}
               onChange={e => onMaxSizeChange(Number(e.target.value))}
-              style={{ width: '100%', accentColor: '#00d4ff', cursor: 'pointer' }}
+              style={{ width: '100%', accentColor: 'var(--accent)', cursor: 'pointer' }}
             />
           </div>
 
           <div style={{ marginBottom: 14 }} title="Size of ultranodes — the top 2% hub-of-hubs (e.g. Frank Parlato, NXIVM).">
-            <div style={{ marginBottom: 6, letterSpacing: '0.08em', fontSize: 10, color: '#a6adc8' }}>
+            <div style={{ marginBottom: 6, letterSpacing: '0.08em', fontSize: 10, color: 'var(--text-muted)' }}>
               ULTRANODE SIZE: {ultraNodeSize.toFixed(1)}x
             </div>
             <input
@@ -260,12 +295,12 @@ export function Settings({
               step={0.5}
               value={ultraNodeSize}
               onChange={e => onUltraNodeSizeChange(Number(e.target.value))}
-              style={{ width: '100%', accentColor: '#00d4ff', cursor: 'pointer' }}
+              style={{ width: '100%', accentColor: 'var(--accent)', cursor: 'pointer' }}
             />
           </div>
 
           <div style={{ marginBottom: 14 }} title="Graph layout shape — how nodes are arranged in 3D space.">
-            <div style={{ marginBottom: 6, letterSpacing: '0.08em', fontSize: 10, color: '#a6adc8' }}>SHAPE</div>
+            <div style={{ marginBottom: 6, letterSpacing: '0.08em', fontSize: 10, color: 'var(--text-muted)' }}>SHAPE</div>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 4 }}>
               {([
                 { value: 'natural', icon: '🌿', label: 'Natural' },
@@ -286,9 +321,9 @@ export function Settings({
                     onMouseLeave={() => setHoveredShape(null)}
                     title={label}
                     style={{
-                      background: isSelected ? '#00d4ff22' : isHovered ? '#00d4ff0d' : 'rgba(0,0,0,0.5)',
-                      border: `1px solid ${isSelected ? '#00d4ff' : isHovered ? '#00d4ff66' : '#1a3a4a'}`,
-                      color: isSelected ? '#00d4ff' : isHovered ? '#00a8cc' : '#585b70',
+                      background: isSelected ? 'rgb(var(--accent-rgb) / 0.13)' : isHovered ? 'rgb(var(--accent-rgb) / 0.05)' : 'rgba(0,0,0,0.5)',
+                      border: `1px solid ${isSelected ? 'var(--accent)' : isHovered ? 'rgb(var(--accent-rgb) / 0.4)' : 'var(--border-accent)'}`,
+                      color: isSelected ? 'var(--accent)' : isHovered ? 'var(--accent-dim)' : 'var(--text-faint)',
                       borderRadius: 4,
                       padding: '10px 4px 8px',
                       cursor: 'pointer',
@@ -296,7 +331,7 @@ export function Settings({
                       fontSize: 10,
                       letterSpacing: '0.05em',
                       textAlign: 'center',
-                      boxShadow: isSelected ? '0 0 8px #00d4ff44' : 'none',
+                      boxShadow: isSelected ? '0 0 8px rgb(var(--accent-rgb) / 0.27)' : 'none',
                       transition: 'border-color 0.15s, background 0.15s, box-shadow 0.15s',
                     }}
                   >
@@ -315,7 +350,7 @@ export function Settings({
             onDelete={onPresetDelete}
           />
 
-          <div style={{ borderTop: '1px solid #1a3a4a', paddingTop: 14, marginBottom: 0 }}>
+          <div style={{ borderTop: '1px solid var(--border-accent)', paddingTop: 14, marginBottom: 0 }}>
             {toggleBtn(false, '[ RESET ALL ]', onResetAll, 'Reset camera, filters, sliders, and simulation to defaults.')}
             <div style={{ marginTop: 8 }}>
               {toggleBtn(false, '[ Reset View ]', onResetPosition, 'Snap the camera back to fit all nodes in view.')}

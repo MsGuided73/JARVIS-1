@@ -110,14 +110,14 @@ export function FirstRunSetup({ onConfigured }: FirstRunSetupProps) {
   const pathHint = PATH_HINTS[platform] ?? ''
   const isValidated = validation?.valid === true
   const inputBorderColor = validation
-    ? (validation.valid ? '#a6e3a1' : '#f38ba8')
-    : '#313244'
+    ? (validation.valid ? 'var(--success)' : 'var(--warn)')
+    : 'var(--border)'
 
   return (
     <div style={{
       position: 'fixed',
       inset: 0,
-      background: 'rgba(0,0,0,0.85)',
+      background: 'var(--panel-strong)',
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'center',
@@ -126,7 +126,7 @@ export function FirstRunSetup({ onConfigured }: FirstRunSetupProps) {
     }}>
       <div style={{
         background: '#11111b',
-        border: '1px solid #313244',
+        border: '1px solid var(--border)',
         borderRadius: 8,
         padding: 32,
         maxWidth: 520,
@@ -139,7 +139,7 @@ export function FirstRunSetup({ onConfigured }: FirstRunSetupProps) {
           <div style={{
             fontSize: 28,
             fontWeight: 700,
-            color: '#00d4ff',
+            color: 'var(--accent)',
             letterSpacing: '0.2em',
             marginBottom: 6,
           }}>
@@ -147,7 +147,7 @@ export function FirstRunSetup({ onConfigured }: FirstRunSetupProps) {
           </div>
           <div style={{
             fontSize: 12,
-            color: '#a6adc8',
+            color: 'var(--text-muted)',
             letterSpacing: '0.15em',
           }}>
             OBSIDIAN VAULT SETUP
@@ -159,13 +159,13 @@ export function FirstRunSetup({ onConfigured }: FirstRunSetupProps) {
           display: 'inline-flex',
           alignItems: 'center',
           gap: 6,
-          background: '#1e1e2e',
-          border: '1px solid #313244',
+          background: 'var(--surface)',
+          border: '1px solid var(--border)',
           borderRadius: 4,
           padding: '4px 10px',
           marginBottom: 20,
           fontSize: 11,
-          color: '#cdd6f4',
+          color: 'var(--text)',
         }}>
           <span>{osIcon}</span>
           <span>{osLabel} detected</span>
@@ -176,7 +176,7 @@ export function FirstRunSetup({ onConfigured }: FirstRunSetupProps) {
           <div style={{ marginBottom: 20 }}>
             <div style={{
               fontSize: 10,
-              color: '#a6adc8',
+              color: 'var(--text-muted)',
               letterSpacing: '0.08em',
               marginBottom: 8,
             }}>
@@ -188,9 +188,9 @@ export function FirstRunSetup({ onConfigured }: FirstRunSetupProps) {
                   key={p}
                   onClick={() => handleChipClick(p)}
                   style={{
-                    background: inputPath === p ? '#00d4ff22' : '#1e1e2e',
-                    border: `1px solid ${inputPath === p ? '#00d4ff' : '#313244'}`,
-                    color: inputPath === p ? '#00d4ff' : '#7f849c',
+                    background: inputPath === p ? 'rgb(var(--accent-rgb) / 0.13)' : 'var(--surface)',
+                    border: `1px solid ${inputPath === p ? 'var(--accent)' : 'var(--border)'}`,
+                    color: inputPath === p ? 'var(--accent)' : '#7f849c',
                     borderRadius: 4,
                     padding: '4px 10px',
                     cursor: 'pointer',
@@ -216,7 +216,7 @@ export function FirstRunSetup({ onConfigured }: FirstRunSetupProps) {
         <div style={{ marginBottom: 16 }}>
           <div style={{
             fontSize: 10,
-            color: '#a6adc8',
+            color: 'var(--text-muted)',
             letterSpacing: '0.08em',
             marginBottom: 8,
           }}>
@@ -230,10 +230,10 @@ export function FirstRunSetup({ onConfigured }: FirstRunSetupProps) {
             placeholder="Paste vault path or select a suggestion"
             style={{
               width: '100%',
-              background: '#1e1e2e',
+              background: 'var(--surface)',
               border: `1px solid ${inputBorderColor}`,
               borderRadius: 4,
-              color: '#cdd6f4',
+              color: 'var(--text)',
               fontFamily: 'inherit',
               fontSize: 11,
               padding: '10px 12px',
@@ -243,7 +243,7 @@ export function FirstRunSetup({ onConfigured }: FirstRunSetupProps) {
             }}
           />
           {pathHint && (
-            <div style={{ marginTop: 5, fontSize: 10, color: '#45475a' }}>
+            <div style={{ marginTop: 5, fontSize: 10, color: 'var(--border)' }}>
               {pathHint}
             </div>
           )}
@@ -254,7 +254,7 @@ export function FirstRunSetup({ onConfigured }: FirstRunSetupProps) {
           <div style={{
             marginBottom: 14,
             fontSize: 11,
-            color: validation.valid ? '#a6e3a1' : '#f38ba8',
+            color: validation.valid ? 'var(--success)' : 'var(--warn)',
             display: 'flex',
             alignItems: 'center',
             gap: 6,
@@ -269,7 +269,7 @@ export function FirstRunSetup({ onConfigured }: FirstRunSetupProps) {
         )}
 
         {saveError && (
-          <div style={{ marginBottom: 14, fontSize: 11, color: '#f38ba8' }}>
+          <div style={{ marginBottom: 14, fontSize: 11, color: 'var(--warn)' }}>
             ✗ {saveError}
           </div>
         )}
@@ -282,8 +282,8 @@ export function FirstRunSetup({ onConfigured }: FirstRunSetupProps) {
             style={{
               flex: 1,
               background: 'rgba(0,0,0,0.5)',
-              border: '1px solid #313244',
-              color: inputPath.trim() ? '#00a8cc' : '#45475a',
+              border: '1px solid var(--border)',
+              color: inputPath.trim() ? 'var(--accent-dim)' : 'var(--border)',
               borderRadius: 4,
               padding: '9px 0',
               cursor: inputPath.trim() ? 'pointer' : 'not-allowed',
@@ -300,16 +300,16 @@ export function FirstRunSetup({ onConfigured }: FirstRunSetupProps) {
             disabled={!isValidated || saving}
             style={{
               flex: 1,
-              background: isValidated ? '#00d4ff22' : 'rgba(0,0,0,0.5)',
-              border: `1px solid ${isValidated ? '#00d4ff' : '#313244'}`,
-              color: isValidated ? '#00d4ff' : '#45475a',
+              background: isValidated ? 'rgb(var(--accent-rgb) / 0.13)' : 'rgba(0,0,0,0.5)',
+              border: `1px solid ${isValidated ? 'var(--accent)' : 'var(--border)'}`,
+              color: isValidated ? 'var(--accent)' : 'var(--border)',
               borderRadius: 4,
               padding: '9px 0',
               cursor: isValidated ? 'pointer' : 'not-allowed',
               fontFamily: 'inherit',
               fontSize: 11,
               letterSpacing: '0.08em',
-              boxShadow: isValidated ? '0 0 10px #00d4ff33' : 'none',
+              boxShadow: isValidated ? '0 0 10px rgb(var(--accent-rgb) / 0.2)' : 'none',
               transition: 'border-color 0.15s, box-shadow 0.15s',
             }}
           >

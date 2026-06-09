@@ -178,8 +178,8 @@ export function TimeFilter({ nodes, onChange, onDateChange, playing, playSpeed, 
 
   const btnBase: React.CSSProperties = {
     background: 'transparent',
-    border: '1px solid #1a3a4a',
-    color: '#00a8cc',
+    border: '1px solid var(--border-accent)',
+    color: 'var(--accent-dim)',
     borderRadius: 4,
     padding: '3px 8px',
     cursor: 'pointer',
@@ -189,9 +189,9 @@ export function TimeFilter({ nodes, onChange, onDateChange, playing, playSpeed, 
   }
   const btnActive: React.CSSProperties = {
     ...btnBase,
-    background: '#00d4ff22',
-    border: '1px solid #00d4ff',
-    color: '#00d4ff',
+    background: 'rgb(var(--accent-rgb) / 0.13)',
+    border: '1px solid var(--accent)',
+    color: 'var(--accent)',
   }
 
   return (
@@ -200,16 +200,16 @@ export function TimeFilter({ nodes, onChange, onDateChange, playing, playSpeed, 
       bottom: 24,
       left: '50%',
       transform: 'translateX(-50%)',
-      background: 'rgba(0,0,0,0.88)',
-      border: '1px solid #1a3a4a',
+      background: 'var(--panel-strong)',
+      border: '1px solid var(--border-accent)',
       borderRadius: 8,
       padding: '10px 20px',
       width: 420,
       zIndex: 50,
       fontFamily: '"Courier New", monospace',
       fontSize: 12,
-      color: '#00a8cc',
-      boxShadow: '0 0 15px #00d4ff22',
+      color: 'var(--accent-dim)',
+      boxShadow: '0 0 15px rgb(var(--accent-rgb) / 0.13)',
     }}>
       {/* Preset buttons */}
       <div style={{ display: 'flex', gap: 6, marginBottom: 8, justifyContent: 'center' }}>
@@ -233,7 +233,7 @@ export function TimeFilter({ nodes, onChange, onDateChange, playing, playSpeed, 
           left: 0,
           right: 0,
           height: 2,
-          background: '#1a3a4a',
+          background: 'var(--border-accent)',
           transform: 'translateY(-50%)',
           borderRadius: 2,
         }} />
@@ -244,7 +244,7 @@ export function TimeFilter({ nodes, onChange, onDateChange, playing, playSpeed, 
           left: `${startPct}%`,
           width: `${endPct - startPct}%`,
           height: 2,
-          background: '#00d4ff',
+          background: 'var(--accent)',
           transform: 'translateY(-50%)',
           borderRadius: 2,
         }} />
@@ -296,7 +296,7 @@ export function TimeFilter({ nodes, onChange, onDateChange, playing, playSpeed, 
           transform: 'translate(-50%, -50%)',
           width: 10,
           height: 10,
-          background: '#00d4ff',
+          background: 'var(--accent)',
           borderRadius: '50%',
           border: '2px solid #000',
           zIndex: 1,
@@ -308,7 +308,7 @@ export function TimeFilter({ nodes, onChange, onDateChange, playing, playSpeed, 
           transform: 'translate(-50%, -50%)',
           width: 10,
           height: 10,
-          background: '#00d4ff',
+          background: 'var(--accent)',
           borderRadius: '50%',
           border: '2px solid #000',
           zIndex: 1,
@@ -316,7 +316,7 @@ export function TimeFilter({ nodes, onChange, onDateChange, playing, playSpeed, 
       </div>
 
       {/* Date labels */}
-      <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: 4, fontSize: 10, color: '#00a8cc99' }}>
+      <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: 4, fontSize: 10, color: 'color-mix(in srgb, var(--accent-dim) 60%, transparent)' }}>
         <span>{fmtDate(range[0])}</span>
         <span>{fmtDate(range[1])}</span>
       </div>
@@ -343,7 +343,7 @@ export function TimeFilter({ nodes, onChange, onDateChange, playing, playSpeed, 
             }
             onPlayChange(!playing)
           }}
-          style={{ ...btnBase, background: playing ? '#00d4ff22' : 'transparent', border: `1px solid ${playing ? '#00d4ff' : '#1a3a4a'}`, color: '#00d4ff', padding: '3px 12px' }}
+          style={{ ...btnBase, background: playing ? 'rgb(var(--accent-rgb) / 0.13)' : 'transparent', border: `1px solid ${playing ? 'var(--accent)' : 'var(--border-accent)'}`, color: 'var(--accent)', padding: '3px 12px' }}
           title={playing ? 'Pause' : 'Play timelapse'}
         >
           {playing ? '⏸' : '▶'}
@@ -361,7 +361,7 @@ export function TimeFilter({ nodes, onChange, onDateChange, playing, playSpeed, 
         ))}
         {/* Current date during playback */}
         {playing && (
-          <span style={{ color: '#00d4ff', fontSize: 11, letterSpacing: '0.04em', marginLeft: 4 }}>
+          <span style={{ color: 'var(--accent)', fontSize: 11, letterSpacing: '0.04em', marginLeft: 4 }}>
             {fmtPlayDate(range[1])}
           </span>
         )}

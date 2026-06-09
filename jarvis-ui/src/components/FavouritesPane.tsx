@@ -31,14 +31,14 @@ export function FavouritesPane({ favourites, allNodes, sidebarWidth, onNavigate,
           right: sidebarWidth,
           zIndex: 199,
           background: open ? '#1a2a3a' : 'rgba(0,30,50,0.90)',
-          border: '1px solid #00d4ff44',
+          border: '1px solid rgb(var(--accent-rgb) / 0.27)',
           borderRight: 'none',
           borderRadius: '4px 0 0 4px',
           padding: '8px 7px',
           cursor: 'pointer',
           fontFamily: '"Courier New", monospace',
           fontSize: 11,
-          color: '#00d4ff',
+          color: 'var(--accent)',
           display: 'flex',
           flexDirection: 'column',
           alignItems: 'center',
@@ -47,10 +47,10 @@ export function FavouritesPane({ favourites, allNodes, sidebarWidth, onNavigate,
           transition: 'background 0.2s, box-shadow 0.2s',
           writingMode: 'vertical-rl',
           letterSpacing: '0.07em',
-          boxShadow: open ? 'inset 0 0 8px #00d4ff22' : '0 0 6px #00d4ff22',
+          boxShadow: open ? 'inset 0 0 8px rgb(var(--accent-rgb) / 0.13)' : '0 0 6px rgb(var(--accent-rgb) / 0.13)',
         }}
-        onMouseEnter={e => { (e.currentTarget as HTMLElement).style.background = '#1a2a3a'; (e.currentTarget as HTMLElement).style.boxShadow = '0 0 10px #00d4ff33' }}
-        onMouseLeave={e => { (e.currentTarget as HTMLElement).style.background = open ? '#1a2a3a' : 'rgba(0,30,50,0.90)'; (e.currentTarget as HTMLElement).style.boxShadow = open ? 'inset 0 0 8px #00d4ff22' : '0 0 6px #00d4ff22' }}
+        onMouseEnter={e => { (e.currentTarget as HTMLElement).style.background = '#1a2a3a'; (e.currentTarget as HTMLElement).style.boxShadow = '0 0 10px rgb(var(--accent-rgb) / 0.2)' }}
+        onMouseLeave={e => { (e.currentTarget as HTMLElement).style.background = open ? '#1a2a3a' : 'rgba(0,30,50,0.90)'; (e.currentTarget as HTMLElement).style.boxShadow = open ? 'inset 0 0 8px rgb(var(--accent-rgb) / 0.13)' : '0 0 6px rgb(var(--accent-rgb) / 0.13)' }}
       >
         ★ FAV{favouriteNodes.length > 0 ? ` (${favouriteNodes.length})` : ''}
       </div>
@@ -62,8 +62,8 @@ export function FavouritesPane({ favourites, allNodes, sidebarWidth, onNavigate,
         right: sidebarWidth,
         width: PANE_WIDTH,
         height: '100%',
-        background: '#1a1a2e',
-        borderLeft: '1px solid #313244',
+        background: 'var(--surface-2)',
+        borderLeft: '1px solid var(--border)',
         zIndex: 198,
         transform: open ? 'translateX(0)' : `translateX(${PANE_WIDTH}px)`,
         transition: 'transform 0.25s ease',
@@ -75,21 +75,21 @@ export function FavouritesPane({ favourites, allNodes, sidebarWidth, onNavigate,
         {/* Header */}
         <div style={{
           padding: '16px 12px 10px',
-          borderBottom: '1px solid #313244',
+          borderBottom: '1px solid var(--border)',
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'space-between',
           position: 'sticky',
           top: 0,
-          background: '#1a1a2e',
+          background: 'var(--surface-2)',
           zIndex: 1,
         }}>
-          <span style={{ color: '#00d4ff', fontSize: 11, letterSpacing: '0.1em', fontWeight: 600 }}>
+          <span style={{ color: 'var(--accent)', fontSize: 11, letterSpacing: '0.1em', fontWeight: 600 }}>
             ♥ FAVOURITES
           </span>
           <span
             onClick={() => setOpen(false)}
-            style={{ color: '#a6adc8', cursor: 'pointer', fontSize: 14, lineHeight: 1 }}
+            style={{ color: 'var(--text-muted)', cursor: 'pointer', fontSize: 14, lineHeight: 1 }}
             title="Close"
           >✕</span>
         </div>
@@ -97,9 +97,9 @@ export function FavouritesPane({ favourites, allNodes, sidebarWidth, onNavigate,
         {/* List */}
         <div style={{ flex: 1, overflowY: 'auto', padding: '8px 0' }}>
           {favouriteNodes.length === 0 ? (
-            <div style={{ padding: '20px 12px', color: '#a6adc8', fontSize: 11, lineHeight: 1.6 }}>
+            <div style={{ padding: '20px 12px', color: 'var(--text-muted)', fontSize: 11, lineHeight: 1.6 }}>
               No favourites yet.<br />
-              Select a note and press <span style={{ color: '#00a8cc' }}>F</span> to add.
+              Select a note and press <span style={{ color: 'var(--accent-dim)' }}>F</span> to add.
             </div>
           ) : (
             favouriteNodes.map(node => {
@@ -113,7 +113,7 @@ export function FavouritesPane({ favourites, allNodes, sidebarWidth, onNavigate,
                     justifyContent: 'space-between',
                     padding: '6px 10px',
                     cursor: 'pointer',
-                    borderBottom: '1px solid #181825',
+                    borderBottom: '1px solid var(--surface-2)',
                     gap: 4,
                   }}
                   onMouseEnter={e => { (e.currentTarget as HTMLElement).style.background = 'rgba(0,212,255,0.06)' }}
@@ -124,7 +124,7 @@ export function FavouritesPane({ favourites, allNodes, sidebarWidth, onNavigate,
                     onClick={() => onNavigate(node.id)}
                   >
                     <div style={{
-                      color: '#e0e0e0',
+                      color: 'var(--text)',
                       fontSize: 12,
                       fontFamily: '"Inter", "Segoe UI", sans-serif',
                       overflow: 'hidden',
@@ -136,7 +136,7 @@ export function FavouritesPane({ favourites, allNodes, sidebarWidth, onNavigate,
                     </div>
                     {folderName && (
                       <div style={{
-                        color: '#a6adc8',
+                        color: 'var(--text-muted)',
                         fontSize: 10,
                         fontFamily: '"Inter", "Segoe UI", sans-serif',
                         overflow: 'hidden',
@@ -152,7 +152,7 @@ export function FavouritesPane({ favourites, allNodes, sidebarWidth, onNavigate,
                     onClick={e => { e.stopPropagation(); onRemove(node.id) }}
                     title="Remove from favourites"
                     style={{
-                      color: '#a6adc8',
+                      color: 'var(--text-muted)',
                       cursor: 'pointer',
                       fontSize: 13,
                       lineHeight: 1,
@@ -161,7 +161,7 @@ export function FavouritesPane({ favourites, allNodes, sidebarWidth, onNavigate,
                       marginTop: 1,
                     }}
                     onMouseEnter={e => { (e.currentTarget as HTMLElement).style.color = '#ff6b6b' }}
-                    onMouseLeave={e => { (e.currentTarget as HTMLElement).style.color = '#585b70' }}
+                    onMouseLeave={e => { (e.currentTarget as HTMLElement).style.color = 'var(--text-faint)' }}
                   >♥</span>
                 </div>
               )

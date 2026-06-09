@@ -269,7 +269,7 @@ export function SearchBar({ visible, allNodes, allTags, onResults, onNavigate, o
 
   return (
     <>
-      <style>{`.jarvis-snippet mark { background: #00d4ff22; color: #00d4ff; border-radius: 2px; padding: 0 1px; }`}</style>
+      <style>{`.jarvis-snippet mark { background: rgb(var(--accent-rgb) / 0.13); color: var(--accent); border-radius: 2px; padding: 0 1px; }`}</style>
     <div
       ref={containerRef}
       style={{
@@ -282,14 +282,14 @@ export function SearchBar({ visible, allNodes, allTags, onResults, onNavigate, o
       }}
     >
       <div style={{
-        background: 'rgba(0,0,0,0.92)',
-        border: '1px solid #00d4ff',
+        background: 'var(--panel-strong)',
+        border: '1px solid var(--accent)',
         borderRadius: hasDropdown ? '6px 6px 0 0' : 6,
-        boxShadow: '0 0 20px #00d4ff33',
+        boxShadow: '0 0 20px rgb(var(--accent-rgb) / 0.2)',
         overflow: 'hidden',
       }}>
         <div style={{ display: 'flex', alignItems: 'center', padding: '0 12px' }}>
-          <span style={{ color: '#00d4ff', fontSize: 16, marginRight: 8 }}>⌕</span>
+          <span style={{ color: 'var(--accent)', fontSize: 16, marginRight: 8 }}>⌕</span>
           <input
             ref={inputRef}
             value={query}
@@ -301,7 +301,7 @@ export function SearchBar({ visible, allNodes, allTags, onResults, onNavigate, o
               background: 'transparent',
               border: 'none',
               outline: 'none',
-              color: '#cdd6f4',
+              color: 'var(--text)',
               fontFamily: '"Courier New", monospace',
               fontSize: 14,
               padding: '12px 0',
@@ -309,7 +309,7 @@ export function SearchBar({ visible, allNodes, allTags, onResults, onNavigate, o
           />
           {query && (
             <span
-              style={{ color: '#a6adc8', cursor: 'pointer', fontSize: 12 }}
+              style={{ color: 'var(--text-muted)', cursor: 'pointer', fontSize: 12 }}
               onClick={onClose}
             >ESC</span>
           )}
@@ -319,8 +319,8 @@ export function SearchBar({ visible, allNodes, allTags, onResults, onNavigate, o
       {/* ── Dropdown panel (separated so input border stays clean) ── */}
       {hasDropdown && (
         <div style={{
-          background: 'rgba(0,0,0,0.96)',
-          border: '1px solid #00d4ff',
+          background: 'var(--panel-strong)',
+          border: '1px solid var(--accent)',
           borderTop: 'none',
           borderRadius: '0 0 6px 6px',
           boxShadow: '0 8px 20px #00000088',
@@ -329,16 +329,16 @@ export function SearchBar({ visible, allNodes, allTags, onResults, onNavigate, o
 
           {/* Tag suggestions */}
           {tagSuggestions.length > 0 && (
-            <div style={{ padding: '6px 10px', borderBottom: results.length > 0 ? '1px solid #1e2030' : 'none' }}>
-              <div style={{ color: '#a6adc8', fontSize: 10, letterSpacing: 1, marginBottom: 4 }}>TAGS</div>
+            <div style={{ padding: '6px 10px', borderBottom: results.length > 0 ? '1px solid var(--surface-raised)' : 'none' }}>
+              <div style={{ color: 'var(--text-muted)', fontSize: 10, letterSpacing: 1, marginBottom: 4 }}>TAGS</div>
               <div style={{ display: 'flex', flexWrap: 'wrap', gap: 4 }}>
                 {tagSuggestions.map((tag, i) => (
                   <span
                     key={tag}
                     style={{
                       background: i === 0 ? '#1a2d1a' : '#111820',
-                      color: i === 0 ? '#a6e3a1' : '#6b8a6b',
-                      border: `1px solid ${i === 0 ? '#a6e3a155' : '#2a3a2a'}`,
+                      color: i === 0 ? 'var(--success)' : '#6b8a6b',
+                      border: `1px solid ${i === 0 ? 'color-mix(in srgb, var(--success) 33%, transparent)' : '#2a3a2a'}`,
                       borderRadius: 4,
                       padding: '3px 9px',
                       fontSize: 12,
@@ -349,8 +349,8 @@ export function SearchBar({ visible, allNodes, allTags, onResults, onNavigate, o
                     onMouseEnter={e => {
                       const el = e.currentTarget
                       el.style.background = '#1a2d1a'
-                      el.style.color = '#a6e3a1'
-                      el.style.borderColor = '#a6e3a155'
+                      el.style.color = 'var(--success)'
+                      el.style.borderColor = 'color-mix(in srgb, var(--success) 33%, transparent)'
                     }}
                     onMouseLeave={e => {
                       const el = e.currentTarget
@@ -396,25 +396,25 @@ export function SearchBar({ visible, allNodes, allTags, onResults, onNavigate, o
                   padding: '8px 16px',
                   cursor: 'pointer',
                   background: '#0f1a0f',
-                  borderTop: '1px solid #1e2030',
-                  borderLeft: '2px solid #a6e3a1',
+                  borderTop: '1px solid var(--surface-raised)',
+                  borderLeft: '2px solid var(--success)',
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'space-between',
                 }}
               >
-                <span style={{ color: '#a6e3a1', fontSize: 13 }}>
+                <span style={{ color: 'var(--success)', fontSize: 13 }}>
                   Filter: {tagTerms.map(t => `#${t}`).join(' ')}
-                  <span style={{ color: '#a6adc8', fontSize: 11, marginLeft: 8 }}>{matchCount} nodes</span>
+                  <span style={{ color: 'var(--text-muted)', fontSize: 11, marginLeft: 8 }}>{matchCount} nodes</span>
                 </span>
-                <span style={{ color: '#a6adc8', fontSize: 11 }}>Enter ↵</span>
+                <span style={{ color: 'var(--text-muted)', fontSize: 11 }}>Enter ↵</span>
               </div>
             )
           })()}
 
           {/* Note results */}
           {results.length > 0 && (
-            <div style={{ borderTop: tagSuggestions.length > 0 ? '1px solid #1e2030' : 'none', maxHeight: 280, overflowY: 'auto' }}>
+            <div style={{ borderTop: tagSuggestions.length > 0 ? '1px solid var(--surface-raised)' : 'none', maxHeight: 280, overflowY: 'auto' }}>
               {results.map((node, i) => (
                 <div
                   key={node.id}
@@ -422,16 +422,16 @@ export function SearchBar({ visible, allNodes, allTags, onResults, onNavigate, o
                   style={{
                     padding: '8px 16px',
                     cursor: 'pointer',
-                    background: i === selectedIdx ? '#00d4ff15' : 'transparent',
-                    borderLeft: i === selectedIdx ? '2px solid #00d4ff' : '2px solid transparent',
+                    background: i === selectedIdx ? 'rgb(var(--accent-rgb) / 0.08)' : 'transparent',
+                    borderLeft: i === selectedIdx ? '2px solid var(--accent)' : '2px solid transparent',
                     transition: 'background 0.1s',
                   }}
                 >
-                  <div style={{ color: i === selectedIdx ? '#00d4ff' : '#cdd6f4', fontSize: 13 }}>
+                  <div style={{ color: i === selectedIdx ? 'var(--accent)' : 'var(--text)', fontSize: 13 }}>
                     {node.label}
                   </div>
                   {node.tags.length > 0 && (
-                    <div style={{ color: '#a6e3a1', fontSize: 11, marginTop: 2 }}>
+                    <div style={{ color: 'var(--success)', fontSize: 11, marginTop: 2 }}>
                       {node.tags.slice(0, 3).map(t => `#${t}`).join(' ')}
                     </div>
                   )}
@@ -442,11 +442,11 @@ export function SearchBar({ visible, allNodes, allTags, onResults, onNavigate, o
 
           {/* Content search section */}
           {(contentLoading || contentResults.length > 0) && (
-            <div style={{ borderTop: '1px solid #1e2030' }}>
+            <div style={{ borderTop: '1px solid var(--surface-raised)' }}>
               {/* Divider */}
               <div style={{
                 padding: '5px 16px',
-                color: '#313244',
+                color: 'var(--border)',
                 fontSize: 11,
                 letterSpacing: 1,
                 userSelect: 'none',
@@ -456,7 +456,7 @@ export function SearchBar({ visible, allNodes, allTags, onResults, onNavigate, o
 
               {/* Loading state */}
               {contentLoading && contentResults.length === 0 && (
-                <div style={{ padding: '6px 16px 10px', color: '#313244', fontSize: 12, fontStyle: 'italic' }}>
+                <div style={{ padding: '6px 16px 10px', color: 'var(--border)', fontSize: 12, fontStyle: 'italic' }}>
                   [searching content…]
                 </div>
               )}
@@ -473,22 +473,22 @@ export function SearchBar({ visible, allNodes, allTags, onResults, onNavigate, o
                     transition: 'background 0.1s',
                   }}
                   onMouseEnter={e => {
-                    e.currentTarget.style.background = '#00d4ff0d'
-                    e.currentTarget.style.borderLeftColor = '#00d4ff55'
+                    e.currentTarget.style.background = 'rgb(var(--accent-rgb) / 0.05)'
+                    e.currentTarget.style.borderLeftColor = 'rgb(var(--accent-rgb) / 0.33)'
                   }}
                   onMouseLeave={e => {
                     e.currentTarget.style.background = 'transparent'
                     e.currentTarget.style.borderLeftColor = 'transparent'
                   }}
                 >
-                  <div style={{ color: '#cdd6f4', fontSize: 13 }}>{result.title}</div>
+                  <div style={{ color: 'var(--text)', fontSize: 13 }}>{result.title}</div>
                   <div
                     className="jarvis-snippet"
-                    style={{ color: '#a6adc8', fontSize: 11, marginTop: 2, overflow: 'hidden', whiteSpace: 'nowrap', textOverflow: 'ellipsis' }}
+                    style={{ color: 'var(--text-muted)', fontSize: 11, marginTop: 2, overflow: 'hidden', whiteSpace: 'nowrap', textOverflow: 'ellipsis' }}
                     dangerouslySetInnerHTML={{ __html: result.snippet }}
                   />
                   {result.tags.length > 0 && (
-                    <div style={{ color: '#a6e3a1', fontSize: 11, marginTop: 2 }}>
+                    <div style={{ color: 'var(--success)', fontSize: 11, marginTop: 2 }}>
                       {result.tags.slice(0, 3).map(t => `#${t}`).join(' ')}
                     </div>
                   )}
@@ -499,10 +499,10 @@ export function SearchBar({ visible, allNodes, allTags, onResults, onNavigate, o
 
           {/* Semantic search section */}
           {isSemanticMode && (semanticLoading || semanticResults.length > 0) && (
-            <div style={{ borderTop: '1px solid #1e2030' }}>
+            <div style={{ borderTop: '1px solid var(--surface-raised)' }}>
               <div style={{
                 padding: '5px 16px',
-                color: '#c4a7e7',
+                color: 'var(--purple)',
                 fontSize: 11,
                 letterSpacing: 1,
                 userSelect: 'none',
@@ -511,7 +511,7 @@ export function SearchBar({ visible, allNodes, allTags, onResults, onNavigate, o
               </div>
 
               {semanticLoading && semanticResults.length === 0 && (
-                <div style={{ padding: '6px 16px 10px', color: '#c4a7e7', fontSize: 12, fontStyle: 'italic' }}>
+                <div style={{ padding: '6px 16px 10px', color: 'var(--purple)', fontSize: 12, fontStyle: 'italic' }}>
                   Semantic search...
                 </div>
               )}
@@ -530,8 +530,8 @@ export function SearchBar({ visible, allNodes, allTags, onResults, onNavigate, o
                     justifyContent: 'space-between',
                   }}
                   onMouseEnter={e => {
-                    e.currentTarget.style.background = '#c4a7e70d'
-                    e.currentTarget.style.borderLeftColor = '#c4a7e755'
+                    e.currentTarget.style.background = 'color-mix(in srgb, var(--purple) 5%, transparent)'
+                    e.currentTarget.style.borderLeftColor = 'color-mix(in srgb, var(--purple) 33%, transparent)'
                   }}
                   onMouseLeave={e => {
                     e.currentTarget.style.background = 'transparent'
@@ -539,17 +539,17 @@ export function SearchBar({ visible, allNodes, allTags, onResults, onNavigate, o
                   }}
                 >
                   <div style={{ flex: 1, minWidth: 0 }}>
-                    <div style={{ color: '#cdd6f4', fontSize: 13 }}>{result.label}</div>
+                    <div style={{ color: 'var(--text)', fontSize: 13 }}>{result.label}</div>
                     {result.excerpt && (
-                      <div style={{ color: '#a6adc8', fontSize: 11, marginTop: 2, overflow: 'hidden', whiteSpace: 'nowrap', textOverflow: 'ellipsis' }}>
+                      <div style={{ color: 'var(--text-muted)', fontSize: 11, marginTop: 2, overflow: 'hidden', whiteSpace: 'nowrap', textOverflow: 'ellipsis' }}>
                         {result.excerpt}
                       </div>
                     )}
                   </div>
                   <span style={{
-                    background: '#c4a7e722',
-                    color: '#c4a7e7',
-                    border: '1px solid #c4a7e733',
+                    background: 'color-mix(in srgb, var(--purple) 13%, transparent)',
+                    color: 'var(--purple)',
+                    border: '1px solid color-mix(in srgb, var(--purple) 20%, transparent)',
                     borderRadius: 3,
                     padding: '1px 6px',
                     fontSize: 10,
@@ -564,13 +564,13 @@ export function SearchBar({ visible, allNodes, allTags, onResults, onNavigate, o
           )}
 
           {isSemanticMode && !semanticLoading && semanticResults.length === 0 && query.trim().length > 1 && (
-            <div style={{ padding: '12px 16px', color: '#a6adc8', fontSize: 13 }}>
+            <div style={{ padding: '12px 16px', color: 'var(--text-muted)', fontSize: 13 }}>
               No semantic results
             </div>
           )}
 
           {!isSemanticMode && query && results.length === 0 && tagSuggestions.length === 0 && !contentLoading && contentResults.length === 0 && (
-            <div style={{ padding: '12px 16px', color: '#a6adc8', fontSize: 13 }}>
+            <div style={{ padding: '12px 16px', color: 'var(--text-muted)', fontSize: 13 }}>
               No results
             </div>
           )}

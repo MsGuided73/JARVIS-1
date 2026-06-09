@@ -59,7 +59,7 @@ export function GraphBuildProgress({ progress, embeddingProgress }: Props) {
       alignItems: 'center',
       justifyContent: 'center',
       fontFamily: '"Courier New", monospace',
-      color: '#00d4ff',
+      color: 'var(--accent)',
       userSelect: 'none',
     }}>
       {/* Logo / title */}
@@ -89,7 +89,7 @@ export function GraphBuildProgress({ progress, embeddingProgress }: Props) {
       <div style={{
         fontSize: 13,
         letterSpacing: '0.12em',
-        color: '#00a8cc',
+        color: 'var(--accent-dim)',
         marginBottom: 20,
       }}>
         {statusLabel}
@@ -104,7 +104,7 @@ export function GraphBuildProgress({ progress, embeddingProgress }: Props) {
         overflow: 'hidden',
         position: 'relative',
         marginBottom: 14,
-        boxShadow: '0 0 6px #00d4ff11',
+        boxShadow: '0 0 6px rgb(var(--accent-rgb) / 0.07)',
       }}>
         {hasTotal && !filesComplete ? (
           // Determinate bar — file reading phase
@@ -114,10 +114,10 @@ export function GraphBuildProgress({ progress, embeddingProgress }: Props) {
             top: 0,
             height: '100%',
             width: `${pct}%`,
-            background: 'linear-gradient(90deg, #006688, #00d4ff)',
+            background: 'linear-gradient(90deg, #006688, var(--accent))',
             borderRadius: 2,
             transition: 'width 0.3s ease-out',
-            boxShadow: '0 0 8px #00d4ff88',
+            boxShadow: '0 0 8px rgb(var(--accent-rgb) / 0.53)',
           }} />
         ) : linkProg ? (
           // Determinate bar — linking phase
@@ -139,7 +139,7 @@ export function GraphBuildProgress({ progress, embeddingProgress }: Props) {
             top: 0,
             height: '100%',
             width: 80,
-            background: 'linear-gradient(90deg, transparent, #00d4ff, transparent)',
+            background: 'linear-gradient(90deg, transparent, var(--accent), transparent)',
             animation: 'jarvisScan 1.4s ease-in-out infinite',
           }} />
         )}

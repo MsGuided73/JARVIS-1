@@ -28,15 +28,16 @@ interface TimelinePanelProps {
   onNavigate: (noteName: string) => void
 }
 
-const ACCENT = '#00d4ff'
+const ACCENT = 'var(--accent)'
+const ACCENT_33 = 'color-mix(in srgb, var(--accent) 33%, transparent)'
+const ACCENT_22 = 'color-mix(in srgb, var(--accent) 13%, transparent)'
+const ACCENT_1f = 'color-mix(in srgb, var(--accent) 12%, transparent)'
 
 const pdfBtnStyle: CSSProperties = {
-  background: 'transparent', border: `1px solid ${ACCENT}55`, color: ACCENT,
+  background: 'transparent', border: `1px solid ${ACCENT_33}`, color: ACCENT,
   borderRadius: 4, padding: '3px 9px', fontSize: 11, cursor: 'pointer',
   fontFamily: '"Courier New", monospace', letterSpacing: 1,
 }
-
-const surface = (alpha: number) => `rgba(17, 19, 28, ${alpha})`
 
 function yearOf(iso: string): string {
   return iso.slice(0, 4)
@@ -119,15 +120,15 @@ export function TimelinePanel({ open, initialCase, onClose, onNavigate }: Timeli
         style={{
           width: 'min(720px, 92vw)', height: 'min(82vh, 900px)',
           display: 'flex', flexDirection: 'column',
-          background: surface(0.96),
-          border: `1px solid ${ACCENT}55`,
+          background: 'var(--panel-strong)',
+          border: `1px solid ${ACCENT_33}`,
           borderRadius: 10,
-          boxShadow: `0 0 40px ${ACCENT}22, 0 20px 60px rgba(0,0,0,0.6)`,
+          boxShadow: `0 0 40px ${ACCENT_22}, 0 20px 60px rgba(0,0,0,0.6)`,
           overflow: 'hidden',
         }}
       >
         {/* Header */}
-        <div style={{ padding: '16px 20px 12px', borderBottom: '1px solid #2a2d3a' }}>
+        <div style={{ padding: '16px 20px 12px', borderBottom: '1px solid var(--surface-raised)' }}>
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
             <div style={{
               fontFamily: '"Courier New", monospace', fontSize: 12, letterSpacing: 2,
@@ -154,7 +155,7 @@ export function TimelinePanel({ open, initialCase, onClose, onNavigate }: Timeli
                 onClick={onClose}
                 title="Close (Esc)"
                 style={{
-                  background: 'transparent', border: 'none', color: '#a6adc8',
+                  background: 'transparent', border: 'none', color: 'var(--text-muted)',
                   fontSize: 20, lineHeight: 1, cursor: 'pointer', padding: 4,
                 }}
               >×</button>
@@ -171,9 +172,9 @@ export function TimelinePanel({ open, initialCase, onClose, onNavigate }: Timeli
                   onClick={() => setActiveCase(c.name)}
                   title={`${c.events.length} events · ${c.articleCount} articles`}
                   style={{
-                    background: isActive ? `${ACCENT}1f` : 'transparent',
-                    border: `1px solid ${isActive ? ACCENT : '#3a3d4a'}`,
-                    color: isActive ? ACCENT : '#a6adc8',
+                    background: isActive ? ACCENT_1f : 'transparent',
+                    border: `1px solid ${isActive ? ACCENT : 'var(--border)'}`,
+                    color: isActive ? ACCENT : 'var(--text-muted)',
                     borderRadius: 999, padding: '4px 12px', fontSize: 12,
                     cursor: 'pointer', transition: 'all 120ms ease',
                   }}
@@ -190,11 +191,11 @@ export function TimelinePanel({ open, initialCase, onClose, onNavigate }: Timeli
               <span
                 onClick={() => { onNavigate(current.note); onClose() }}
                 title="Open case file in graph"
-                style={{ fontSize: 18, fontWeight: 600, color: '#dcddde', cursor: 'pointer' }}
+                style={{ fontSize: 18, fontWeight: 600, color: 'var(--text)', cursor: 'pointer' }}
               >
                 {current.name}
               </span>
-              <span style={{ fontFamily: '"Courier New", monospace', fontSize: 12, color: '#7a7f95' }}>
+              <span style={{ fontFamily: '"Courier New", monospace', fontSize: 12, color: 'var(--text-faint)' }}>
                 {current.span} · {current.events.length} dated events
               </span>
             </div>
@@ -204,13 +205,13 @@ export function TimelinePanel({ open, initialCase, onClose, onNavigate }: Timeli
         {/* Body */}
         <div style={{ flex: 1, overflowY: 'auto', padding: '8px 20px 24px' }}>
           {error && (
-            <div style={{ color: '#f38ba8', fontSize: 13, padding: '24px 0' }}>{error}</div>
+            <div style={{ color: 'var(--warn)', fontSize: 13, padding: '24px 0' }}>{error}</div>
           )}
           {!error && !cases && (
-            <div style={{ color: '#7a7f95', fontSize: 13, padding: '24px 0' }}>Loading timeline…</div>
+            <div style={{ color: 'var(--text-faint)', fontSize: 13, padding: '24px 0' }}>Loading timeline…</div>
           )}
           {!error && current && current.events.length === 0 && (
-            <div style={{ color: '#7a7f95', fontSize: 13, padding: '24px 0' }}>
+            <div style={{ color: 'var(--text-faint)', fontSize: 13, padding: '24px 0' }}>
               No dated events were extracted for this case.
             </div>
           )}
@@ -220,13 +221,13 @@ export function TimelinePanel({ open, initialCase, onClose, onNavigate }: Timeli
               <div style={{
                 fontFamily: '"Courier New", monospace', fontSize: 13, fontWeight: 700,
                 color: ACCENT, letterSpacing: 1, marginBottom: 8,
-                position: 'sticky', top: 0, background: surface(0.96), padding: '2px 0', zIndex: 1,
+                position: 'sticky', top: 0, background: 'var(--panel-strong)', padding: '2px 0', zIndex: 1,
               }}>
                 {year}
               </div>
 
               {/* Rail + events */}
-              <div style={{ borderLeft: `1px solid ${ACCENT}33`, marginLeft: 6, paddingLeft: 16 }}>
+              <div style={{ borderLeft: `1px solid ${ACCENT_33}`, marginLeft: 6, paddingLeft: 16 }}>
                 {events.map((ev, i) => (
                   <div key={`${ev.date}-${i}`} style={{ position: 'relative', paddingBottom: 14 }}>
                     {/* node dot */}
@@ -240,7 +241,7 @@ export function TimelinePanel({ open, initialCase, onClose, onNavigate }: Timeli
                     }}>
                       {ev.display}
                     </div>
-                    <div style={{ fontSize: 13.5, lineHeight: 1.5, color: '#dcddde' }}>
+                    <div style={{ fontSize: 13.5, lineHeight: 1.5, color: 'var(--text)' }}>
                       {ev.description}
                     </div>
                     <span
@@ -248,7 +249,7 @@ export function TimelinePanel({ open, initialCase, onClose, onNavigate }: Timeli
                       title="Open source article in graph"
                       style={{
                         display: 'inline-block', marginTop: 3, fontSize: 11,
-                        color: '#7a7f95', cursor: 'pointer', borderBottom: '1px dotted #7a7f9555',
+                        color: 'var(--text-faint)', cursor: 'pointer', borderBottom: '1px dotted color-mix(in srgb, var(--text-faint) 33%, transparent)',
                       }}
                     >
                       ↳ {ev.note}

@@ -55,10 +55,10 @@ export function HUD({ nodeCount, linkCount, visibleNodeCount, simDone, breadcrum
       left: 16,
       fontFamily: '"Courier New", monospace',
       fontSize: '12px',
-      color: '#00a8cc',
+      color: 'var(--accent-dim)',
       lineHeight: '1.7',
       userSelect: 'none',
-      textShadow: '0 0 8px #00a8cc44',
+      textShadow: '0 0 8px color-mix(in srgb, var(--accent-dim) 27%, transparent)',
       pointerEvents: 'none',
     }}>
       <div style={{ pointerEvents: 'auto', width: 'fit-content' }}>
@@ -68,13 +68,13 @@ export function HUD({ nodeCount, linkCount, visibleNodeCount, simDone, breadcrum
         <div title="Rendering frame rate (frames per second).">FPS: {fps}</div>
         <div
           title={simDone ? 'The force-directed layout has settled into place.' : 'The layout physics is still arranging the nodes.'}
-          style={{ marginTop: 4, color: simDone ? '#00d4ff' : '#ff6b35' }}
+          style={{ marginTop: 4, color: simDone ? 'var(--accent)' : '#ff6b35' }}
         >
           {simDone ? '■ SIM STABLE' : '◌ SIMULATING'}
         </div>
       </div>
       {breadcrumb && (
-        <div style={{ marginTop: 4, color: '#00d4ff', fontSize: 10, letterSpacing: '0.06em' }}>
+        <div style={{ marginTop: 4, color: 'var(--accent)', fontSize: 10, letterSpacing: '0.06em' }}>
           {breadcrumb}
         </div>
       )}
@@ -84,7 +84,7 @@ export function HUD({ nodeCount, linkCount, visibleNodeCount, simDone, breadcrum
           display: 'inline-flex',
           alignItems: 'center',
           gap: 5,
-          color: '#c4a7e7',
+          color: 'var(--purple)',
           fontSize: 11,
           letterSpacing: '0.08em',
         }}>
@@ -99,11 +99,11 @@ export function HUD({ nodeCount, linkCount, visibleNodeCount, simDone, breadcrum
             display: 'inline-flex',
             alignItems: 'center',
             gap: 5,
-            background: '#00d4ff11',
-            border: '1px solid #00d4ff44',
+            background: 'rgb(var(--accent-rgb) / 0.07)',
+            border: '1px solid rgb(var(--accent-rgb) / 0.27)',
             borderRadius: 4,
             padding: '3px 8px',
-            color: '#00d4ff',
+            color: 'var(--accent)',
             fontSize: 11,
             letterSpacing: '0.08em',
             animation: 'timelapse-pulse 1.5s ease-in-out infinite',
@@ -114,7 +114,7 @@ export function HUD({ nodeCount, linkCount, visibleNodeCount, simDone, breadcrum
         >
           <span>▶ TIMELAPSE</span>
           {timelapseDate !== undefined && (
-            <span style={{ color: '#00d4ffaa', fontSize: 10 }}>{fmtDate(timelapseDate)}</span>
+            <span style={{ color: 'rgb(var(--accent-rgb) / 0.67)', fontSize: 10 }}>{fmtDate(timelapseDate)}</span>
           )}
         </div>
       )}

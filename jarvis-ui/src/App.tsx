@@ -22,6 +22,7 @@ import { useHistory } from './hooks/useHistory'
 import { usePresets, type PresetSettings, type PresetCamera, type PresetFilters } from './hooks/usePresets'
 import { captureToClipboard } from './utils/screenshot'
 import { getNodeColor } from './lib/colors'
+import { applyTheme, getTheme, getInitialThemeId } from './lib/themes'
 
 // Defined outside App to avoid unnecessary re-renders
 const SHORTCUTS = [
@@ -43,21 +44,21 @@ function ShortcutRow({ keyName, label, desc }: { keyName: string; label: string;
       onMouseEnter={() => setShowDesc(true)}
       onMouseLeave={() => setShowDesc(false)}
     >
-      <span style={{ color: '#00a8cc' }}>{keyName}</span>{' '}{label}
+      <span style={{ color: 'var(--accent-dim)' }}>{keyName}</span>{' '}{label}
       {showDesc && (
         <div style={{
           position: 'absolute',
           right: '100%',
           top: 0,
           marginRight: 10,
-          background: 'rgba(0,0,0,0.92)',
-          border: '1px solid #00d4ff',
+          background: 'var(--panel-strong)',
+          border: '1px solid var(--accent)',
           borderRadius: 4,
           padding: '4px 8px',
-          color: '#cdd6f4',
+          color: 'var(--text)',
           fontSize: 10,
           whiteSpace: 'nowrap',
-          boxShadow: '0 0 8px #00d4ff33',
+          boxShadow: '0 0 8px rgb(var(--accent-rgb) / 0.2)',
           pointerEvents: 'none',
           zIndex: 200,
         }}>
@@ -133,6 +134,10 @@ function App() {
   const patternLoadingRef = useRef(false)
 
   // UI State
+  const [themeId, setThemeId] = useState(getInitialThemeId)
+  const theme = getTheme(themeId)
+  useEffect(() => { applyTheme(themeId) }, [themeId])
+
   const [selectedNode, setSelectedNode] = useState<GraphNode | null>(null)
   const [sidebarFullView, setSidebarFullView] = useState(false)
   const [timelineOpen, setTimelineOpen] = useState(false)
@@ -848,7 +853,7 @@ function App() {
         <div>
           <div style={{ marginBottom: 8 }}>✗ CONNECTION ERROR</div>
           <div style={{ fontSize: 12 }}>{error}</div>
-          <div style={{ marginTop: 8, fontSize: 11, color: '#585b70' }}>
+          <div style={{ marginTop: 8, fontSize: 11, color: 'var(--text-faint)' }}>
             Start server: npm run server
           </div>
         </div>
@@ -859,7 +864,7 @@ function App() {
   if (!graphData?.nodes) {
     console.warn('[App] graphData has no nodes — rendering null. graphData:', graphData, 'loading:', loading, 'error:', error)
     return (
-      <div style={{ width: '100vw', height: '100vh', background: '#000', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#585b70', fontFamily: 'monospace', fontSize: 12 }}>
+      <div style={{ width: '100vw', height: '100vh', background: '#000', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--text-faint)', fontFamily: 'monospace', fontSize: 12 }}>
         Waiting for graph data...
       </div>
     )
@@ -891,6 +896,9 @@ function App() {
           linksEnabled={linksEnabled}
           linkOpacity={linkOpacity}
           textSize={textSize}
+          accent3d={theme.accent3d}
+          canvasBg={theme.canvasBg}
+          themeMode={theme.mode}
           nodeDegrees={nodeDegrees}
           minNodeSize={minNodeSize}
           maxNodeSize={maxNodeSize}
@@ -924,6 +932,8 @@ function App() {
       />
 
       <Settings
+        themeId={themeId}
+        onThemeChange={setThemeId}
         bloomStrength={bloomStrength}
         nodeOpacity={nodeOpacity}
         starsEnabled={starsEnabled}
@@ -1047,23 +1057,23 @@ function App() {
           display: 'flex',
           alignItems: 'center',
           gap: 6,
-          background: 'rgba(0,0,0,0.88)',
-          border: '1px solid #00d4ff',
+          background: 'var(--panel-strong)',
+          border: '1px solid var(--accent)',
           borderRadius: 4,
           padding: '5px 12px',
           fontFamily: '"Courier New", monospace',
           fontSize: 11,
-          boxShadow: '0 0 10px #00d4ff22',
+          boxShadow: '0 0 10px rgb(var(--accent-rgb) / 0.13)',
         }}>
-          <span style={{ color: '#585b70' }}>FILTER:</span>
+          <span style={{ color: 'var(--text-faint)' }}>FILTER:</span>
           {tagIsolationTags.map(t => (
             <span key={t} style={{
               display: 'inline-flex',
               alignItems: 'center',
               gap: 4,
               background: '#1a2a1a',
-              color: '#a6e3a1',
-              border: '1px solid #a6e3a133',
+              color: 'var(--success)',
+              border: '1px solid color-mix(in srgb, var(--success) 20%, transparent)',
               borderRadius: 3,
               padding: '1px 6px',
             }}>
@@ -1076,7 +1086,7 @@ function App() {
             </span>
           ))}
           <span
-            style={{ color: '#585b70', cursor: 'pointer', marginLeft: 4, fontSize: 13 }}
+            style={{ color: 'var(--text-faint)', cursor: 'pointer', marginLeft: 4, fontSize: 13 }}
             onClick={clearTagIsolation}
             title="Clear all tag filters"
           >×</span>
@@ -1099,9 +1109,9 @@ function App() {
           top: 178,
           left: 16,
           zIndex: 200,
-          background: 'rgba(0,0,0,0.7)',
-          border: '1px solid #1a3a4a',
-          color: '#00a8cc',
+          background: 'var(--panel)',
+          border: '1px solid var(--border-accent)',
+          color: 'var(--accent-dim)',
           borderRadius: 4,
           padding: '6px 10px',
           cursor: 'pointer',
@@ -1118,9 +1128,9 @@ function App() {
           top: 220,
           left: 16,
           zIndex: 200,
-          background: 'rgba(0,0,0,0.7)',
-          border: '1px solid #1a3a4a',
-          color: '#00a8cc',
+          background: 'var(--panel)',
+          border: '1px solid var(--border-accent)',
+          color: 'var(--accent-dim)',
           borderRadius: 4,
           padding: '6px 10px',
           cursor: 'pointer',
@@ -1147,14 +1157,14 @@ function App() {
           left: '50%',
           transform: 'translateX(-50%)',
           zIndex: 300,
-          background: 'rgba(0,0,0,0.9)',
-          border: '1px solid #00d4ff',
+          background: 'var(--panel-strong)',
+          border: '1px solid var(--accent)',
           borderRadius: 6,
           padding: '8px 20px',
-          color: '#00d4ff',
+          color: 'var(--accent)',
           fontFamily: '"Courier New", monospace',
           fontSize: 13,
-          boxShadow: '0 0 12px #00d4ff33',
+          boxShadow: '0 0 12px rgb(var(--accent-rgb) / 0.2)',
           pointerEvents: 'none',
         }}>
           {toastMsg}
@@ -1179,9 +1189,9 @@ function App() {
     }
             }}
             style={{
-              background: 'rgba(0,0,0,0.7)',
-              border: '1px solid #1a3a4a',
-              color: '#00a8cc',
+              background: 'var(--panel)',
+              border: '1px solid var(--border-accent)',
+              color: 'var(--accent-dim)',
               borderRadius: 4,
               padding: '2px 7px',
               cursor: 'pointer',
@@ -1192,11 +1202,11 @@ function App() {
         </div>
         {shortcutsVisible && (
           <div style={{
-            background: 'rgba(0,0,0,0.85)',
-            border: '1px solid #00d4ff',
+            background: 'var(--panel-strong)',
+            border: '1px solid var(--accent)',
             borderRadius: 4,
             padding: '8px 12px',
-            boxShadow: '0 0 10px #00d4ff22',
+            boxShadow: '0 0 10px rgb(var(--accent-rgb) / 0.13)',
             textAlign: 'right',
           }}>
             {SHORTCUTS.map(({ key, label, desc }) => (

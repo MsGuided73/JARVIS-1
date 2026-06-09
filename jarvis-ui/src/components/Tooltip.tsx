@@ -32,8 +32,8 @@ export function Tooltip({ node, x, y }: TooltipProps) {
       position: 'fixed',
       left,
       top,
-      background: 'rgba(0,0,0,0.88)',
-      border: '1px solid #00d4ff',
+      background: 'var(--panel-strong)',
+      border: '1px solid var(--accent)',
       borderRadius: 4,
       padding: '8px 10px',
       maxWidth: TOOLTIP_W,
@@ -41,10 +41,10 @@ export function Tooltip({ node, x, y }: TooltipProps) {
       zIndex: 100,
       fontFamily: '"Courier New", monospace',
       fontSize: 12,
-      color: '#cdd6f4',
-      boxShadow: '0 0 12px #00d4ff33',
+      color: 'var(--text)',
+      boxShadow: '0 0 12px rgb(var(--accent-rgb) / 0.2)',
     }}>
-      <div style={{ color: '#00d4ff', marginBottom: 4, fontWeight: 'bold', fontSize: 13 }}>
+      <div style={{ color: 'var(--accent)', marginBottom: 4, fontWeight: 'bold', fontSize: 13 }}>
         {node.label}
       </div>
       {node.excerpt && (
@@ -53,7 +53,7 @@ export function Tooltip({ node, x, y }: TooltipProps) {
         </div>
       )}
       {node.tags.length > 0 && (
-        <div style={{ marginTop: 4, color: '#a6e3a1', fontSize: 11 }}>
+        <div style={{ marginTop: 4, color: 'var(--success)', fontSize: 11 }}>
           {node.tags.slice(0, 4).map(t => `#${t}`).join(' ')}
         </div>
       )}

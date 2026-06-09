@@ -35,8 +35,8 @@ export function PresetManager({ presets, onSave, onLoad, onDelete }: PresetManag
   }
 
   return (
-    <div style={{ borderTop: '1px solid #1a3a4a', paddingTop: 14, marginBottom: 14 }}>
-      <div style={{ marginBottom: 8, letterSpacing: '0.08em', fontSize: 10, color: '#a6adc8' }}>
+    <div style={{ borderTop: '1px solid var(--border-accent)', paddingTop: 14, marginBottom: 14 }}>
+      <div style={{ marginBottom: 8, letterSpacing: '0.08em', fontSize: 10, color: 'var(--text-muted)' }}>
         PRESETS
       </div>
 
@@ -55,9 +55,9 @@ export function PresetManager({ presets, onSave, onLoad, onDelete }: PresetManag
             style={{
               flex: 1,
               background: 'rgba(0,0,0,0.6)',
-              border: '1px solid #00d4ff66',
+              border: '1px solid rgb(var(--accent-rgb) / 0.4)',
               borderRadius: 3,
-              color: '#cdd6f4',
+              color: 'var(--text)',
               fontFamily: 'inherit',
               fontSize: 11,
               padding: '3px 6px',
@@ -67,9 +67,9 @@ export function PresetManager({ presets, onSave, onLoad, onDelete }: PresetManag
           <button
             onClick={handleSave}
             style={{
-              background: '#00d4ff22',
-              border: '1px solid #00d4ff',
-              color: '#00d4ff',
+              background: 'rgb(var(--accent-rgb) / 0.13)',
+              border: '1px solid var(--accent)',
+              color: 'var(--accent)',
               borderRadius: 3,
               padding: '3px 8px',
               cursor: 'pointer',
@@ -81,8 +81,8 @@ export function PresetManager({ presets, onSave, onLoad, onDelete }: PresetManag
             onClick={() => { setSaving(false); setName('') }}
             style={{
               background: 'rgba(0,0,0,0.5)',
-              border: '1px solid #1a3a4a',
-              color: '#a6adc8',
+              border: '1px solid var(--border-accent)',
+              color: 'var(--text-muted)',
               borderRadius: 3,
               padding: '3px 6px',
               cursor: 'pointer',
@@ -97,8 +97,8 @@ export function PresetManager({ presets, onSave, onLoad, onDelete }: PresetManag
           style={{
             width: '100%',
             background: 'rgba(0,0,0,0.5)',
-            border: '1px solid #1a3a4a',
-            color: '#00a8cc',
+            border: '1px solid var(--border-accent)',
+            color: 'var(--accent-dim)',
             borderRadius: 4,
             padding: '4px 12px',
             cursor: 'pointer',
@@ -123,7 +123,7 @@ export function PresetManager({ presets, onSave, onLoad, onDelete }: PresetManag
                 alignItems: 'flex-start',
                 gap: 6,
                 background: 'rgba(0,0,0,0.4)',
-                border: '1px solid #1a3a4a',
+                border: '1px solid var(--border-accent)',
                 borderRadius: 3,
                 padding: '5px 8px',
               }}
@@ -137,7 +137,7 @@ export function PresetManager({ presets, onSave, onLoad, onDelete }: PresetManag
                 }}
               >
                 <div style={{
-                  color: '#00d4ff',
+                  color: 'var(--accent)',
                   fontSize: 11,
                   letterSpacing: '0.04em',
                   overflow: 'hidden',
