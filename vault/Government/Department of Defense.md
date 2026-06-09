@@ -4,11 +4,14 @@ type: government body
 article_count: 6
 first_mention: 2026-01-09
 last_mention: 2026-05-12
+cases: ["Juan Orlando Hernandez / Honduras"]
 ---
 
 # Department of Defense
 
 *government body · 6 mentions · 2026*
+
+**Cases:** [[Juan Orlando Hernandez / Honduras — Case File|Juan Orlando Hernandez / Honduras]]
 
 **Most connected to:** [[Biden]] (6) · [[Frank Rose]] (5) · [[National Nuclear Security Administration]] (5) · [[Brookings Institution]] (5) · [[Center for Security]] (4) · [[NNSA Administrator Jill Hruby]] (4) · [[National Security]] (4) · [[Deputy General Counsel Jocelyn]] (4)
 

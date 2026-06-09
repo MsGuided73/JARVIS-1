@@ -57,11 +57,7 @@ Of the three, Ziegler, Matt, and Ganim, any two were like electrical wires of in
 
 In the absence of any clear archive of evidence, Ziegler created “Framing Paterno” and began collecting many hundreds of hours of testimony in his “benefit of hindsight” podcast with Liz Habib.
 
-John Ziegler
-
 The testimony was of such relevance and such high quality that a hundred pages or so were transcribed by the Forensic Psychiatrist Dr. R. Chris Barden and submitted to Pennsylvania court [26], but to no avail.
-
-Forensic Psychiatrist Dr. R. Chris Barden
 
 In the Letby case, the same terms of reference which had come from a gentle cub reporter here originate right at the top, from Lady Justice Dame Thirlwall: we’re not going to re-try the Lucy Letby criminal case, protestations of innocence are just noise, but why were these events allowed to take place at the beginning? Of course, assuming guilt is a good way to gather evidence of innocence, but it is demoralizing to see that unconscious bias based on gender remains so stubborn.
 
@@ -97,4 +93,4 @@ Shoo Lee press conference 2024
 
 **Author:** [[Guest View]]
 
-**Mentions:** [[Jerry Sandusky]] · [[Sara Ganim]] · [[Jason Simcisko]] · [[NY Times]]
+**Mentions:** [[Jerry Sandusky]] · [[Dottie Sandusky]] · [[Sara Ganim]] · [[Jason Simcisko]] · [[Graham Spanier]] · [[NY Times]] · [[John Ziegler]] · [[Matt Sandusky]] · [[Happy Valley]] · [[Oprah Winfrey]]

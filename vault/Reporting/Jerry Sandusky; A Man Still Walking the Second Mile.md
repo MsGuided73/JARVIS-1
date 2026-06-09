@@ -47,8 +47,6 @@ And somewhere along that road, the story changed.
 
 ## **The Fall**
 
-Sandusky heads to trial
-
 In 2011, he was accused of crimes that ended his life as he knew it. The trial came fast. The headlines came faster. Somewhere between truth and hysteria, his name crossed over — from symbol of victory to symbol of shame.
 
 One day he was the beloved coach who had helped build Linebacker U and taught boys to keep their word. The next day he was accused of the worst thing a man can be accused of.
@@ -133,4 +131,4 @@ And maybe what remains of Jerry Sandusky is not the coach, or the prisoner, or t
 
 **Author:** [[Frank Parlato]]
 
-**Mentions:** [[Jerry Sandusky]] · [[Penn State]] · [[John Cleland]]
+**Mentions:** [[Jerry Sandusky]] · [[Penn State]] · [[John Cleland]] · [[Commonwealth of Pennsylvania]]

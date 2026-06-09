@@ -1,14 +1,14 @@
 ---
 title: "Family Court / Parental Alienation — Case File"
 type: case
-article_count: 32
+article_count: 33
 event_count: 89
 ---
 # Family Court / Parental Alienation — Case File
-*case · 32 articles · 89 dated events · 2025–2026*
+*case · 33 articles · 89 dated events · 2023–2026*
 
 ## Key parties
-[[Christopher Ambrose]] (21) · [[Middle Beach Road]] (9) · [[Eyes Above Productions]] (8) · [[Mia Ambrose]] (8) · [[Frank Report]] (8) · [[District Court]] (7) · [[Nagala]] (7) · [[Social Security]] (6) · [[Frank Parlato]] (6) · [[Chris Ambrose]] (6) · [[Bandy Lee]] (6) · [[Paul Boyne]] (5) · [[Hare Psychopathy Checklist]] (5) · [[Bank of America]] (5) · [[East Wharf Beach Park]] (5) · [[District of Connecticut]] (5) · [[Tina Swithin]] (5) · [[Brown]] (4)
+[[Christopher Ambrose]] (22) · [[Mia Ambrose]] (9) · [[Middle Beach Road]] (9) · [[Eyes Above Productions]] (8) · [[Frank Report]] (8) · [[District Court]] (7) · [[Nagala]] (7) · [[Social Security]] (6) · [[Frank Parlato]] (6) · [[Chris Ambrose]] (6) · [[Bandy Lee]] (6) · [[Paul Boyne]] (5) · [[Hare Psychopathy Checklist]] (5) · [[Bank of America]] (5) · [[East Wharf Beach Park]] (5) · [[District of Connecticut]] (5) · [[Tina Swithin]] (5) · [[Brown]] (4)
 
 ## Timeline of events
 - **November 13, 2006** — He is a lawyer but the New York Unified Court System website says he was suspended from law practice on November 13, 2006, by the Appellate Division for a Violation of the Judiciary Law. — [[Beyond Parlato The Many Legal Targets of Christopher Ambrose]]
@@ -134,3 +134,4 @@ event_count: 89
 - 2025-08-14 · [[Psychopath Or Just Broke Family Court Manipulator Christopher Ambrose Lawsuit Exposes More Than He Meant]]
 - 2025-08-05 · [[Family Court-Ordered ‘Supervised Visitation ‘ Is a Revenue Stream]]
 - 2025-07-17 · [[Elizabeth Harding Weinstein, at Center of Contentious Divorce and Mental Health Dispute, Dies at 53]]
+- 2023-10-01 · [[Paterno and Sandusky Compared to DCF’s Dorantes and Peterson Parallels of Institutional Neglect]]

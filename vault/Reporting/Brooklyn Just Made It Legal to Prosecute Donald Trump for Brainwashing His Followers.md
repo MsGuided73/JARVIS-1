@@ -469,4 +469,4 @@ USCIRF 2023 Status of Religious Freedom Issue Update [https://www.uscirf.gov/sit
 
 **Author:** [[Frank Parlato]]
 
-**Mentions:** [[Nicole Daedone]] · [[Rachel Cherwitz]] · [[Michal Neria]] · [[AUSA Kayla Bensing]] · [[Donald Trump]] · [[Frank Report]] · [[White House]] · [[Supreme Court]] · [[Department of Justice]] · [[Diane Gujarati]] · [[San Francisco]] · [[Jennifer Bonjean]] · [[Steven Hassan]] · [[Church of Jesus Christ of Latter-day]] · [[Hillary Clinton]] · [[Dana Gill]] · [[Nina Gupta]] · [[Metropolitan Detention Center]] · [[International Policy Digest]] · [[NBC News]]
+**Mentions:** [[Nicole Daedone]] · [[Rachel Cherwitz]] · [[Michal Neria]] · [[AUSA Kayla Bensing]] · [[Donald Trump]] · [[Frank Report]] · [[White House]] · [[Supreme Court]] · [[Department of Justice]] · [[Barack Obama]] · [[Diane Gujarati]] · [[San Francisco]] · [[Jennifer Bonjean]] · [[Steven Hassan]] · [[Church of Jesus Christ of Latter-day]] · [[Hillary Clinton]] · [[Dana Gill]] · [[Nina Gupta]] · [[Metropolitan Detention Center]] · [[International Policy Digest]] · [[NBC News]]

@@ -179,4 +179,4 @@ In her new role, Skerda has consistently denied Sandusky’s post-conviction app
 
 **Author:** [[Frank Parlato]]
 
-**Mentions:** [[Frank Parlato]] · [[Senior Judge Maureen Skerda]] · [[Ryan Rittmeyer]] · [[Jerry Sandusky]] · [[Jasmine Rittmeyer]] · [[Frank Fina]] · [[Sabastian Paden]] · [[Penn State]] · [[Joe McGettigan]] · [[Senior Deputy Attorney General]] · [[Andrew Salemme]] · [[Joseph McGettigan]] · [[Victim No]] · [[Dennis McAndrews]] · [[Bryn Mawr]] · [[US Claims]]
+**Mentions:** [[Frank Parlato]] · [[Skerda]] · [[Ryan Rittmeyer]] · [[Jerry Sandusky]] · [[Jasmine Rittmeyer]] · [[Frank Fina]] · [[Sabastian Paden]] · [[Penn State]] · [[Joe McGettigan]] · [[Senior Judge Maureen Skerda]] · [[Senior Deputy Attorney General]] · [[Dick Anderson]] · [[Nittany Lions]] · [[Andrew Salemme]] · [[Joseph McGettigan]] · [[Victim No]] · [[Dennis McAndrews]] · [[Bryn Mawr]] · [[US Claims]]

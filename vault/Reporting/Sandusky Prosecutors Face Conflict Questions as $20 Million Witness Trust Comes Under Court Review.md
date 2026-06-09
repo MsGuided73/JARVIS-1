@@ -32,8 +32,6 @@ At the sex abuse trial of Jerry Sandusky, the late Deputy Attorney General Josep
 
 “Yeah, I’m going to try,” Paden replied.
 
-Sabastian Paden
-
 After Sandusky was convicted on 45 counts of sex abuse, and sentenced to 30 to 60 years in prison, Paden hired a civil lawyer and sued Penn State for damages. He wound up collecting the highest payout of any of Sandusky’s alleged victims, $20 million.
 
 # From Criminal Trial to Civil Payday

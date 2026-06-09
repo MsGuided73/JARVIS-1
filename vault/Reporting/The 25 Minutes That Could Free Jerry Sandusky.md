@@ -83,4 +83,4 @@ Judge Skerda dismissed a claim of innocence without seeing the evidence that sup
 
 **Author:** [[Frank Parlato]]
 
-**Mentions:** [[Senior Judge Maureen Skerda]] · [[Ryan Rittmeyer]] · [[Jerry Sandusky]] · [[Jasmine Rittmeyer]] · [[Penn State]] · [[Second Mile]] · [[Centre County]] · [[Senior Deputy Attorney General]] · [[Joseph McGettigan]] · [[Jason Simcisko]] · [[Andrew Shubin]]
+**Mentions:** [[Skerda]] · [[Ryan Rittmeyer]] · [[Jerry Sandusky]] · [[Jasmine Rittmeyer]] · [[Penn State]] · [[Second Mile]] · [[Pennsylvania State Police]] · [[Centre County]] · [[Senior Deputy Attorney General]] · [[Joseph McGettigan]] · [[Maureen Skerda]] · [[Jason Simcisko]] · [[Andrew Shubin]]

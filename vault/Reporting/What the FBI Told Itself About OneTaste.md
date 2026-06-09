@@ -154,4 +154,4 @@ This is the record.
 
 **Author:** [[Frank Parlato]]
 
-**Mentions:** [[Nicole Daedone]] · [[Rachel Cherwitz]] · [[Frank Report]] · [[Department of Justice]] · [[Diane Gujarati]] · [[Assistant United States Attorney]] · [[Ayries Blanck]] · [[Keith Raniere]] · [[DOS]] · [[NXIVM]] · [[FBI Director Kash Patel]] · [[Jeffrey Epstein]] · [[Elliot McGinnis]] · [[Orgasm Inc]]
+**Mentions:** [[Nicole Daedone]] · [[Rachel Cherwitz]] · [[Frank Report]] · [[Department of Justice]] · [[Diane Gujarati]] · [[Assistant United States Attorney]] · [[Ayries Blanck]] · [[Keith Raniere]] · [[DOS]] · [[NXIVM]] · [[FBI Director Kash Patel]] · [[Jeffrey Epstein]] · [[Elliot McGinnis]] · [[Orgasm Inc]] · [[Daily Mail]]

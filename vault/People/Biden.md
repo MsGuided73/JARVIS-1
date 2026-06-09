@@ -4,14 +4,14 @@ type: person
 article_count: 28
 first_mention: 2025-07-02
 last_mention: 2026-06-07
-cases: ["NXIVM", "OneTaste", "Wrongful Convictions"]
+cases: ["NXIVM", "OneTaste", "Juan Orlando Hernandez / Honduras", "Wrongful Convictions"]
 ---
 
 # Biden
 
 *person · 28 mentions · 2025–2026*
 
-**Cases:** [[NXIVM — Case File|NXIVM]] · [[OneTaste — Case File|OneTaste]] · [[Wrongful Convictions — Case File|Wrongful Convictions]]
+**Cases:** [[NXIVM — Case File|NXIVM]] · [[OneTaste — Case File|OneTaste]] · [[Juan Orlando Hernandez / Honduras — Case File|Juan Orlando Hernandez / Honduras]] · [[Wrongful Convictions — Case File|Wrongful Convictions]]
 
 **Most connected to:** [[Donald Trump]] (20) · [[United States]] (13) · [[Department of Justice]] (9) · [[Frank Rose]] (7) · [[David Duong]] (7) · [[Rachel Cherwitz]] (6) · [[Juan Orlando Hern]] (6) · [[Department of Defense]] (6)
 

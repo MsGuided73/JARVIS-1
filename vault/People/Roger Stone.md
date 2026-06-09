@@ -1,23 +1,25 @@
 ---
 title: "Roger Stone"
 type: person
-article_count: 4
-first_mention: 2025-07-25
+article_count: 5
+first_mention: 2024-02-25
 last_mention: 2026-02-01
-cases: ["NXIVM", "OneTaste"]
+cases: ["NXIVM", "OneTaste", "Jerry Sandusky / Penn State", "Wrongful Convictions"]
 ---
 
 # Roger Stone
 
-*person · 4 mentions · 2025–2026*
+*person · 5 mentions · 2024–2026*
 
-**Cases:** [[NXIVM — Case File|NXIVM]] · [[OneTaste — Case File|OneTaste]]
+**Cases:** [[NXIVM — Case File|NXIVM]] · [[OneTaste — Case File|OneTaste]] · [[Jerry Sandusky / Penn State — Case File|Jerry Sandusky / Penn State]] · [[Wrongful Convictions — Case File|Wrongful Convictions]]
 
-**Most connected to:** [[NXIVM]] (3) · [[Frank Report]] (2) · [[Keith Raniere]] (2) · [[Clare Bronfman]] (2) · [[Bronfman]] (2) · [[Donald Trump]] (2) · [[Frank Parlato]] (2) · [[Department of Justice]] (2)
+**Most connected to:** [[NXIVM]] (3) · [[Donald Trump]] (3) · [[Frank Parlato]] (3) · [[Frank Report]] (2) · [[Keith Raniere]] (2) · [[Clare Bronfman]] (2) · [[Bronfman]] (2) · [[Department of Justice]] (2)
 
 
 
 ## Articles
+
+- [[Frank Parlato goes on WABC Radio with Roger Stone to Talk About Jerry Sandusky 5pm ET LIVE Today]]
 
 - [[Judge Gujarati’s Gag Order by Jail Cell – OneTaste Got Under Her Prosecutorial Skin]]
 

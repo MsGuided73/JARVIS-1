@@ -1,10 +1,10 @@
 ---
 title: "Investigations"
 type: category
-article_count: 32
+article_count: 34
 ---
 # Investigations
-*category · 32 articles*
+*category · 34 articles*
 
 - [[Allison Mack Out — NXIVM Lawsuit Zeroes In on Bronfman Fortune]]
 - [[Ambrose Has Nine Days to Prove Poverty in Bandy Lee Case]]
@@ -17,6 +17,8 @@ article_count: 32
 - [[Grading Charities, Dodging Oversight The Unchecked Power of Laurie Styron’s CharityWatch]]
 - [[How Public Opinion Was Engineered Before the First Witness Testified in Sandusky and Letby Cases]]
 - [[James D. Clark FBI Informant Pt 1 The Trade]]
+- [[Jerry Sandusky Mystery Did McQueary Really See Anything]]
+- [[John Ziegler Interviews Bob Costas Who Admits Joe Paterno ‘Not a Villian’]]
 - [[Juarez’s Bounced Check Blows Hole In DOJ’s Case Against Oakland Mayor Sheng Thao and ‘Recycling King’ David Du]]
 - [[Letby and Sandusky Two Monsters or Two Martyrs of the Media Age]]
 - [[Los Angeles Judge Escalante’s Kangaroo Court Sends No-Kill Shelter to Bankruptcy]]

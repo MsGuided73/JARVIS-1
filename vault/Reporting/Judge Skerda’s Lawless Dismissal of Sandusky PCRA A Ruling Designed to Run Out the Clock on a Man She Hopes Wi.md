@@ -47,8 +47,6 @@ It is for the sake of the Pennsylvania judiciary’s honor and reputation that S
 
 Sandusky is innocent. Prosecutors manufactured testimony, judges enabled it, and the Pennsylvania courts convicted a man on evidence they refused to examine. Skerda is not administering justice. She is protecting every institution that would be exposed if the truth came out.
 
-Jerry Sandusky
-
 Read more: [https://artvoice.com/2026/01/20/the-sandusky-trial-a-study-in-how-american-justice-fails/](https://artvoice.com/2026/01/20/the-sandusky-trial-a-study-in-how-american-justice-fails/)
 
 ---
@@ -57,4 +55,4 @@ Read more: [https://artvoice.com/2026/01/20/the-sandusky-trial-a-study-in-how-am
 
 **Author:** [[Frank Parlato]]
 
-**Mentions:** [[Senior Judge Maureen Skerda]] · [[Ryan Rittmeyer]] · [[Jasmine Rittmeyer]]
+**Mentions:** [[Skerda]] · [[Ryan Rittmeyer]] · [[Jasmine Rittmeyer]] · [[Senior Judge Maureen Skerda]]

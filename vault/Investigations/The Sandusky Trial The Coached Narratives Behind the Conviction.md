@@ -51,8 +51,6 @@ Another section of the Sinisi interview — and all were eventually published po
 
 The lawyer chooses a date, saying, thank God for the internet, right, then [52] “Do you remember him soaping you up and washing you in the shower?” Sinisi says “No.” The lawyer says “OK, um, do you remember him lifting you up to the shower head and putting your head in the shower head?” Sinisi says, “No.”
 
-Shawn Sinisi
-
 This second event which Sinisi denies, about lifting him up to a shower head, is actually copy/pasted from much earlier very careful testimony from someone else which had cleared Sandusky, and could create a believable MO if the lawyer can get Sinisi to say it.
 
 They move to a different room when time is up and the lawyer tries again [53], “You were just about to talk to me about the shower head.” The lawyer suggests Sinisi can change his answer without being embarrassed as a female assistant is no longer there.
@@ -73,4 +71,4 @@ Page 22. of exhibit B of CP-14-0002421-2011
 
 **Author:** [[Guest View]]
 
-**Mentions:** [[Frank Fina]] · [[Joe Amendola]] · [[Joe McGettigan]]
+**Mentions:** [[Frank Fina]] · [[Joe Amendola]] · [[Joe McGettigan]] · [[Matt Sandusky]]

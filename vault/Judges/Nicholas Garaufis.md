@@ -2,27 +2,29 @@
 title: "Nicholas Garaufis"
 type: judge
 aliases: ["Garaufis"]
-article_count: 14
-first_mention: 2025-06-30
+article_count: 15
+first_mention: 2024-02-19
 last_mention: 2026-04-04
-cases: ["NXIVM"]
+cases: ["NXIVM", "Jerry Sandusky / Penn State"]
 ---
 
 # Nicholas Garaufis
 
-*judge · 14 mentions · 2025–2026*
+*judge · 15 mentions · 2024–2026*
 
 **Also known as:** Garaufis
 
-**Cases:** [[NXIVM — Case File|NXIVM]]
+**Cases:** [[NXIVM — Case File|NXIVM]] · [[Jerry Sandusky / Penn State — Case File|Jerry Sandusky / Penn State]]
 
-**Most connected to:** [[Keith Raniere]] (14) · [[NXIVM]] (13) · [[Allison Mack]] (8) · [[Nancy Salzman]] (8) · [[DOS]] (8) · [[Lauren Salzman]] (7) · [[Bronfman]] (7) · [[Clare Bronfman]] (6)
+**Most connected to:** [[Keith Raniere]] (15) · [[NXIVM]] (14) · [[Allison Mack]] (8) · [[Nancy Salzman]] (8) · [[DOS]] (8) · [[Lauren Salzman]] (7) · [[Bronfman]] (7) · [[Clare Bronfman]] (6)
 
 
 
 ## Articles
 
 - [[Ask Frank What Did Raniere Do]]
+
+- [[BK’s Bluster All Bark, No Byte I Challenge Him to Debate on Sandusky’s Innocence]]
 
 - [[Clare Bronfman Released from BOP Custody]]
 

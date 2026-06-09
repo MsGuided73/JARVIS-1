@@ -53,8 +53,6 @@ For a net advance of $50,000 at 27% APR, compounded monthly, the amount due by A
 
 The fax header indicates that the agreement was routed directly to Stephen Raynes, the civil lawyer who filed the claim. The deal demonstrates that, even before Penn State agreed to pay Paden, financial players were already carving up the award.
 
-Sabastian Paden
-
 ## Shaping Testimony?
 
 In an affidavit, Paden’s mother—identified here as ‘Marie’— says her son repeatedly told her Sandusky never molested him. Still, after several lengthy meetings with lead prosecutor McGettigan, his story changed.
@@ -207,8 +205,6 @@ In 2013, the Pennsylvania Supreme Court took Judge Barry Feudale off the statewi
 
 In another episode, Fina and the trial judge James Cleland arranged a “secret” hearing to persuade Sandusky’s trial lawyer Joe Amendola to waive the right to learn the names of the accusers and test their claims and challenge the controversial science of repressed recovered memory therapy before trial.
 
-State College Hilton Garden Inn
-
 At an evening meeting at the Hilton Garden Inn (State College), Judge Cleland presided and prosecutor Fina met with defense attorney Joe Amendola; no court reporter; defendant absent.
 
 The defense says this led to waiving the preliminary hearing—foreclosing pretrial tests on accuser identities, memory-science challenges and agreeing to set a accelerated trial schedule. (The case from indictment to conviction was seven months.)
@@ -263,4 +259,4 @@ Links to key exhibits:
 
 **Author:** [[Frank Parlato]]
 
-**Mentions:** [[Frank Parlato]] · [[Ryan Rittmeyer]] · [[Jerry Sandusky]] · [[Frank Fina]] · [[Sabastian Paden]] · [[Allan Myers]] · [[Penn State]] · [[Mike McQueary]] · [[Aaron Fisher]] · [[Joe Amendola]] · [[Joe McGettigan]] · [[Andrew Salemme]] · [[Joseph McGettigan]] · [[Dennis McAndrews]] · [[US Claims]] · [[Post Conviction Relief Act]] · [[John Cleland]] · [[Silent No More]] · [[Stephen Raynes]] · [[Trust Protective Committee]] · [[Gay Warren]] · [[State College]] · [[Michael Gillum]] · [[Hilton Garden Inn]] · [[Lauren Cliggitt]]
+**Mentions:** [[Frank Parlato]] · [[Ryan Rittmeyer]] · [[Jerry Sandusky]] · [[Frank Fina]] · [[Sabastian Paden]] · [[Allan Myers]] · [[Penn State]] · [[Mike McQueary]] · [[Aaron Fisher]] · [[Joe Amendola]] · [[Joe McGettigan]] · [[Andrew Salemme]] · [[Joseph McGettigan]] · [[Dennis McAndrews]] · [[US Claims]] · [[Post Conviction Relief Act]] · [[John Cleland]] · [[Silent No More]] · [[Stephen Raynes]] · [[Trust Protective Committee]] · [[Gay Warren]] · [[State College]] · [[Michael Gillum]] · [[Brett Swisher Houtz]] · [[Hilton Garden Inn]] · [[Lauren Cliggitt]] · [[General Linda Kelly]] · [[Michal Kajak]] · [[Zach Konstas]] · [[Dustin Struble]] · [[Jim Calhoun]] · [[PA Attorney General]] · [[Deputy Attorney General Jonelle]]

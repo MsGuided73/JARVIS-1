@@ -4,14 +4,14 @@ type: government body
 article_count: 12
 first_mention: 2025-08-21
 last_mention: 2026-05-28
-cases: ["NXIVM", "OneTaste"]
+cases: ["NXIVM", "OneTaste", "Juan Orlando Hernandez / Honduras"]
 ---
 
 # White House
 
 *government body · 12 mentions · 2025–2026*
 
-**Cases:** [[NXIVM — Case File|NXIVM]] · [[OneTaste — Case File|OneTaste]]
+**Cases:** [[NXIVM — Case File|NXIVM]] · [[OneTaste — Case File|OneTaste]] · [[Juan Orlando Hernandez / Honduras — Case File|Juan Orlando Hernandez / Honduras]]
 
 **Most connected to:** [[Donald Trump]] (10) · [[United States]] (6) · [[Biden]] (4) · [[Second Circuit]] (3) · [[Department of Justice]] (3) · [[Nicole Daedone]] (3) · [[Rachel Cherwitz]] (3) · [[Michal Neria]] (3)
 

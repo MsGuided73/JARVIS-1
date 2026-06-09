@@ -4,14 +4,14 @@ type: person
 article_count: 4
 first_mention: 2025-11-11
 last_mention: 2026-05-28
-cases: ["NXIVM"]
+cases: ["NXIVM", "Juan Orlando Hernandez / Honduras"]
 ---
 
 # Latin America
 
 *person · 4 mentions · 2025–2026*
 
-**Cases:** [[NXIVM — Case File|NXIVM]]
+**Cases:** [[NXIVM — Case File|NXIVM]] · [[Juan Orlando Hernandez / Honduras — Case File|Juan Orlando Hernandez / Honduras]]
 
 **Most connected to:** [[Biden]] (3) · [[United States]] (3) · [[Donald Trump]] (3) · [[ARTVOICE ART]] (3) · [[Honduran President Juan Orlando]] (3) · [[Biden Department of Justice]] (3) · [[Kevin Castel]] (3) · [[Juan Orlando Hern]] (2)
 

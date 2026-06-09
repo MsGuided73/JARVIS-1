@@ -13,7 +13,7 @@ cases: ["NXIVM"]
 
 **Cases:** [[NXIVM — Case File|NXIVM]]
 
-**Most connected to:** [[Keith Raniere]] (4) · [[USP Tucson]] (4) · [[Oklahoma City]] (4) · [[NXIVM]] (3) · [[Metropolitan Detention Center]] (2) · [[Clare Bronfman]] (2) · [[Bronfman]] (2) · [[Frank Report]] (1)
+**Most connected to:** [[Keith Raniere]] (4) · [[USP Tucson]] (4) · [[Oklahoma City]] (4) · [[NXIVM]] (3) · [[North Carolina]] (3) · [[Metropolitan Detention Center]] (2) · [[Clare Bronfman]] (2) · [[Bronfman]] (2)
 
 
 

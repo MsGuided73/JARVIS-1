@@ -1,19 +1,19 @@
 ---
 title: "Los Angeles"
 type: place
-article_count: 22
-first_mention: 2025-06-24
+article_count: 23
+first_mention: 2024-01-18
 last_mention: 2026-06-07
-cases: ["NXIVM", "OneTaste", "Wrongful Convictions", "Family Court / Parental Alienation"]
+cases: ["NXIVM", "OneTaste", "Jerry Sandusky / Penn State", "Wrongful Convictions", "Family Court / Parental Alienation"]
 ---
 
 # Los Angeles
 
-*place · 22 mentions · 2025–2026*
+*place · 23 mentions · 2024–2026*
 
-**Cases:** [[NXIVM — Case File|NXIVM]] · [[OneTaste — Case File|OneTaste]] · [[Wrongful Convictions — Case File|Wrongful Convictions]] · [[Family Court / Parental Alienation — Case File|Family Court / Parental Alienation]]
+**Cases:** [[NXIVM — Case File|NXIVM]] · [[OneTaste — Case File|OneTaste]] · [[Jerry Sandusky / Penn State — Case File|Jerry Sandusky / Penn State]] · [[Wrongful Convictions — Case File|Wrongful Convictions]] · [[Family Court / Parental Alienation — Case File|Family Court / Parental Alienation]]
 
-**Most connected to:** [[United States]] (8) · [[Frank Report]] (7) · [[Rachel Cherwitz]] (6) · [[Keith Raniere]] (6) · [[NXIVM]] (6) · [[DELTA Rescue]] (5) · [[Leo Grillo]] (5) · [[Sara Bronfman]] (5)
+**Most connected to:** [[United States]] (9) · [[Frank Report]] (7) · [[Rachel Cherwitz]] (6) · [[Keith Raniere]] (6) · [[NXIVM]] (6) · [[DELTA Rescue]] (5) · [[Leo Grillo]] (5) · [[Sara Bronfman]] (5)
 
 
 
@@ -44,6 +44,8 @@ cases: ["NXIVM", "OneTaste", "Wrongful Convictions", "Family Court / Parental Al
 - [[OneTaste and the FBI’s Scorecard]]
 
 - [[Petra vs. United A Woman Fighting Cancer, Stranded by an Airline]]
+
+- [[Renowned Academic, Authors, and Investigators Challenge Jerry Sandusky’s Conviction]]
 
 - [[Roger Stone Helped Take Down NXIVM — He Was Never Part of It]]
 

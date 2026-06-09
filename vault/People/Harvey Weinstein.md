@@ -1,19 +1,19 @@
 ---
 title: "Harvey Weinstein"
 type: person
-article_count: 5
-first_mention: 2025-06-29
+article_count: 7
+first_mention: 2024-04-18
 last_mention: 2026-02-07
-cases: ["OneTaste", "Jerry Sandusky / Penn State", "Wrongful Convictions"]
+cases: ["NXIVM", "OneTaste", "Jerry Sandusky / Penn State", "Wrongful Convictions"]
 ---
 
 # Harvey Weinstein
 
-*person · 5 mentions · 2025–2026*
+*person · 7 mentions · 2024–2026*
 
-**Cases:** [[OneTaste — Case File|OneTaste]] · [[Jerry Sandusky / Penn State — Case File|Jerry Sandusky / Penn State]] · [[Wrongful Convictions — Case File|Wrongful Convictions]]
+**Cases:** [[NXIVM — Case File|NXIVM]] · [[OneTaste — Case File|OneTaste]] · [[Jerry Sandusky / Penn State — Case File|Jerry Sandusky / Penn State]] · [[Wrongful Convictions — Case File|Wrongful Convictions]]
 
-**Most connected to:** [[Jerry Sandusky]] (2) · [[Frank Fina]] (2) · [[Penn State]] (2) · [[Joe McGettigan]] (2) · [[Rachel Cherwitz]] (2) · [[Frank Parlato]] (1) · [[Justice Department]] (1) · [[Mike McQueary]] (1)
+**Most connected to:** [[Jerry Sandusky]] (4) · [[Penn State]] (4) · [[Frank Fina]] (3) · [[Bill Cosby]] (3) · [[Joe McGettigan]] (2) · [[Rachel Cherwitz]] (2) · [[Joe Amendola]] (2) · [[John Cleland]] (2)
 
 
 
@@ -25,6 +25,10 @@ cases: ["OneTaste", "Jerry Sandusky / Penn State", "Wrongful Convictions"]
 
 - [[More Info on Angel DuBose’s Christmas Party Accusation Will It End Letitia James’s Career]]
 
+- [[Penn State University Press Director Emeritus Sanford Thatcher Sandusky Is Innocent!]]
+
 - [[The Secret Hilton Meeting That Changed the Sandusky Case]]
+
+- [[Was Justice Served Inside the Record-Breaking Speed of Sandusky’s Trial]]
 
 - [[Weinstein, Alexander Brothers, OneTaste When Legal Reality Diverges from Media Narrative]]

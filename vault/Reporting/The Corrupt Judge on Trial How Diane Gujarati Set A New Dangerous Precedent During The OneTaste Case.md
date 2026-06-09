@@ -153,4 +153,4 @@ Sentencing occurred March 30, 2026: [OneTaste Founder Gets Prison in First Brai
 
 **Author:** [[Frank Parlato]]
 
-**Mentions:** [[Nicole Daedone]] · [[Rachel Cherwitz]] · [[United States]] · [[Southern District of New York]] · [[Second Circuit]] · [[Department of Justice]] · [[Diane Gujarati]] · [[US District Judge Diane]] · [[Assistant United States Attorney]] · [[Jennifer Bonjean]] · [[Ayries Blanck]] · [[NXIVM]] · [[John]] · [[Orgasmic Meditation]] · [[FBI Director Kash Patel]] · [[Case No]]
+**Mentions:** [[Nicole Daedone]] · [[Rachel Cherwitz]] · [[United States]] · [[Southern District of New York]] · [[Second Circuit]] · [[Department of Justice]] · [[Diane Gujarati]] · [[US District Judge Diane]] · [[Assistant United States Attorney]] · [[Jennifer Bonjean]] · [[Ayries Blanck]] · [[NXIVM]] · [[John]] · [[Orgasmic Meditation]] · [[Bill Cosby]] · [[FBI Director Kash Patel]] · [[Case No]]

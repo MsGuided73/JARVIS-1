@@ -43,8 +43,6 @@ No depositions were taken. No forensic psychiatric examinations were conducted. 
 
 The biggest payday went to Sabastian Paden — alleged Victim 9.
 
-Sabastian Paden
-
 When police first came to the trailer where Paden lived with his mother, he told them Sandusky had never done anything sexual to him. His story changed shortly afterward.
 
 Paden received $20 million, or one-third of the $60 million distributed to the eight trial accusers. His settlement (less attorney’s fees) was placed in a trust.
@@ -115,8 +113,6 @@ Fisher testified that he stayed at Sandusky’s house “probably close to a hun
 
 Both accusers testified that Sandusky abused them alone, on the same bed, during the same weekends, over the same three-year period, during an estimated 100 to 150 visits each.
 
-Dawn Hennessey with her son, Aaron Fisher
-
 Fisher’s mother, Dawn Hennessey, has confirmed that the “every weekend” narrative was false. In preserved messages, she stated that her son “did not go there every weekend,” that the visits were sporadic — often one night, back before dinner the next day — and that other boys were frequently present. She estimated the total number of overnights at roughly 10-20.
 
 Her account matches Marie’s. Both mothers — who had no contact with each other during these communications — independently describe sporadic visits, far fewer than claimed, often with other teens present.
@@ -163,8 +159,6 @@ Every subsequent act by that prosecutor — every objection to post-conviction r
 
 Additional evidence confirms that the financial entanglement was not a one-time arrangement but an ongoing enterprise. The US Claims Purchase Agreement securitized Paden’s settlement proceeds — converting future payments into present-day financial instruments. An October 2020 email from Fina demonstrates his continuing involvement in the financial management of witness settlement funds — eight years after the trial.
 
-Frank Fina by MK10ART
-
 Fina’s law license was suspended for a year and a day by the Pennsylvania Supreme Court in 2020, by a 5-1 vote, for misleading a supervising grand jury judge during the related prosecution of Penn State administrators. Justice David Wecht, concurring, wrote that Fina “chose to mislead the supervising judge” and “promptly reneged” on assurances he had given to that judge — conduct that “fell far below the ethical standard we rightly demand of a prosecutor.” The Office of Disciplinary Counsel described Fina as “someone who cannot or will not separate right from wrong.”
 
 Fina was represented in the disciplinary proceeding by McGettigan and McAndrews — the same men who would share control of their witness’s millions.
@@ -187,4 +181,4 @@ The answer is no.
 
 **Author:** [[Frank Parlato]]
 
-**Mentions:** [[United States]] · [[Jerry Sandusky]] · [[Frank Fina]] · [[Sabastian Paden]] · [[Supreme Court]] · [[Penn State]] · [[Aaron Fisher]] · [[Joseph McGettigan]] · [[Dennis McAndrews]] · [[Bryn Mawr]] · [[US Claims]] · [[Trust Protective Committee]] · [[Gay Warren]] · [[Chris Malanga]] · [[State College]]
+**Mentions:** [[United States]] · [[Jerry Sandusky]] · [[Frank Fina]] · [[Sabastian Paden]] · [[Supreme Court]] · [[Penn State]] · [[Aaron Fisher]] · [[Joseph McGettigan]] · [[Dennis McAndrews]] · [[Bryn Mawr]] · [[US Claims]] · [[Trust Protective Committee]] · [[Gay Warren]] · [[Chris Malanga]] · [[Penn State University]] · [[State College]] · [[Youth Services]] · [[Dawn Hennessey]] · [[Barry Feudale]]

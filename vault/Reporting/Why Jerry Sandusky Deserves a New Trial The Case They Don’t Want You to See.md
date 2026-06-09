@@ -20,8 +20,6 @@ If you laid out every issue in the Jerry Sandusky case — not the headlines, no
 
 ## **The Secret Meeting**
 
-One of the most dishonest judges of our time, (or any time) Judge John Cleland
-
 Before the trial began, Judge John Cleland, the prosecution, and defense attorney Joe Amendola met in a hotel room. At that meeting, they agreed to an expedited trial. Nobody disclosed this meeting. Nobody put it on the record. It came to light four years later.
 
 Judge Cleland was forced to admit it and then angrily recused himself from post conviction rulings.
@@ -31,8 +29,6 @@ Think about what that means. When Amendola later stood before Cleland and said h
 In any other courtroom in America, a defense attorney telling a judge he cannot competently represent his client triggers a mistrial or, at minimum, an adjournment. Here, it triggered nothing. The trial went forward. The question is why. The answer was in the hotel room.
 
 ## **The Reluctant Accuser**
-
-Aaron Fisher
 
 Aaron Fisher, designated Victim Number One, twice failed to tell the grand jury that anything happened.
 
@@ -57,8 +53,6 @@ All of them said the same thing: nothing happened. The attorney general’s off
 Seven out of 600. And a hotline. After direct law enforcement contact. That’s a conversion rate of barely one percent — and that one percent required therapeutic intervention to produce.
 
 ## **The A.J. Dillon Sting**
-
-Unethical lawyer Andrew Shubin
 
 A man named A.J. Dillon decided to test the system. He went to attorney Andrew Shubin — the lawyer who represented several  Sandusky accusers and had been advertising for victims.
 
@@ -140,4 +134,4 @@ And that’s why they’ll fight to make sure he never gets the hearing he’s o
 
 **Author:** [[Frank Parlato]]
 
-**Mentions:** [[Jerry Sandusky]] · [[Penn State]] · [[Mike McQueary]] · [[Joe Paterno]] · [[Second Mile]] · [[Aaron Fisher]] · [[Joe Amendola]] · [[John Cleland]] · [[Andrew Shubin]] · [[Michael Gillum]]
+**Mentions:** [[Jerry Sandusky]] · [[Penn State]] · [[Mike McQueary]] · [[Joe Paterno]] · [[Second Mile]] · [[Joseph Leiter]] · [[Aaron Fisher]] · [[Joe Amendola]] · [[John Cleland]] · [[Andrew Shubin]] · [[Michael Gillum]] · [[State Police]] · [[Brett Swisher Houtz]] · [[Commonwealth of Pennsylvania]]

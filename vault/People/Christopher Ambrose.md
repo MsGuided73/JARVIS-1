@@ -1,19 +1,19 @@
 ---
 title: "Christopher Ambrose"
 type: person
-article_count: 21
-first_mention: 2025-08-14
+article_count: 22
+first_mention: 2023-10-01
 last_mention: 2026-04-20
-cases: ["Family Court / Parental Alienation"]
+cases: ["Jerry Sandusky / Penn State", "Family Court / Parental Alienation"]
 ---
 
 # Christopher Ambrose
 
-*person · 21 mentions · 2025–2026*
+*person · 22 mentions · 2023–2026*
 
-**Cases:** [[Family Court / Parental Alienation — Case File|Family Court / Parental Alienation]]
+**Cases:** [[Jerry Sandusky / Penn State — Case File|Jerry Sandusky / Penn State]] · [[Family Court / Parental Alienation — Case File|Family Court / Parental Alienation]]
 
-**Most connected to:** [[Middle Beach Road]] (9) · [[Eyes Above Productions]] (8) · [[Mia Ambrose]] (8) · [[Nagala]] (7) · [[District Court]] (6) · [[Social Security]] (6) · [[Chris Ambrose]] (6) · [[Bandy Lee]] (6)
+**Most connected to:** [[Mia Ambrose]] (9) · [[Middle Beach Road]] (9) · [[Eyes Above Productions]] (8) · [[Nagala]] (7) · [[District Court]] (6) · [[Social Security]] (6) · [[Chris Ambrose]] (6) · [[Bandy Lee]] (6)
 
 
 
@@ -52,6 +52,8 @@ cases: ["Family Court / Parental Alienation"]
 - [[Federal Judge Orders Ambrose to Produce Bank Records, Criminal Referral Open]]
 
 - [[Judge Dismisses Ambrose Lawsuit Over False Poverty Claim]]
+
+- [[Paterno and Sandusky Compared to DCF’s Dorantes and Peterson Parallels of Institutional Neglect]]
 
 - [[Psychopath Or Just Broke Family Court Manipulator Christopher Ambrose Lawsuit Exposes More Than He Meant]]
 

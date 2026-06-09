@@ -122,4 +122,4 @@ I hope McGibney will debate and also put the results on his website. If he’s l
 
 **Author:** [[Frank Parlato]]
 
-**Mentions:** [[Frank Report]] · [[Frank Parlato]] · [[Ryan Rittmeyer]] · [[Jerry Sandusky]] · [[Frank Fina]] · [[Penn State]] · [[Second Mile]] · [[Aaron Fisher]] · [[Joseph McGettigan]] · [[Sebastian Paden]] · [[John Cleland]]
+**Mentions:** [[Frank Report]] · [[Frank Parlato]] · [[Ryan Rittmeyer]] · [[Jerry Sandusky]] · [[Elizabeth Loftus]] · [[Frank Fina]] · [[Penn State]] · [[Second Mile]] · [[Aaron Fisher]] · [[Joseph McGettigan]] · [[Frederick Crews]] · [[Saint Sandusky]] · [[Sebastian Paden]] · [[John Cleland]] · [[Mark Pendergrast]] · [[UC Berkeley]] · [[John Ziegler]] · [[Ralph Cipriano]] · [[John Snedden]]

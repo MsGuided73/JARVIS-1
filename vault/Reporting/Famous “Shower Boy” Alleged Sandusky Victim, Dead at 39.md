@@ -34,8 +34,6 @@ Nor did it mention that, years later, [Penn State would pay Myers $6.9 million](
 
 Myers was born on February 28, 1987, in rural central Pennsylvania. He met Sandusky as a fourth-grader through The Second Mile, the charity Sandusky had founded for troubled and at-risk children.
 
-Sandusky
-
 Sandusky was Penn State royalty — the famous defensive coordinator for 30 years under head coach Joe Paterno.
 
 By Myers’s account, the house he grew up in was marked by violence. He recalled watching his father threaten his mother with a gun. A school guidance counselor recommended The Second Mile. Allan was nine.
@@ -49,8 +47,6 @@ On Senior Night at West Branch High School, Myers asked Sandusky to walk beside 
 Later, Myers invited Sandusky to speak at his high school graduation. Sandusky came and spoke.
 
 He spent the summer after graduation living with Jerry and Dottie Sandusky, working jobs, and taking classes. When Myers married, Sandusky attended the wedding. When Sandusky’s mother died, Myers drove twelve hours across the country to attend the funeral. He joined the Marine Corps as a young man, rose to the rank of sergeant, and when his service ended, he received an honorable discharge.
-
-Sandusky and Myers
 
 ## Press Revelation
 
@@ -71,8 +67,6 @@ On September 20, 2011, Pennsylvania State Police officers Joseph Leiter and Jame
 A 24-year-old Marine sergeant told them that Aaron Fisher, the first accuser, was “only out to get some money.” He said that at no time had Sandusky done anything that made him uncomfortable.
 
 Myers later said the investigators were trying to put words in his mouth and were “clearly angry and upset” when he would not say what they wanted to hear.  His final words to them were: “I will never have anything bad to say about Jerry.”
-
-Linda KellyPennsylvania State Attorney General Linda Kelly speaking at a press conference on November 7, 2011
 
 On November 7, 2011 — two days after the grand jury presentment became public, Pennsylvania Attorney General Linda Kelly stood before television cameras and addressed the country directly. Near the end, Kelly stated that the boy described by McQueary in the Penn State shower incident — “Victim 2” — was unknown.
 
@@ -154,8 +148,6 @@ On November 4, 2016, Myers finally entered the courtroom in connection to hearin
 
 Sandusky, in his prison uniform, was there when Myers, 29, and a millionaire, walked in.
 
-Jerry Sandusky
-
 Sandusky said he barely recognized him — heavier now, bearded, withdrawn, carrying himself with the exhausted gloom of someone who had traveled a long way from the boy he once knew.
 
 For the entirety of his testimony, Myers refused to say Sandusky’s name. Instead, addressing defense attorney Al Lindsay, he referred to Sandusky only as “your client.”
@@ -226,8 +218,6 @@ He never came back out. Instead, his brother appeared and quietly said Allan wo
 
 Allan Myers died the way he lived after 2011 — hiding from the truth. That, perhaps, was the final measure of the tragedy. Not merely that a man lied. But that in the end he lacked even the courage to speak before the darkness closed around him.
 
-Allan Myers.
-
 ## [ARTVOICE ART](https://artvoice.com)
 
 See More: [https://frankreport.com/investigations/sandusky/](https://frankreport.com/category/investigations/sandusky/)
@@ -238,4 +228,4 @@ See More: [https://frankreport.com/investigations/sandusky/](https://frankreport
 
 **Author:** [[Frank Parlato]]
 
-**Mentions:** [[Frank Report]] · [[Jerry Sandusky]] · [[Allan Myers]] · [[Penn State]] · [[Mike McQueary]] · [[Joe Paterno]] · [[Sara Ganim]] · [[Second Mile]] · [[Aaron Fisher]] · [[Joe Amendola]] · [[Centre County]] · [[General]] · [[Joe McGettigan]]
+**Mentions:** [[Frank Report]] · [[Jerry Sandusky]] · [[Allan Myers]] · [[Penn State]] · [[Mike McQueary]] · [[Joe Paterno]] · [[Dottie Sandusky]] · [[Sara Ganim]] · [[Pennsylvania Attorney General]] · [[Second Mile]] · [[Pennsylvania State Police]] · [[Joseph Leiter]] · [[Aaron Fisher]] · [[Joe Amendola]] · [[Andrew Shubin]] · [[Centre County]] · [[General]] · [[Joe McGettigan]]

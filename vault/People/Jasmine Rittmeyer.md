@@ -13,7 +13,7 @@ cases: ["Jerry Sandusky / Penn State", "Wrongful Convictions"]
 
 **Cases:** [[Jerry Sandusky / Penn State — Case File|Jerry Sandusky / Penn State]] · [[Wrongful Convictions — Case File|Wrongful Convictions]]
 
-**Most connected to:** [[Senior Judge Maureen Skerda]] (5) · [[Ryan Rittmeyer]] (5) · [[Jerry Sandusky]] (4) · [[Frank Parlato]] (3) · [[Frank Fina]] (3) · [[Sabastian Paden]] (3) · [[Penn State]] (3) · [[Joseph McGettigan]] (3)
+**Most connected to:** [[Skerda]] (5) · [[Ryan Rittmeyer]] (5) · [[Jerry Sandusky]] (4) · [[Frank Parlato]] (3) · [[Frank Fina]] (3) · [[Sabastian Paden]] (3) · [[Penn State]] (3) · [[Senior Judge Maureen Skerda]] (3)
 
 
 

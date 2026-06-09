@@ -1,10 +1,10 @@
 ---
 title: "Featured"
 type: category
-article_count: 57
+article_count: 58
 ---
 # Featured
-*category · 57 articles*
+*category · 58 articles*
 
 - [[Ambrose Has Nine Days to Prove Poverty in Bandy Lee Case]]
 - [[Ambrose Has Until April 14. His Options Are All Bad]]
@@ -25,6 +25,7 @@ article_count: 57
 - [[James D. Clark FBI Informant Pt 1 The Trade]]
 - [[Juarez’s Bounced Check Blows Hole In DOJ’s Case Against Oakland Mayor Sheng Thao and ‘Recycling King’ David Du]]
 - [[Los Angeles Judge Escalante’s Kangaroo Court Sends No-Kill Shelter to Bankruptcy]]
+- [[Memo to Publisher The Jerry Sandusky Conviction Was a Miscarriage of Justice]]
 - [[More Info on Angel DuBose’s Christmas Party Accusation Will It End Letitia James’s Career]]
 - [[Niagara Falls Arena Study No Author, No Team, No Truth]]
 - [[Niagara Falls Mayor Restaino’s Very Loud Anti-AI Crusade Arena Dreams vs. a $1.5 Billion Future]]

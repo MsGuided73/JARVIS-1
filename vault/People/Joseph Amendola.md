@@ -1,19 +1,19 @@
 ---
 title: "Joseph Amendola"
 type: person
-article_count: 5
-first_mention: 2025-09-26
+article_count: 7
+first_mention: 2024-02-21
 last_mention: 2026-02-09
-cases: ["NXIVM", "OneTaste", "Jerry Sandusky / Penn State"]
+cases: ["NXIVM", "OneTaste", "Jerry Sandusky / Penn State", "Wrongful Convictions"]
 ---
 
 # Joseph Amendola
 
-*person · 5 mentions · 2025–2026*
+*person · 7 mentions · 2024–2026*
 
-**Cases:** [[NXIVM — Case File|NXIVM]] · [[OneTaste — Case File|OneTaste]] · [[Jerry Sandusky / Penn State — Case File|Jerry Sandusky / Penn State]]
+**Cases:** [[NXIVM — Case File|NXIVM]] · [[OneTaste — Case File|OneTaste]] · [[Jerry Sandusky / Penn State — Case File|Jerry Sandusky / Penn State]] · [[Wrongful Convictions — Case File|Wrongful Convictions]]
 
-**Most connected to:** [[Jerry Sandusky]] (5) · [[Frank Fina]] (5) · [[John Cleland]] (5) · [[State College]] (4) · [[Hilton Garden Inn]] (4) · [[Penn State]] (4) · [[Joe McGettigan]] (3) · [[Joseph McGettigan]] (3)
+**Most connected to:** [[Jerry Sandusky]] (7) · [[Frank Fina]] (7) · [[John Cleland]] (7) · [[Hilton Garden Inn]] (5) · [[Penn State]] (5) · [[Joe McGettigan]] (4) · [[State College]] (4) · [[Joseph McGettigan]] (3)
 
 
 
@@ -28,3 +28,7 @@ cases: ["NXIVM", "OneTaste", "Jerry Sandusky / Penn State"]
 - [[Sandusky Prosecutor Joseph McGettigan Dies as Court Reviews Allegations of His Misconduct; Cause of Death Unkn]]
 
 - [[The Fastest Railroading in Pennsylvania History The Sandusky Case]]
+
+- [[Vignettes From the Sandusky Trial Prosecution Altered Bob Costas NBC Audio, Got Caught, But Judge Does Nothing]]
+
+- [[Was Justice Served Inside the Record-Breaking Speed of Sandusky’s Trial]]

@@ -4,14 +4,14 @@ type: government body
 article_count: 27
 first_mention: 2025-07-14
 last_mention: 2026-05-25
-cases: ["NXIVM", "OneTaste", "Jerry Sandusky / Penn State"]
+cases: ["NXIVM", "OneTaste", "Jerry Sandusky / Penn State", "Juan Orlando Hernandez / Honduras"]
 ---
 
 # Department of Justice
 
 *government body · 27 mentions · 2025–2026*
 
-**Cases:** [[NXIVM — Case File|NXIVM]] · [[OneTaste — Case File|OneTaste]] · [[Jerry Sandusky / Penn State — Case File|Jerry Sandusky / Penn State]]
+**Cases:** [[NXIVM — Case File|NXIVM]] · [[OneTaste — Case File|OneTaste]] · [[Jerry Sandusky / Penn State — Case File|Jerry Sandusky / Penn State]] · [[Juan Orlando Hernandez / Honduras — Case File|Juan Orlando Hernandez / Honduras]]
 
 **Most connected to:** [[United States]] (13) · [[Donald Trump]] (12) · [[Biden]] (9) · [[Nicole Daedone]] (7) · [[Rachel Cherwitz]] (7) · [[Southern District of New York]] (6) · [[Diane Gujarati]] (6) · [[Frank Report]] (5)
 

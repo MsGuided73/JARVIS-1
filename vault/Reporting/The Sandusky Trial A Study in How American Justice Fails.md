@@ -57,10 +57,6 @@ The mothers who controlled their children’s schedules say the foundational tes
 
 Fisher and Paden received civil settlements totaling $27.5 million based on testimony their own mothers now contradict.
 
-Sabastian Paden
-
-Aaron Fisher
-
 [Sandusky Basement](https://frankreport.com/wp-content/uploads/2023/12/Sandusky-Basement.mov)
 
 ## **The Basement That Wasn’t a Prison**
@@ -135,8 +131,6 @@ Every accuser who testified at trial—except the two phantom victims who were n
 
 1
 
-Aaron Fisher
-
 $7,500,000
 
 2
@@ -183,13 +177,9 @@ N/A
 
 9
 
-Sabastian Paden
-
 $20,000,000
 
 10
-
-Ryan Rittmeyer
 
 $5,500,000
 
@@ -219,8 +209,6 @@ The three members of that committee:
 
 The prosecutors who secured the conviction took paid positions controlling the settlement money.
 
-Prosecutors Frank Fina and the late Joseph McGettigan
-
 The Trust Protective Committee can veto any distribution over $100,000. They can remove the trustee. They can block Paden from ever gaining control of his own assets. They receive $5,000 annually plus hourly compensation—paid from the trust they control.
 
 Paden receives $1,500 per week from what remains of his trust based on his original $20 million settlement.
@@ -246,8 +234,6 @@ The jury drew the intended inference.
 The truth: According to Marie, her son “had hidden his underwear and socks since he was three or four, well before he met Mr. Sandusky.”
 
 McGettigan knew this. He manufactured corroboration.
-
-Ryan Rittmeyer
 
 ## **The Recantation**
 
@@ -301,8 +287,6 @@ The final discovery arrived nine days before trial.
 
 ## **The Question**
 
-Dr. Frederick Crews
-
 I began this investigation because Professor Frederick Crews, then ninety years old, contacted me. Crews spent his career at UC Berkeley exposing the dangers of suggestive therapy, memory contamination, and the pseudoscientific underpinnings of “recovered memory.”
 
 He told me: “The truth about the Sandusky case is exactly the opposite to what the public believes.”
@@ -331,4 +315,4 @@ The answer, apparently, is yes.
 
 **Author:** [[Frank Parlato]]
 
-**Mentions:** [[Ryan Rittmeyer]] · [[Jerry Sandusky]] · [[Frank Fina]] · [[Sabastian Paden]] · [[Penn State]] · [[Aaron Fisher]] · [[General]] · [[Joe McGettigan]] · [[Joseph McGettigan]] · [[Dennis McAndrews]] · [[Mike Gillum]] · [[Silent No More]] · [[Trust Protective Committee]] · [[Gay Warren]] · [[Jason Simcisko]] · [[Michael Gillum]] · [[Prosecutors Frank Fina]]
+**Mentions:** [[Jerry Sandusky]] · [[Frank Fina]] · [[Sabastian Paden]] · [[Penn State]] · [[Aaron Fisher]] · [[General]] · [[Joe McGettigan]] · [[Joseph McGettigan]] · [[Dennis McAndrews]] · [[Mike Gillum]] · [[Silent No More]] · [[Trust Protective Committee]] · [[Gay Warren]] · [[Jason Simcisko]] · [[Dawn Hennessey]] · [[Michael Gillum]] · [[State Police]] · [[Brett Swisher Houtz]] · [[General Linda Kelly]] · [[Michal Kajak]] · [[Zach Konstas]] · [[Dustin Struble]] · [[UC Berkeley]]

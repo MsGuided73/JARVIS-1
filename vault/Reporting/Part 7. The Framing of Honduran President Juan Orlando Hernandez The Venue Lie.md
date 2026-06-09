@@ -31,8 +31,6 @@ wpId: 265356
 
 ### This is Part 7.
 
-Juan Orlando Hernandez
-
 Juan Orlando Hernández served as president of Honduras from January 27, 2014 to January 27, 2022.
 
 On June 26, 2024, Judge P. Kevin Castel in the Southern District of NY sentenced Hernandez to 45 years in US federal prison on drug trafficking and gun charges.
@@ -191,4 +189,4 @@ We will cover more of them in the series.
 
 **Author:** [[Frank Parlato]]
 
-**Mentions:** [[Biden]] · [[United States]] · [[Donald Trump]] · [[Latin American]] · [[ARTVOICE ART]] · [[Honduran President Juan Orlando]] · [[Biden Department of Justice]] · [[Kevin Castel]] · [[Attorney’s Office]] · [[Juan Orlando Hern]] · [[Biden DOJ]] · [[Latin America]] · [[White House]] · [[Alexander Ard]] · [[El Para]] · [[Second Circuit]]
+**Mentions:** [[Biden]] · [[United States]] · [[Donald Trump]] · [[Latin American]] · [[ARTVOICE ART]] · [[Honduran President Juan Orlando]] · [[Biden Department of Justice]] · [[Juan Orlando Hern]] · [[Kevin Castel]] · [[Attorney’s Office]] · [[Biden DOJ]] · [[Latin America]] · [[White House]] · [[Alexander Ard]] · [[El Para]] · [[Second Circuit]]

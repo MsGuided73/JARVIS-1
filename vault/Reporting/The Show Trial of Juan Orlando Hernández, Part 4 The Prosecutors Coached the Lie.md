@@ -119,4 +119,4 @@ We will present many more examples of inconvenient truths in this series.
 
 **Author:** [[Frank Parlato]]
 
-**Mentions:** [[Biden]] · [[Donald Trump]] · [[Southern District of New York]] · [[Honduran President Juan Orlando]] · [[Kevin Castel]] · [[Juan Orlando Hern]] · [[Biden DOJ]] · [[Alexander Ard]] · [[El Para]] · [[State Department]] · [[Biden’s DOJ]]
+**Mentions:** [[Biden]] · [[Donald Trump]] · [[Southern District of New York]] · [[Honduran President Juan Orlando]] · [[Juan Orlando Hern]] · [[Kevin Castel]] · [[Biden DOJ]] · [[Alexander Ard]] · [[El Para]] · [[State Department]] · [[Biden’s DOJ]]

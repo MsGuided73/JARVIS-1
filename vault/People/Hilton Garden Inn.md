@@ -1,23 +1,25 @@
 ---
 title: "Hilton Garden Inn"
 type: person
-article_count: 7
-first_mention: 2025-09-29
+article_count: 11
+first_mention: 2023-12-25
 last_mention: 2026-02-09
 cases: ["NXIVM", "OneTaste", "Jerry Sandusky / Penn State", "Wrongful Convictions"]
 ---
 
 # Hilton Garden Inn
 
-*person · 7 mentions · 2025–2026*
+*person · 11 mentions · 2023–2026*
 
 **Cases:** [[NXIVM — Case File|NXIVM]] · [[OneTaste — Case File|OneTaste]] · [[Jerry Sandusky / Penn State — Case File|Jerry Sandusky / Penn State]] · [[Wrongful Convictions — Case File|Wrongful Convictions]]
 
-**Most connected to:** [[Jerry Sandusky]] (7) · [[John Cleland]] (7) · [[Frank Fina]] (6) · [[State College]] (5) · [[Penn State]] (5) · [[Joe McGettigan]] (4) · [[Joseph Amendola]] (4) · [[Joseph McGettigan]] (4)
+**Most connected to:** [[Jerry Sandusky]] (11) · [[John Cleland]] (11) · [[Frank Fina]] (9) · [[Penn State]] (8) · [[State College]] (7) · [[Joe Amendola]] (6) · [[Joe McGettigan]] (5) · [[Joseph Amendola]] (5)
 
 
 
 ## Articles
+
+- [[Did Jerry Sandusky Get a Fair Trial – The Answer Is ‘No’]]
 
 - [[From Prosecution to Payday How Sandusky’s Prosecutors Gained Control Over a Key Accuser’s $12 Million Fortune]]
 
@@ -25,10 +27,16 @@ cases: ["NXIVM", "OneTaste", "Jerry Sandusky / Penn State", "Wrongful Conviction
 
 - [[Introducing the Crank Report The Frank Report’s AI-Powered Heckler]]
 
+- [[Judge Cleland Caught in Court (Hotel) Caper, as Penn State Perjury Scandal Spirals]]
+
 - [[Pennsylvania Prosecutors Respond to Sandusky PCRA — By Ignoring the Evidence]]
 
 - [[Sandusky Prosecutor Joseph McGettigan Dies as Court Reviews Allegations of His Misconduct; Cause of Death Unkn]]
 
+- [[Sandusky’s Defense Sabotaged The Truth About Judge Cleland’s Secret Motel Meeting]]
+
 - [[The Fastest Railroading in Pennsylvania History The Sandusky Case]]
 
 - [[The Secret Hilton Meeting That Changed the Sandusky Case]]
+
+- [[Was Justice Served Inside the Record-Breaking Speed of Sandusky’s Trial]]

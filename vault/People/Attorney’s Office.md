@@ -4,14 +4,14 @@ type: person
 article_count: 7
 first_mention: 2025-07-11
 last_mention: 2026-05-28
-cases: ["NXIVM"]
+cases: ["NXIVM", "Juan Orlando Hernandez / Honduras"]
 ---
 
 # Attorney’s Office
 
 *person · 7 mentions · 2025–2026*
 
-**Cases:** [[NXIVM — Case File|NXIVM]]
+**Cases:** [[NXIVM — Case File|NXIVM]] · [[Juan Orlando Hernandez / Honduras — Case File|Juan Orlando Hernandez / Honduras]]
 
 **Most connected to:** [[United States]] (4) · [[Biden]] (3) · [[Donald Trump]] (3) · [[Department of Justice]] (2) · [[San Francisco]] (2) · [[Northern District of California]] (2) · [[David Duong]] (2) · [[Sheng Thao]] (2)
 

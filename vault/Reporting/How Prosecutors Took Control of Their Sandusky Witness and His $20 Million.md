@@ -41,8 +41,6 @@ The jury heard it. McGettigan moved on.
 
 ## **The Referral Pipeline**
 
-Paden got the biggest settlement and the least control
-
 During or immediately after the criminal prosecution, McGettigan referred Paden to civil attorney Dennis McAndrews. McAndrews referred Paden to civil attorney Stephen Raynes. On April 28, 2015, Penn State paid Paden $20 million.
 
 McGettigan left the Attorney General’s Office on April 11, 2013 — less than a year after the June 2012 conviction — and joined McAndrews Law Offices in Berwyn, Pennsylvania.
@@ -60,8 +58,6 @@ McAndrews then imposed a gag. “Because the settlement is highly confidential, 
 Marie had no independent counsel. She did not understand the trust structure — “not sure what to do next with it,” she wrote. She told McAndrews: “I do trust whatever you did to set things up.”
 
 ## **The Protective Committee**
-
-They had something in mind and it was not justice
 
 Paden’s trust was controlled by a Trust Protective Committee, which had veto power over all distributions exceeding $100,000 per year. Committee members could not be removed without a court order. They received a guaranteed minimum of $5,000 per year, plus hourly compensation and expense reimbursements paid from Paden’s trust.
 
@@ -119,8 +115,6 @@ Marie was now entirely cut off from him.
 
 ## **What the Judge Didn’t See**
 
-The judge chose not to look at the witness in the trap
-
 Judge Maureen Skerda dismissed Sandusky’s PCRA petition on February 27, 2026, without the Rule 907 notice required by Pennsylvania criminal procedure. The financial evidence detailed here was being prepared for inclusion in an amended petition at the time of dismissal.
 
 The financial trap was not trial evidence. It was the mechanism used to prevent post-trial evidence — recantations — from reaching the court. That is the definition of governmental interference.
@@ -137,4 +131,4 @@ See also: [The 25 Minutes That Could Free Jerry Sandusky](https://frankreport.c
 
 **Author:** [[Frank Parlato]]
 
-**Mentions:** [[Jerry Sandusky]] · [[Frank Fina]] · [[Penn State]] · [[Senior Deputy Attorney General]] · [[Joseph McGettigan]] · [[Dennis McAndrews]] · [[Sebastian Paden]] · [[Stephen Raynes]] · [[Trust Protective Committee]] · [[Gay Warren]] · [[Chris Malanga]]
+**Mentions:** [[Jerry Sandusky]] · [[Frank Fina]] · [[Penn State]] · [[Senior Deputy Attorney General]] · [[Joseph McGettigan]] · [[Dennis McAndrews]] · [[Maureen Skerda]] · [[Sebastian Paden]] · [[Stephen Raynes]] · [[Trust Protective Committee]] · [[Gay Warren]] · [[Chris Malanga]]

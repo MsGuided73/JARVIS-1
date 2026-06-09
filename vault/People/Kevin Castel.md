@@ -5,6 +5,7 @@ aliases: ["Castel"]
 article_count: 5
 first_mention: 2026-05-05
 last_mention: 2026-05-28
+cases: ["Juan Orlando Hernandez / Honduras"]
 ---
 
 # Kevin Castel
@@ -12,6 +13,8 @@ last_mention: 2026-05-28
 *person · 5 mentions · 2026*
 
 **Also known as:** Castel
+
+**Cases:** [[Juan Orlando Hernandez / Honduras — Case File|Juan Orlando Hernandez / Honduras]]
 
 **Most connected to:** [[Biden]] (5) · [[Donald Trump]] (5) · [[Honduran President Juan Orlando]] (5) · [[Biden Department of Justice]] (4) · [[Juan Orlando Hern]] (4) · [[Southern District of New York]] (4) · [[United States]] (3) · [[ARTVOICE ART]] (3)
 

@@ -795,4 +795,4 @@ Let the animals stay.
 
 **Author:** [[Frank Parlato]]
 
-**Mentions:** [[United States]] · [[Los Angeles]] · [[Donald Trump]] · [[DELTA Rescue]] · [[Leo Grillo]] · [[Adriana Duarte Valentines]] · [[Social Security]] · [[Jorge Avalos]] · [[Adriana Duarte]] · [[Kristin Escalante]] · [[Your Honor]]
+**Mentions:** [[United States]] · [[Los Angeles]] · [[Donald Trump]] · [[DELTA Rescue]] · [[Leo Grillo]] · [[Los Angeles County]] · [[Adriana Duarte Valentines]] · [[Social Security]] · [[Jorge Avalos]] · [[Adriana Duarte]] · [[Kristin Escalante]] · [[Your Honor]]

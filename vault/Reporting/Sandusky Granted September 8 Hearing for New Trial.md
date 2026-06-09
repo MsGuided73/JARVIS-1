@@ -81,6 +81,6 @@ On September 8, the long season of looking away comes to an end. The judge will 
 
 **Author:** [[Frank Parlato]]
 
-**Mentions:** [[Frank Parlato]] · [[Senior Judge Maureen Skerda]] · [[Ryan Rittmeyer]] · [[Jerry Sandusky]] · [[Jasmine Rittmeyer]] · [[Frank Fina]] · [[Sabastian Paden]]
+**Mentions:** [[Frank Parlato]] · [[Skerda]] · [[Ryan Rittmeyer]] · [[Jerry Sandusky]] · [[Laurel Highlands]] · [[Elizabeth Loftus]] · [[Jasmine Rittmeyer]] · [[Frank Fina]] · [[Sabastian Paden]]
 
 **Related:** [[How Prosecutors Took Control of Their Sandusky Witness and His $20 Million]]

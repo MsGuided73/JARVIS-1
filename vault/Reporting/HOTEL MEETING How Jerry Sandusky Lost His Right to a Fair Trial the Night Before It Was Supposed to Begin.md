@@ -47,8 +47,6 @@ Joseph McGettigan — lead prosecutor
 
 Frank Fina — senior prosecutor
 
-Prosecutors Frank Fina and the late Joseph McGettigan
-
 Jonelle Eshbach — prosecutor
 
 Joseph Amendola — Sandusky’s lead defense attorney
@@ -57,12 +55,8 @@ Defense Attorney Joe Amendola
 
 The District Magistrate Judge Robert E. Scott
 
-District Magistrate Judge Robert E. Scott
-
 **Absent:**
 Sandusky — the defendant.
-
-Jerry Sandusky
 
 Also abent was Karl Rominger, Sandusky’s co-counsel and an advocate for preliminary hearings. Rominger had written on the subject, arguing that defendants should never waive this critical right.
 
@@ -139,4 +133,4 @@ Judge Cleland may be ahead of his time. Why conduct hearings in a courtroom when
 
 **Author:** [[Frank Parlato]]
 
-**Mentions:** [[Jerry Sandusky]] · [[Frank Fina]] · [[Penn State]] · [[Joseph McGettigan]] · [[John Cleland]] · [[John]] · [[State College]] · [[Hilton Garden Inn]] · [[Joseph Amendola]] · [[Prosecutors Frank Fina]]
+**Mentions:** [[Jerry Sandusky]] · [[Frank Fina]] · [[Penn State]] · [[Joseph McGettigan]] · [[John Cleland]] · [[John]] · [[State College]] · [[Hilton Garden Inn]] · [[Joseph Amendola]] · [[Karl Rominger]] · [[Jonelle Eshbach]] · [[If Sandusky]]

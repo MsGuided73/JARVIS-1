@@ -25,8 +25,6 @@ His testimony helped convict Sandusky on 45 counts. Lead prosecutor Joseph McGet
 
 Three years later, Penn State paid Paden $20 million.
 
-Sabastian Paden
-
 Today, Paden cannot access that money without permission from two people: Frank Fina, the prosecutor who helped build the case against Sandusky, and Gay Warren, McGettigan’s longtime partner.
 
 This is not a metaphor. This is the actual legal structure governing Paden’s settlement.
@@ -145,8 +143,6 @@ These behaviors, which the prosecution implicitly attributed to Sandusky’s abu
 
 While still a Deputy Attorney General, McGettigan introduced Paden and his mother to civil attorney Dennis McAndrews.
 
-Attorney Dennis McAndrews
-
 Within weeks of conviction, attorney Stephen Raynes — working with McAndrews — filed a notice of claim against Penn State on Paden’s behalf.
 
 Thirty-five days after conviction, Paden signed a predatory loan agreement with US Claims, borrowing $50,000 against his future settlement at approximately 27% annual interest with monthly compounding. According to Marie, he ultimately borrowed “hundreds of thousands of dollars” at rates that more than doubled the principal.
@@ -243,4 +239,4 @@ Jerry Sandusky
 
 **Author:** [[Frank Parlato]]
 
-**Mentions:** [[Ryan Rittmeyer]] · [[Jerry Sandusky]] · [[Frank Fina]] · [[Sabastian Paden]] · [[Penn State]] · [[Aaron Fisher]] · [[General]] · [[Senior Deputy Attorney General]] · [[Joseph McGettigan]] · [[Dennis McAndrews]] · [[US Claims]] · [[Stephen Raynes]] · [[Trust Protective Committee]] · [[Gay Warren]] · [[Chris Malanga]] · [[Post-Conviction Relief Act]] · [[Prosecutors Frank Fina]] · [[Lauren Cliggitt]]
+**Mentions:** [[Ryan Rittmeyer]] · [[Jerry Sandusky]] · [[Frank Fina]] · [[Sabastian Paden]] · [[Penn State]] · [[Aaron Fisher]] · [[General]] · [[Senior Deputy Attorney General]] · [[Joseph McGettigan]] · [[Dennis McAndrews]] · [[US Claims]] · [[Stephen Raynes]] · [[Trust Protective Committee]] · [[Gay Warren]] · [[Chris Malanga]] · [[Post-Conviction Relief Act]] · [[Youth Services]] · [[Prosecutors Frank Fina]] · [[Lauren Cliggitt]]

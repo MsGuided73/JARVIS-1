@@ -83,4 +83,4 @@ This is the first installment in a Frank Report series on the DELTA Rescue bankr
 
 **Author:** [[Frank Parlato]]
 
-**Mentions:** [[Los Angeles]] · [[Frank Report]] · [[DELTA Rescue]] · [[Leo Grillo]] · [[Santa Monica]] · [[United States Bankruptcy Court]] · [[ARTVOICE ART]]
+**Mentions:** [[Los Angeles]] · [[Frank Report]] · [[DELTA Rescue]] · [[Leo Grillo]] · [[Santa Monica]] · [[Los Angeles County]] · [[United States Bankruptcy Court]] · [[ARTVOICE ART]]

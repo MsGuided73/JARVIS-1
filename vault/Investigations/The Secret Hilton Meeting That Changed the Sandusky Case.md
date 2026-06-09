@@ -140,4 +140,4 @@ The propriety of that meeting was later raised in one of Sandusky’s appeals. B
 
 **Author:** [[Frank Parlato]]
 
-**Mentions:** [[Jerry Sandusky]] · [[Frank Fina]] · [[Penn State]] · [[Joe Amendola]] · [[Joe McGettigan]] · [[Joseph McGettigan]] · [[John Cleland]] · [[Your Honor]] · [[State College]] · [[Hilton Garden Inn]] · [[Harvey Weinstein]] · [[Prosecutors Frank Fina]]
+**Mentions:** [[Jerry Sandusky]] · [[Elizabeth Loftus]] · [[Frank Fina]] · [[Penn State]] · [[Joe Amendola]] · [[Joe McGettigan]] · [[Joseph McGettigan]] · [[John Cleland]] · [[Bill Cosby]] · [[Your Honor]] · [[State College]] · [[Hilton Garden Inn]] · [[Harvey Weinstein]] · [[Prosecutors Frank Fina]]

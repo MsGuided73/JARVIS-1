@@ -125,4 +125,4 @@ As does the official cover up at Penn State.
 
 **Author:** [[Ralph Cipriano]]
 
-**Mentions:** [[Frank Parlato]] · [[Senior Judge Maureen Skerda]] · [[Ryan Rittmeyer]] · [[Jerry Sandusky]] · [[Jasmine Rittmeyer]] · [[Frank Fina]] · [[Sabastian Paden]] · [[Penn State]] · [[Joe Paterno]] · [[Joe McGettigan]] · [[Joseph McGettigan]] · [[Victim No]] · [[Dennis McAndrews]] · [[Bryn Mawr]] · [[US Claims]] · [[Trust Protective Committee]] · [[Gay Warren]] · [[Post-Conviction Relief Act]]
+**Mentions:** [[Frank Parlato]] · [[Skerda]] · [[Ryan Rittmeyer]] · [[Jerry Sandusky]] · [[Jasmine Rittmeyer]] · [[Frank Fina]] · [[Sabastian Paden]] · [[Penn State]] · [[Joe Paterno]] · [[Joe McGettigan]] · [[Senior Judge Maureen Skerda]] · [[Joseph McGettigan]] · [[Victim No]] · [[Dennis McAndrews]] · [[Bryn Mawr]] · [[US Claims]] · [[Trust Protective Committee]] · [[Gay Warren]] · [[Post-Conviction Relief Act]] · [[Christopher Barden]]

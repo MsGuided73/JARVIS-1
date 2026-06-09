@@ -79,4 +79,4 @@ To be continued…
 
 **Author:** [[Frank Parlato]]
 
-**Mentions:** [[Jerry Sandusky]] · [[Penn State]] · [[Aaron Fisher]] · [[Sebastian Paden]]
+**Mentions:** [[Jerry Sandusky]] · [[Penn State]] · [[Dottie Sandusky]] · [[Aaron Fisher]] · [[Sebastian Paden]]

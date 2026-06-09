@@ -21,8 +21,6 @@ wpId: 262675
 
 Two prosecutors in Centre County, Pennsylvania — Frank Fina and the late Joe McGettigan — didn’t just control the narrative around Jerry Sandusky’s conviction. They controlled the money. [Sabastian Paden TRUST](https://frankreport.com/wp-content/uploads/2025/09/Sebastian-Paden-TRUST.pdf)
 
-Prosecutors Frank Fina and the late Joseph McGettigan
-
 A seven-figure trust fund established for one of the eight accusers, a man named Sabastian Paden, is under the direct management of Fina and McGettigan’s widow. Paden doesn’t know how much money is in his trust. He has no say over it. He was moved to Colorado, where he rents a home from the trust they administer.
 
 Sabastian Paden’s story, though fictitious, won him a $20 million trust from Penn State, but he does not control it
@@ -40,8 +38,6 @@ We’re not talking about an eight-year-old child. We’re talking about a 13-, 
 There is another accuser, Ryan Rittmeyer, who has now stated:
 “Joe McGettigan and Frank Fina coached me every inch of the way. They told me to remember things I didn’t remember. They said it’s okay to testify to things I didn’t remember because it probably happened.”
 
-Ryan Rittmeyer
-
 This is not an allegation against Sandusky. It is an allegation against the state.
 
 Prosecutors told a witness it was acceptable to testify under oath to events he could not recall, on the theory that the abuse “probably happened.”
@@ -49,8 +45,6 @@ Prosecutors told a witness it was acceptable to testify under oath to events he 
 ## The McQueary Lie That Destroyed Everything
 
 Consider the stupendous irony at the center of this case. The single event that made Jerry Sandusky notorious — the allegation, driven by assistant coach Mike, that Sandusky raped a young boy in a Penn State shower — was the one charge the jury rejected outright.
-
-Penn State assistant football coach Mike McQueary.
 
 They acquitted him on the McQueary counts because the testimony was so palpably false that even a jury predisposed to convict wouldn’t buy it. The one thing that destroyed Sandusky, that killed Joe Paterno, that sent Penn State president Graham Spanier to jail, that triggered the NCAA’s nuclear threat against Penn State football — was a lie. The jury said so.
 
@@ -88,8 +82,6 @@ The defense has filed a response dismantling every one of the Commonwealth’s a
 
 Jerry Sandusky sits in a Pennsylvania prison. He has been there for over a decade. The big media event that put him there, the shower allegation, was rejected by his own jury. The other testimony that convicted him was built on repressed memory therapy that was never subjected to scientific challenge because his own lawyer waived that right in a hotel room.
 
-Jerry Sandusky
-
 The prosecutors who put him away — Fina and McGettigan took control of millions of dollars in trust funds meant for the accusers. And at least one of those accusers says every word was coached.
 This is not justice. This is Pennsylvania.
 
@@ -99,4 +91,4 @@ This is not justice. This is Pennsylvania.
 
 **Author:** [[Frank Parlato]]
 
-**Mentions:** [[Ryan Rittmeyer]] · [[Jerry Sandusky]] · [[Frank Fina]] · [[Sabastian Paden]] · [[Penn State]] · [[Mike McQueary]] · [[Joe Paterno]] · [[Joe Amendola]] · [[Centre County]] · [[Joe McGettigan]] · [[Joseph McGettigan]] · [[Post-Conviction Relief Act]]
+**Mentions:** [[Ryan Rittmeyer]] · [[Jerry Sandusky]] · [[Frank Fina]] · [[Sabastian Paden]] · [[Penn State]] · [[Joe Paterno]] · [[Joe Amendola]] · [[Centre County]] · [[Joe McGettigan]] · [[Post-Conviction Relief Act]] · [[Graham Spanier]]

@@ -97,4 +97,4 @@ Hernández’s innocence was irrelevant.
 
 **Author:** [[Frank Parlato]]
 
-**Mentions:** [[Biden]] · [[Donald Trump]] · [[Southern District of New York]] · [[Honduran President Juan Orlando]] · [[Biden Department of Justice]] · [[Kevin Castel]] · [[Juan Orlando Hern]] · [[Alexander Ard]] · [[El Para]] · [[Department of Justice]] · [[State Department]] · [[Department of Defense]]
+**Mentions:** [[Biden]] · [[Donald Trump]] · [[Southern District of New York]] · [[Honduran President Juan Orlando]] · [[Biden Department of Justice]] · [[Juan Orlando Hern]] · [[Kevin Castel]] · [[Alexander Ard]] · [[El Para]] · [[Department of Justice]] · [[State Department]] · [[Department of Defense]]

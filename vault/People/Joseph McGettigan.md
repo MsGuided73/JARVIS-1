@@ -1,25 +1,33 @@
 ---
 title: "Joseph McGettigan"
 type: person
-article_count: 18
-first_mention: 2025-06-24
+article_count: 23
+first_mention: 2023-12-15
 last_mention: 2026-04-23
 cases: ["Jerry Sandusky / Penn State", "Wrongful Convictions"]
 ---
 
 # Joseph McGettigan
 
-*person · 18 mentions · 2025–2026*
+*person · 23 mentions · 2023–2026*
 
 **Cases:** [[Jerry Sandusky / Penn State — Case File|Jerry Sandusky / Penn State]] · [[Wrongful Convictions — Case File|Wrongful Convictions]]
 
-**Most connected to:** [[Jerry Sandusky]] (18) · [[Frank Fina]] (16) · [[Penn State]] (15) · [[Ryan Rittmeyer]] (12) · [[Sabastian Paden]] (10) · [[Joe McGettigan]] (9) · [[Dennis McAndrews]] (9) · [[Trust Protective Committee]] (9)
+**Most connected to:** [[Jerry Sandusky]] (23) · [[Penn State]] (20) · [[Frank Fina]] (18) · [[Ryan Rittmeyer]] (14) · [[Sabastian Paden]] (11) · [[Aaron Fisher]] (11) · [[Joe McGettigan]] (10) · [[John Cleland]] (10)
 
 
 
 ## Articles
 
 - [[A Conviction Built on Recovered Memories An Overview of the Sandusky Case]]
+
+- [[Best ‘One-Stop’ Explanation of the False Conviction of Jerry Sandusky by Frederick Crews The House of Cards]]
+
+- [[Changing Claims Shubin ‘Amplified’ Accusers Stories in Sandusky Case]]
+
+- [[Frederick Crews A Shower of Lies Spanier, Sandusky, and the Mess at Penn State]]
+
+- [[Frederick Crews Saint Sandusky]]
 
 - [[From Prosecution to Payday How Sandusky’s Prosecutors Gained Control Over a Key Accuser’s $12 Million Fortune]]
 
@@ -35,7 +43,11 @@ cases: ["Jerry Sandusky / Penn State", "Wrongful Convictions"]
 
 - [[Letby and Sandusky Two Monsters or Two Martyrs of the Media Age]]
 
+- [[Questioning Millionaire Victims Doubts Arise in Sandusky Trial]]
+
 - [[SANDUSKY INVESTIGATION The First Prosecutors in American History to Directly Profit From Their Own Conviction]]
+
+- [[Sandusky False Accuser Ryan Rittmeyer Leaves a Trail of Victims Behind – Part 1]]
 
 - [[Sandusky Judge Forced to Reverse Herself]]
 
@@ -44,8 +56,6 @@ cases: ["Jerry Sandusky / Penn State", "Wrongful Convictions"]
 - [[Skerda Won’t Look at the $12 Million Witness]]
 
 - [[The 25 Minutes That Could Free Jerry Sandusky]]
-
-- [[The Prosecutors Who Convicted Jerry Sandusky Control Millions Meant for His Accuser]]
 
 - [[The Sandusky Prosecutors Built a Trap — And Put Their Star Witness Inside It]]
 

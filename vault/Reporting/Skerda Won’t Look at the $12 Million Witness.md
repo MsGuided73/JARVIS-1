@@ -74,8 +74,6 @@ With a $10-12 million settlement locked inside a trust — and the prosecutors o
 
 ## **The Testimony That Doesn’t Hold Together**
 
-Paden
-
 By the time he got to the stand, Paden, 18, testified that Sandusky anally raped him over three to four years, beginning around age 13. He said it caused him to bleed. He never sought medical attention.
 
 He screamed during the abuse. Jerry Sandusky’s wife, Dottie, was upstairs. “I think the basement is soundproof,” Paden told the jury. “I don’t know. It’s a big basement.”
@@ -194,4 +192,4 @@ Maureen Skerda is protecting the conviction and the corrupt prosecutors who prod
 
 **Author:** [[Frank Parlato]]
 
-**Mentions:** [[Senior Judge Maureen Skerda]] · [[Jerry Sandusky]] · [[Frank Fina]] · [[Sabastian Paden]] · [[Joe McGettigan]] · [[Joseph McGettigan]] · [[US Claims]] · [[Sebastian Paden]] · [[Trust Protective Committee]] · [[Gay Warren]]
+**Mentions:** [[Skerda]] · [[Jerry Sandusky]] · [[Frank Fina]] · [[Sabastian Paden]] · [[Joe McGettigan]] · [[Senior Judge Maureen Skerda]] · [[Joseph McGettigan]] · [[US Claims]] · [[Sebastian Paden]] · [[Trust Protective Committee]] · [[Gay Warren]]

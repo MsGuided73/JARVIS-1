@@ -120,8 +120,6 @@ The rules that protect every other defendant did not apply to Jerry Sandusky.
 
 ## **The Meeting That Sealed It**
 
-Jerry Sandusky right after the conviction in his mega-fast trial.
-
 Everything has an origin. For Sandusky, it was not the indictment. It was not the media frenzy. It was a hotel.
 
 On December 12, 2011—five weeks after his arrest—a meeting took place at the Hilton Garden Inn in State College, Pennsylvania. Present were Judge John Cleland, senior prosecutor Frank Fina, lead prosecutor Joe McGettigan, and Sandusky defense attorney Joseph Amendola.
@@ -162,11 +160,7 @@ Judges should not decide guilt in advance. In fact, they should not decide guilt
 
 When a judge, prosecutors, and defense counsel meet in secret to waive rights and impose a schedule that the defendant cannot survive, the Sixth Amendment is forfeited.
 
-Judge John Cleland; he laughed all the way to the conviction.
-
 ## **The Recusal**
-
-Hilton Garden Inn
 
 Four years later, Sandusky’s post-conviction counsel discovered the hotel meeting. They raised it in PCRA proceedings. They included a footnote renewing the request that Cleland recuse.
 
@@ -206,12 +200,10 @@ But this was Jerry Sandusky.
 
 And the hotel meeting is where the fix went in.
 
-Jerry Sandusky
-
 ---
 
 **Categories:** [[Sandusky]]
 
 **Author:** [[Frank Parlato]]
 
-**Mentions:** [[Jerry Sandusky]] · [[Frank Fina]] · [[Penn State]] · [[Joe Paterno]] · [[Second Mile]] · [[Joe McGettigan]] · [[Keith Raniere]] · [[John Cleland]] · [[Sixth Amendment]] · [[State College]] · [[Hilton Garden Inn]] · [[Joseph Amendola]]
+**Mentions:** [[Jerry Sandusky]] · [[Frank Fina]] · [[Penn State]] · [[Joe Paterno]] · [[Pennsylvania Attorney General]] · [[Second Mile]] · [[Joe McGettigan]] · [[Keith Raniere]] · [[John Cleland]] · [[Sixth Amendment]] · [[State College]] · [[Hilton Garden Inn]] · [[Joseph Amendola]] · [[Karl Rominger]]

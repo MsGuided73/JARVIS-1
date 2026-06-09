@@ -50,8 +50,6 @@ The PA Attorney General’s Office wrote an indictment alleging Mike McQueary wi
 
 The alleged victim in that shower incident, a man named Allan Myers, came forward *before the trial* to swear under oath that Sandusky had never abused him. To prevent the jury from hearing this, prosecutors colluded with Myers’ civil attorney, Andrew Shubin, to hide Myers during the trial.
 
-Allan Myers with Jerry Sandusky.
-
 For his silence, Myers was later paid a $6.9 million settlement.
 
 This isn’t just a question of unreliable memory; it is direct evidence of a system incentivizing accusations and suppressing exonerating evidence.
@@ -68,4 +66,4 @@ Sandusky remains in the State Correctional Institution at Laurel Highlands in So
 
 **Author:** [[Frank Parlato]]
 
-**Mentions:** [[Donald Trump]] · [[Jerry Sandusky]] · [[Allan Myers]] · [[Penn State]] · [[Mike McQueary]] · [[Jeffrey Epstein]] · [[Andrew Shubin]]
+**Mentions:** [[Donald Trump]] · [[Jerry Sandusky]] · [[Laurel Highlands]] · [[Allan Myers]] · [[Penn State]] · [[Mike McQueary]] · [[Jeffrey Epstein]] · [[Andrew Shubin]]

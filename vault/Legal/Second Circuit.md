@@ -4,14 +4,14 @@ type: court / legal
 article_count: 9
 first_mention: 2025-07-16
 last_mention: 2026-05-28
-cases: ["NXIVM", "OneTaste", "Family Court / Parental Alienation"]
+cases: ["NXIVM", "OneTaste", "Juan Orlando Hernandez / Honduras", "Family Court / Parental Alienation"]
 ---
 
 # Second Circuit
 
 *court / legal · 9 mentions · 2025–2026*
 
-**Cases:** [[NXIVM — Case File|NXIVM]] · [[OneTaste — Case File|OneTaste]] · [[Family Court / Parental Alienation — Case File|Family Court / Parental Alienation]]
+**Cases:** [[NXIVM — Case File|NXIVM]] · [[OneTaste — Case File|OneTaste]] · [[Juan Orlando Hernandez / Honduras — Case File|Juan Orlando Hernandez / Honduras]] · [[Family Court / Parental Alienation — Case File|Family Court / Parental Alienation]]
 
 **Most connected to:** [[United States]] (5) · [[NXIVM]] (5) · [[Donald Trump]] (4) · [[Rachel Cherwitz]] (4) · [[Keith Raniere]] (4) · [[Biden]] (3) · [[White House]] (3) · [[Nicole Daedone]] (3)
 

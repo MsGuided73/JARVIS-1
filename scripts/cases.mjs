@@ -67,6 +67,15 @@ export const CASES = [
     entities: ['Jerry Sandusky', 'Penn State', 'Second Mile', 'Joe Paterno', 'Aaron Fisher'],
   },
   {
+    // No dedicated FrankReport category — this is a title-defined series
+    // ("The Framing of Honduran President Juan Orlando Hernández"), so match on
+    // the title. Accent-insensitive, so "Hernandez" and "Hernández" both hit.
+    name: 'Juan Orlando Hernandez / Honduras',
+    categories: [],
+    titles: ['juan orlando hernandez', 'honduran president juan orlando', 'show trial of juan orlando'],
+    entities: ['Juan Orlando Hernández', 'Juan Orlando Hernandez', 'Tony Hernandez'],
+  },
+  {
     name: 'Wrongful Convictions',
     categories: ['Wrongful Convictions'],
     entities: [],
@@ -78,18 +87,26 @@ export const CASES = [
   },
 ]
 
+// Accent-insensitive lowercasing so "Hernández" matches "hernandez".
+const norm = (s) => String(s || '').normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase()
+
 // How does an article match a case? 'category' is high-confidence (the whole
-// article is filed under the case); 'entity' is weaker (the article merely
-// mentions a case figure). null = no match. Used to gate timeline precision.
-export function caseMatchKind(caseDef, categoryNames, entityNames) {
+// article is filed under the case OR its title names the case); 'entity' is
+// weaker (the article merely mentions a case figure). null = no match. Used to
+// gate timeline precision.
+export function caseMatchKind(caseDef, categoryNames, entityNames, title = '') {
   for (const c of categoryNames) if (caseDef.categories.includes(c)) return 'category'
+  if (caseDef.titles?.length) {
+    const t = norm(title)
+    if (caseDef.titles.some((s) => t.includes(norm(s)))) return 'category'
+  }
   for (const e of entityNames) if (caseDef.entities.includes(e)) return 'entity'
   return null
 }
 
 // Does an article belong to this case?
-export function articleInCase(caseDef, categoryNames, entityNames) {
-  return caseMatchKind(caseDef, categoryNames, entityNames) !== null
+export function articleInCase(caseDef, categoryNames, entityNames, title = '') {
+  return caseMatchKind(caseDef, categoryNames, entityNames, title) !== null
 }
 
 // Lowercased phrases that signal a sentence is about this case. Used to keep
@@ -105,6 +122,7 @@ export function caseKeywords(caseDef) {
     if (surname && surname.length >= 4) kw.add(surname)
   }
   for (const c of caseDef.categories) kw.add(c.toLowerCase())
+  for (const t of caseDef.titles || []) kw.add(norm(t))
   for (const tok of caseDef.name.toLowerCase().split(/[\s/]+/)) {
     if (tok.length >= 4) kw.add(tok)
   }

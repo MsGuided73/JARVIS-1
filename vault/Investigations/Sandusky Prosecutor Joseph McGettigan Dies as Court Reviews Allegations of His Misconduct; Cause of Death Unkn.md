@@ -35,8 +35,6 @@ The jury convicted Sandusky on 45 of 48 counts. Obituaries described McGettigan 
 
 On April 16, 2015—three years after the conviction of Sandusky—a trust was established for Sebastian Paden, “Victim 9” in the Sandusky trial. Paden had received a $20 million civil settlement from Pennsylvania State University.
 
-Sabastian Paden
-
 According to the trust document attached to the September 2025 PCRA petition, the trust vested authority in a three-member Trust Protective Committee. Its powers included approval or veto of any distribution exceeding $100,000 and the authority to remove and replace the corporate trustee for any reason. Each committee member was entitled to annual compensation, plus hourly professional fees, to be paid from the trust.
 
 They were:
@@ -52,8 +50,6 @@ The arrangement placed the prosecution team in control over the financial indepe
 
 Less than five weeks after Jerry Sandusky was convicted, Sebastian Paden entered into high-interest loans that were routed through lawyers McGettigan had directed him to. It began with Paden taking a $50,000 advance from US Claims at a 27 percent interest rate. By the time Penn State finalized its settlement in April 2015, the debt had grown to more than $104,000. The paperwork shows that the agreement was sent directly to Paden’s civil lawyer, Stephen Raynes, before any settlement was reached.
 
-Attorney Stephen Raynes
-
 It is unknown whether, and to what extent, McGettigan received referral fees for arranging the loan.
 Paden had approximately $12 million remaining in his trust, yet McGettigan only permitted him to live on $52,000 to $78,000 per year—well under 1% of his own funds. His funds were frozen, and major expenditures required approval from a committee that included two individuals affiliated with the prosecution, who were paid to restrict his access.
 
@@ -64,8 +60,6 @@ Paden was rich on paper. In practice, the prosecutors whom his mother said helpe
 ### From Prosecutor to Private Practice: A Revealing Timeline
 
 During the Sandusky case, McGettigan directed Paden to civil lawyer Dennis McAndrews. McAndrews’ firm handled the trust and then sent the case to civil attorney Stephen Raynes. Raynes later secured a $20 million settlement from Penn State. In 2013, McGettigan left the Attorney General’s Office and joined McAndrews Law Offices.
-
-Attorney Dennis McAndrews
 
 ### The Mother Who Swears Her Son Was Coached
 
@@ -107,8 +101,6 @@ He describes a six-hour pretrial meeting in which he was kept in a small office,
 At trial, Rittmeyer described Sandusky demanding oral sex in a “silver convertible.” The jury was never told Sandusky never owned a convertible.
 
 ### The Off-the-Record Meeting
-
-They met in a conference room at a hotel instead of a courtroom. This way they could keep nice and quiet.
 
 On December 12, 2011—the night before Jerry Sandusky’s scheduled preliminary hearing—prosecutors Joseph McGettigan and Frank Fina met privately with defense attorney Joseph Amendola at a Hilton Garden Inn. Judge John Cleland was present. Sandusky was not. There was no court reporter.
 
@@ -154,4 +146,4 @@ Jerry Sandusky, now 81, is serving his 13th year of a 30-to-60-year sentence at 
 
 **Author:** [[Frank Parlato]]
 
-**Mentions:** [[Ryan Rittmeyer]] · [[Jerry Sandusky]] · [[Frank Fina]] · [[Penn State]] · [[Aaron Fisher]] · [[Joseph McGettigan]] · [[Dennis McAndrews]] · [[US Claims]] · [[Sebastian Paden]] · [[Stephen Raynes]] · [[Trust Protective Committee]] · [[Gay Warren]] · [[Post-Conviction Relief Act]] · [[John Cleland]] · [[Hilton Garden Inn]] · [[Joseph Amendola]] · [[Prosecutors Frank Fina]] · [[Lauren Cliggitt]]
+**Mentions:** [[Ryan Rittmeyer]] · [[Jerry Sandusky]] · [[Frank Fina]] · [[Penn State]] · [[Aaron Fisher]] · [[Joseph McGettigan]] · [[Dennis McAndrews]] · [[US Claims]] · [[Sebastian Paden]] · [[Stephen Raynes]] · [[Trust Protective Committee]] · [[Gay Warren]] · [[Post-Conviction Relief Act]] · [[Penn State University]] · [[John Cleland]] · [[Hilton Garden Inn]] · [[Joseph Amendola]] · [[Prosecutors Frank Fina]] · [[Lauren Cliggitt]] · [[Jim Calhoun]]

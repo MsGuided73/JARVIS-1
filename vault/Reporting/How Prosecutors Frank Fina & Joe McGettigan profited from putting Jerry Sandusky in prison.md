@@ -205,4 +205,4 @@ Nor did any accuser who claimed that Sandusky had engaged them in high-risk sexu
 
 **Author:** [[Guest View]]
 
-**Mentions:** [[Frank Parlato]] · [[Ryan Rittmeyer]] · [[Jerry Sandusky]] · [[Frank Fina]] · [[Sabastian Paden]] · [[Supreme Court]] · [[Penn State]] · [[Joe Paterno]] · [[Joe McGettigan]] · [[Andrew Salemme]] · [[Joseph McGettigan]] · [[Victim No]] · [[Dennis McAndrews]] · [[Bryn Mawr]] · [[US Claims]] · [[Stephen Raynes]] · [[Trust Protective Committee]] · [[Gay Warren]] · [[Chris Malanga]] · [[Post-Conviction Relief Act]] · [[Michael Gillum]] · [[Lauren Cliggitt]]
+**Mentions:** [[Frank Parlato]] · [[Ryan Rittmeyer]] · [[Jerry Sandusky]] · [[Frank Fina]] · [[Sabastian Paden]] · [[Supreme Court]] · [[Penn State]] · [[Joe Paterno]] · [[Joe McGettigan]] · [[Andrew Salemme]] · [[Joseph McGettigan]] · [[Victim No]] · [[Dennis McAndrews]] · [[Bryn Mawr]] · [[US Claims]] · [[Stephen Raynes]] · [[Trust Protective Committee]] · [[Gay Warren]] · [[Chris Malanga]] · [[Post-Conviction Relief Act]] · [[Michael Gillum]] · [[Lauren Cliggitt]] · [[Ralph Cipriano]] · [[Cynthia Baldwin]]

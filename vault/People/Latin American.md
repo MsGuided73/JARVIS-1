@@ -4,11 +4,14 @@ type: person
 article_count: 4
 first_mention: 2026-04-08
 last_mention: 2026-06-06
+cases: ["Juan Orlando Hernandez / Honduras"]
 ---
 
 # Latin American
 
 *person · 4 mentions · 2026*
+
+**Cases:** [[Juan Orlando Hernandez / Honduras — Case File|Juan Orlando Hernandez / Honduras]]
 
 **Most connected to:** [[United States]] (4) · [[Donald Trump]] (4) · [[Frank Report]] (2) · [[Williams Cancer Institute]] (2) · [[Jason Williams]] (2) · [[Biden]] (2) · [[ARTVOICE ART]] (2) · [[Juan Orlando Hern]] (2)
 

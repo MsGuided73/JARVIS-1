@@ -4,16 +4,16 @@ type: court / legal
 article_count: 15
 first_mention: 2025-07-24
 last_mention: 2026-06-04
-cases: ["NXIVM", "OneTaste"]
+cases: ["NXIVM", "OneTaste", "Juan Orlando Hernandez / Honduras"]
 ---
 
 # Southern District of New York
 
 *court / legal · 15 mentions · 2025–2026*
 
-**Cases:** [[NXIVM — Case File|NXIVM]] · [[OneTaste — Case File|OneTaste]]
+**Cases:** [[NXIVM — Case File|NXIVM]] · [[OneTaste — Case File|OneTaste]] · [[Juan Orlando Hernandez / Honduras — Case File|Juan Orlando Hernandez / Honduras]]
 
-**Most connected to:** [[United States]] (10) · [[Donald Trump]] (6) · [[Department of Justice]] (6) · [[Biden]] (5) · [[Honduran President Juan Orlando]] (4) · [[Kevin Castel]] (4) · [[Juan Orlando Hern]] (4) · [[Biden Department of Justice]] (3)
+**Most connected to:** [[United States]] (10) · [[Donald Trump]] (6) · [[Department of Justice]] (6) · [[Biden]] (5) · [[Honduran President Juan Orlando]] (4) · [[Juan Orlando Hern]] (4) · [[Kevin Castel]] (4) · [[Biden Department of Justice]] (3)
 
 
 

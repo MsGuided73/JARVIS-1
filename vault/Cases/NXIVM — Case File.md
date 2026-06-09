@@ -1,14 +1,14 @@
 ---
 title: "NXIVM — Case File"
 type: case
-article_count: 48
+article_count: 51
 event_count: 66
 ---
 # NXIVM — Case File
-*case · 48 articles · 66 dated events · 2025–2026*
+*case · 51 articles · 66 dated events · 2024–2026*
 
 ## Key parties
-[[Keith Raniere]] (44) · [[NXIVM]] (41) · [[DOS]] (23) · [[Allison Mack]] (17) · [[Bronfman]] (17) · [[Nancy Salzman]] (15) · [[Nicholas Garaufis]] (14) · [[Frank Report]] (14) · [[Clare Bronfman]] (12) · [[USP Tucson]] (10) · [[Lauren Salzman]] (9) · [[Sara Bronfman]] (8) · [[Frank Parlato]] (8) · [[Nicole Daedone]] (6) · [[Rachel Cherwitz]] (6) · [[Los Angeles]] (6) · [[Viva Executive Success]] (6) · [[United States]] (5)
+[[Keith Raniere]] (46) · [[NXIVM]] (43) · [[DOS]] (23) · [[Allison Mack]] (17) · [[Bronfman]] (17) · [[Nancy Salzman]] (15) · [[Nicholas Garaufis]] (15) · [[Frank Report]] (14) · [[Clare Bronfman]] (12) · [[USP Tucson]] (10) · [[Lauren Salzman]] (9) · [[Frank Parlato]] (9) · [[Sara Bronfman]] (8) · [[Nicole Daedone]] (6) · [[Rachel Cherwitz]] (6) · [[Los Angeles]] (6) · [[Jerry Sandusky]] (6) · [[Viva Executive Success]] (6)
 
 ## Timeline of events
 - **October 2002** — In October 2002, her body was found at a Buddhist monastery in Woodstock, New York. — [[Ask Frank Who Is Keith Raniere]]
@@ -127,3 +127,6 @@ event_count: 66
 - 2025-07-25 · [[Staten Island DA Says He Fears for His Safety Life—Because of Email Sent on Substack]]
 - 2025-07-20 · [[Raniere Case Changed the Sex Trafficking Law to Include Anything Prosecutors Don’t Like or Could Grab Them Hea]]
 - 2025-06-30 · [[Clare Bronfman Released from BOP Custody]]
+- 2024-10-16 · [[Was Justice Served Inside the Record-Breaking Speed of Sandusky’s Trial]]
+- 2024-03-12 · [[Jason Simcisko Takes Prize For Lying in the Penn State Perjury Scandal]]
+- 2024-02-19 · [[BK’s Bluster All Bark, No Byte I Challenge Him to Debate on Sandusky’s Innocence]]

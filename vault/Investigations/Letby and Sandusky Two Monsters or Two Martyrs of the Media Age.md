@@ -237,4 +237,4 @@ C. Van Tulleken, A. Roberts, Royal Institution Christmas lecture 2024
 
 **Author:** [[Guest View]]
 
-**Mentions:** [[Jerry Sandusky]] · [[Second Mile]] · [[Joe Amendola]] · [[Centre County]] · [[Joseph McGettigan]] · [[Jason Simcisko]] · [[John Cleland]]
+**Mentions:** [[Jerry Sandusky]] · [[Second Mile]] · [[Joe Amendola]] · [[Centre County]] · [[Joseph McGettigan]] · [[Jason Simcisko]] · [[John Cleland]] · [[Ronald Petrosky]] · [[Bob Costas]]

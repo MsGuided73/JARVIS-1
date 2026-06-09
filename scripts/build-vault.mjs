@@ -94,7 +94,7 @@ async function main() {
     const { type } = classifyContentType(p, cats)
     const dates = extractDates(c.text)
     const events = extractEvents(c.text)
-    meta.set(p.slug, { noteName, date: p.publishedAt, cats, authors, ents, type, dates, events })
+    meta.set(p.slug, { noteName, title: p.title, date: p.publishedAt, cats, authors, ents, type, dates, events })
 
     for (const cat of cats) { if (!catArticles.has(cat)) catArticles.set(cat, []); catArticles.get(cat).push(noteName) }
     for (const a of authors) { if (!authorArticles.has(a)) authorArticles.set(a, []); authorArticles.get(a).push(noteName) }
@@ -175,7 +175,7 @@ async function main() {
   const entityCases = new Map() // entity -> Set(caseName)
   for (const caseDef of CASES) {
     for (const [slug, m] of meta) {
-      if (articleInCase(caseDef, m.cats, m.ents)) for (const e of m.ents) {
+      if (articleInCase(caseDef, m.cats, m.ents, m.title)) for (const e of m.ents) {
         if (!entityCases.has(e)) entityCases.set(e, new Set()); entityCases.get(e).add(caseDef.name)
       }
     }
@@ -224,7 +224,7 @@ async function main() {
   const eventsByPath = {}
   const EVENTS_PER_NODE = 80
   for (const caseDef of CASES) {
-    const matched = [...meta].filter(([, m]) => articleInCase(caseDef, m.cats, m.ents))
+    const matched = [...meta].filter(([, m]) => articleInCase(caseDef, m.cats, m.ents, m.title))
     if (!matched.length) continue
     const rows = matched.map(([, m]) => m).sort((a, b) => (a.date < b.date ? -1 : 1))
     const keywords = caseKeywords(caseDef)
@@ -232,7 +232,7 @@ async function main() {
     const rawEvents = []
     for (const [, m] of matched) {
       for (const e of m.ents) bump(partyCount, e)
-      const kind = caseMatchKind(caseDef, m.cats, m.ents) // 'category' (strong) | 'entity' (weak)
+      const kind = caseMatchKind(caseDef, m.cats, m.ents, m.title) // 'category' (strong) | 'entity' (weak)
       const pubDay = dateOnly(m.date)
       for (const ev of m.events) {
         // An article can't report an event dated after its own publication — drop those

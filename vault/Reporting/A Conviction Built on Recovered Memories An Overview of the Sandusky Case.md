@@ -95,8 +95,6 @@ By the time of the trial, Simcisco added Sandusky washing his buttocks and kissi
 
 ### Brett Houtz and the Interrogation Strategy
 
-Brett Houtz as a boy with Jerry Sandusky.
-
 Brett Swisher-Houtz, Victim 4, a former participant in Sandusky’s charity, had a relationship that began in the mid-1990s. After media reports of the investigation in March 2011, Houtz retained an attorney, and state police interviewed him in April 2011.
 
 A recording from a break in that interview captured his attorney and a trooper discussing strategies to elicit a fuller account, including falsely telling Houtz that nine other men had alleged intercourse. When the interview resumed, the trooper suggested a “progression” of abuse, after which Houtz provided more graphic details.
@@ -142,8 +140,6 @@ Petrosky’s story changed between his grand jury testimony and the trial, inclu
 A tape-recorded police interview with the alleged eyewitness, Calhoun, from May 2011 revealed that when asked directly if the perpetrator was Jerry Sandusky, Calhoun stated, “No… It wasn’t him… Sandusky never did anything at all that I can see.”
 
 The prosecution did not call Calhoun, claiming he was incapacitated, nor did they present the tape to the jury at the trial.
-
-Allan Myers with Jerry Sandusky.
 
 ### The Unresolved Identity of Victim 2 and McQueary’s Backlash
 
@@ -337,4 +333,4 @@ Jerry Sandusky remains in prison.)
 
 **Author:** [[Frank Parlato]]
 
-**Mentions:** [[Ryan Rittmeyer]] · [[Jerry Sandusky]] · [[Frank Fina]] · [[Sabastian Paden]] · [[Allan Myers]] · [[Penn State]] · [[Mike McQueary]] · [[Joe Paterno]] · [[Sara Ganim]] · [[Second Mile]] · [[Aaron Fisher]] · [[Joe Amendola]] · [[Centre County]] · [[General]] · [[Joe McGettigan]] · [[Joseph McGettigan]] · [[Mike Gillum]] · [[Silent No More]] · [[Sebastian Paden]] · [[Jason Simcisko]] · [[Andrew Shubin]] · [[State College]] · [[John Cleland]] · [[Joseph Amendola]]
+**Mentions:** [[Ryan Rittmeyer]] · [[Jerry Sandusky]] · [[Laurel Highlands]] · [[Frank Fina]] · [[Sabastian Paden]] · [[Allan Myers]] · [[Penn State]] · [[Mike McQueary]] · [[Joe Paterno]] · [[Sara Ganim]] · [[Second Mile]] · [[Aaron Fisher]] · [[Joe Amendola]] · [[Centre County]] · [[General]] · [[Joe McGettigan]] · [[Joseph McGettigan]] · [[Mike Gillum]] · [[Silent No More]] · [[Josh Fravel]] · [[Sebastian Paden]] · [[Jason Simcisko]] · [[Andrew Shubin]] · [[Penn State University]] · [[State College]] · [[John Cleland]] · [[State Police]] · [[Joseph Amendola]] · [[Jonelle Eshbach]] · [[Michal Kajak]] · [[Zach Konstas]] · [[Dustin Struble]] · [[Pennsylvania Attorney General’s Office]] · [[Jim Calhoun]] · [[Coach Jerry Sandusky]] · [[Used Charity]] · [[Molest Kids]] · [[Zachary Konstas]] · [[Ronald Petrosky]] · [[Ben Andreozzi]] · [[Brett Swisher-Houtz]]

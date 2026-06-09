@@ -13,7 +13,7 @@ cases: ["Jerry Sandusky / Penn State", "Wrongful Convictions"]
 
 **Cases:** [[Jerry Sandusky / Penn State — Case File|Jerry Sandusky / Penn State]] · [[Wrongful Convictions — Case File|Wrongful Convictions]]
 
-**Most connected to:** [[Ryan Rittmeyer]] (5) · [[Jerry Sandusky]] (5) · [[Frank Fina]] (5) · [[Penn State]] (5) · [[Joseph McGettigan]] (5) · [[Sabastian Paden]] (4) · [[Dennis McAndrews]] (4) · [[US Claims]] (4)
+**Most connected to:** [[Ryan Rittmeyer]] (5) · [[Jerry Sandusky]] (5) · [[Frank Fina]] (5) · [[Penn State]] (5) · [[Sabastian Paden]] (4) · [[Joseph McGettigan]] (4) · [[Dennis McAndrews]] (4) · [[US Claims]] (4)
 
 
 

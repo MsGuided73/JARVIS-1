@@ -4,14 +4,14 @@ type: person
 article_count: 13
 first_mention: 2026-03-27
 last_mention: 2026-05-29
-cases: ["NXIVM", "OneTaste", "Family Court / Parental Alienation"]
+cases: ["NXIVM", "OneTaste", "Juan Orlando Hernandez / Honduras", "Family Court / Parental Alienation"]
 ---
 
 # ARTVOICE ART
 
 *person · 13 mentions · 2026*
 
-**Cases:** [[NXIVM — Case File|NXIVM]] · [[OneTaste — Case File|OneTaste]] · [[Family Court / Parental Alienation — Case File|Family Court / Parental Alienation]]
+**Cases:** [[NXIVM — Case File|NXIVM]] · [[OneTaste — Case File|OneTaste]] · [[Juan Orlando Hernandez / Honduras — Case File|Juan Orlando Hernandez / Honduras]] · [[Family Court / Parental Alienation — Case File|Family Court / Parental Alienation]]
 
 **Most connected to:** [[United States]] (5) · [[Donald Trump]] (4) · [[Biden]] (3) · [[Honduran President Juan Orlando]] (3) · [[Biden Department of Justice]] (3) · [[Kevin Castel]] (3) · [[Latin America]] (3) · [[Frank Report]] (2)
 

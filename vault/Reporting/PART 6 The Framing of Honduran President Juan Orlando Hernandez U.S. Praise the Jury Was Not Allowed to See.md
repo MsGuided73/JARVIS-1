@@ -29,8 +29,6 @@ wpId: 265176
 
 ## This is Part 6.
 
-Juan Orlando Hernandez
-
 The United States government told two different stories about Juan Orlando Hernández.
 
 In the first version, Hernández was one of America’s great anti-drug allies in Latin America.
@@ -211,4 +209,4 @@ Maybe that was the point.
 
 **Author:** [[Frank Parlato]]
 
-**Mentions:** [[Biden]] · [[United States]] · [[Donald Trump]] · [[Southern District of New York]] · [[ARTVOICE ART]] · [[Honduran President Juan Orlando]] · [[Biden Department of Justice]] · [[Kevin Castel]] · [[Juan Orlando Hern]] · [[Latin America]] · [[White House]] · [[Department of Justice]] · [[State Department]]
+**Mentions:** [[Biden]] · [[United States]] · [[Donald Trump]] · [[Southern District of New York]] · [[ARTVOICE ART]] · [[Honduran President Juan Orlando]] · [[Biden Department of Justice]] · [[Juan Orlando Hern]] · [[Kevin Castel]] · [[Latin America]] · [[White House]] · [[Department of Justice]] · [[State Department]] · [[Barack Obama]]

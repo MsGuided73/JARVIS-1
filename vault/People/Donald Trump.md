@@ -2,19 +2,19 @@
 title: "Donald Trump"
 type: person
 aliases: ["Trump"]
-article_count: 48
-first_mention: 2025-06-24
+article_count: 49
+first_mention: 2024-02-25
 last_mention: 2026-06-06
-cases: ["NXIVM", "OneTaste", "Jerry Sandusky / Penn State", "Wrongful Convictions"]
+cases: ["NXIVM", "OneTaste", "Jerry Sandusky / Penn State", "Juan Orlando Hernandez / Honduras", "Wrongful Convictions"]
 ---
 
 # Donald Trump
 
-*person · 48 mentions · 2025–2026*
+*person · 49 mentions · 2024–2026*
 
 **Also known as:** Trump
 
-**Cases:** [[NXIVM — Case File|NXIVM]] · [[OneTaste — Case File|OneTaste]] · [[Jerry Sandusky / Penn State — Case File|Jerry Sandusky / Penn State]] · [[Wrongful Convictions — Case File|Wrongful Convictions]]
+**Cases:** [[NXIVM — Case File|NXIVM]] · [[OneTaste — Case File|OneTaste]] · [[Jerry Sandusky / Penn State — Case File|Jerry Sandusky / Penn State]] · [[Juan Orlando Hernandez / Honduras — Case File|Juan Orlando Hernandez / Honduras]] · [[Wrongful Convictions — Case File|Wrongful Convictions]]
 
 **Most connected to:** [[United States]] (20) · [[Biden]] (20) · [[Department of Justice]] (12) · [[Rachel Cherwitz]] (11) · [[White House]] (10) · [[Nicole Daedone]] (10) · [[Diane Gujarati]] (8) · [[Frank Report]] (7)
 
@@ -45,6 +45,8 @@ cases: ["NXIVM", "OneTaste", "Jerry Sandusky / Penn State", "Wrongful Conviction
 - [[FBI Informant James D. Clark PT 3 The Gold Wasn’t There]]
 
 - [[FROM NETFLIX TO LOCKUP The Brainwashing Case That Could Jail a Philosophy]]
+
+- [[Frank Parlato goes on WABC Radio with Roger Stone to Talk About Jerry Sandusky 5pm ET LIVE Today]]
 
 - [[How David Duong Was Indicted for Donating to Trump – on the Last Day of the Biden Administration]]
 

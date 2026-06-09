@@ -1,21 +1,21 @@
 ---
 title: "NXIVM"
 type: program
-article_count: 41
-first_mention: 2025-06-30
+article_count: 43
+first_mention: 2024-02-19
 last_mention: 2026-04-04
-cases: ["NXIVM", "OneTaste", "Jerry Sandusky / Penn State"]
+cases: ["NXIVM", "OneTaste", "Jerry Sandusky / Penn State", "Wrongful Convictions"]
 ---
 
 # NXIVM
 
-*program · 41 mentions · 2025–2026*
+*program · 43 mentions · 2024–2026*
 
 **Includes:** [[Executive Success Programs]] · [[DOS]] · [[Rainbow Cultural Garden]] · [[ESP]] · [[Jness]] · [[Society of Protectors]]
 
-**Cases:** [[NXIVM — Case File|NXIVM]] · [[OneTaste — Case File|OneTaste]] · [[Jerry Sandusky / Penn State — Case File|Jerry Sandusky / Penn State]]
+**Cases:** [[NXIVM — Case File|NXIVM]] · [[OneTaste — Case File|OneTaste]] · [[Jerry Sandusky / Penn State — Case File|Jerry Sandusky / Penn State]] · [[Wrongful Convictions — Case File|Wrongful Convictions]]
 
-**Most connected to:** [[Keith Raniere]] (37) · [[DOS]] (22) · [[Bronfman]] (17) · [[Allison Mack]] (16) · [[Nancy Salzman]] (15) · [[Nicholas Garaufis]] (13) · [[Clare Bronfman]] (12) · [[Frank Report]] (12)
+**Most connected to:** [[Keith Raniere]] (38) · [[DOS]] (22) · [[Bronfman]] (17) · [[Allison Mack]] (16) · [[Nancy Salzman]] (15) · [[Nicholas Garaufis]] (14) · [[Clare Bronfman]] (12) · [[Frank Report]] (12)
 
 
 
@@ -31,6 +31,8 @@ cases: ["NXIVM", "OneTaste", "Jerry Sandusky / Penn State"]
 
 - [[Ask Frank Who Is Keith Raniere]]
 
+- [[BK’s Bluster All Bark, No Byte I Challenge Him to Debate on Sandusky’s Innocence]]
+
 - [[Body Language Expert Allison Mack Shows Signs of Lying About NXIVM Branding]]
 
 - [[Can OneTaste Case Be Used Against Trump]]
@@ -44,6 +46,8 @@ cases: ["NXIVM", "OneTaste", "Jerry Sandusky / Penn State"]
 - [[How to Prevent Another NXIVM Allison Mack’s Licensing Solution]]
 
 - [[Introducing the Crank Report The Frank Report’s AI-Powered Heckler]]
+
+- [[Jason Simcisko Takes Prize For Lying in the Penn State Perjury Scandal]]
 
 - [[Keith Raniere’s Bio, Corrected and Updated for the Prison Era]]
 

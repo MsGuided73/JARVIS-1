@@ -2,21 +2,21 @@
 title: "Keith Raniere"
 type: person
 aliases: ["Raniere", "Keith Alan Raniere"]
-article_count: 44
-first_mention: 2025-06-30
+article_count: 46
+first_mention: 2024-02-19
 last_mention: 2026-04-04
-cases: ["NXIVM", "OneTaste", "Jerry Sandusky / Penn State"]
+cases: ["NXIVM", "OneTaste", "Jerry Sandusky / Penn State", "Wrongful Convictions"]
 ---
 
 # Keith Raniere
 
-*person · 44 mentions · 2025–2026*
+*person · 46 mentions · 2024–2026*
 
 **Also known as:** Raniere · Keith Alan Raniere
 
-**Cases:** [[NXIVM — Case File|NXIVM]] · [[OneTaste — Case File|OneTaste]] · [[Jerry Sandusky / Penn State — Case File|Jerry Sandusky / Penn State]]
+**Cases:** [[NXIVM — Case File|NXIVM]] · [[OneTaste — Case File|OneTaste]] · [[Jerry Sandusky / Penn State — Case File|Jerry Sandusky / Penn State]] · [[Wrongful Convictions — Case File|Wrongful Convictions]]
 
-**Most connected to:** [[NXIVM]] (37) · [[DOS]] (23) · [[Bronfman]] (17) · [[Allison Mack]] (16) · [[Nancy Salzman]] (15) · [[Nicholas Garaufis]] (14) · [[Clare Bronfman]] (12) · [[Frank Report]] (12)
+**Most connected to:** [[NXIVM]] (38) · [[DOS]] (23) · [[Bronfman]] (17) · [[Allison Mack]] (16) · [[Nancy Salzman]] (15) · [[Nicholas Garaufis]] (15) · [[Clare Bronfman]] (12) · [[Frank Report]] (12)
 
 
 
@@ -31,6 +31,8 @@ cases: ["NXIVM", "OneTaste", "Jerry Sandusky / Penn State"]
 - [[Ask Frank What Did Raniere Do]]
 
 - [[Ask Frank Who Is Keith Raniere]]
+
+- [[BK’s Bluster All Bark, No Byte I Challenge Him to Debate on Sandusky’s Innocence]]
 
 - [[Body Language Expert Allison Mack Shows Signs of Lying About NXIVM Branding]]
 
@@ -97,6 +99,8 @@ cases: ["NXIVM", "OneTaste", "Jerry Sandusky / Penn State"]
 - [[The Trial of Keith Raniere Day 1, Part 1 — ‘Please Stand, Mr. Raniere’]]
 
 - [[Very Modern. Very Bullyville. Very Stupid]]
+
+- [[Was Justice Served Inside the Record-Breaking Speed of Sandusky’s Trial]]
 
 - [[Web War Spirals Into Mom’s May-December Romance ‘Is This My Father ’ Nice Guy Asks]]
 

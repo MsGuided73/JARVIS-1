@@ -47,8 +47,6 @@ To say they were wrong would admit people had died because of them. So the execu
 
 Every jurisdiction has its landmark, its defining prosecution. The one that made headlines, the case that assured the public the system was vigilant and strong. In Pennsylvania, that case is Jerry Sandusky.
 
-Outside the courthouse at the Sandusky trial
-
 People say that name in Pennsylvania, and everyone knows what it means. The 2012 conviction was not merely a verdict. Penn State paid more than $100 million in settlements. The NCAA levied historic sanctions. A bronze statue was removed in the night.
 
 Careers were destroyed, reputations annihilated, and an entire university system reorganized itself around the belief that a monster had operated in plain sight and the institution had failed to stop him.
@@ -123,4 +121,4 @@ More weight.
 
 **Author:** [[Frank Parlato]]
 
-**Mentions:** [[Jerry Sandusky]] · [[Penn State]]
+**Mentions:** [[Jerry Sandusky]] · [[Penn State]] · [[If Sandusky]]

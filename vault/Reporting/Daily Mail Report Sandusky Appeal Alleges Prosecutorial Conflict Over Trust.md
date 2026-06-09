@@ -40,4 +40,4 @@ Here is [the link to the story I co-reported](https://www.dailymail.co.uk/news/a
 
 **Author:** [[Frank Parlato]]
 
-**Mentions:** [[Jerry Sandusky]] · [[Frank Fina]] · [[Penn State]] · [[Joe McGettigan]]
+**Mentions:** [[Jerry Sandusky]] · [[Frank Fina]] · [[Penn State]] · [[Joe McGettigan]] · [[Daily Mail]]

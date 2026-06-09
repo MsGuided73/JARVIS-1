@@ -1,19 +1,19 @@
 ---
 title: "United States"
 type: place
-article_count: 56
-first_mention: 2025-06-24
+article_count: 58
+first_mention: 2024-01-18
 last_mention: 2026-06-07
-cases: ["NXIVM", "OneTaste", "Jerry Sandusky / Penn State", "Wrongful Convictions", "Family Court / Parental Alienation"]
+cases: ["NXIVM", "OneTaste", "Jerry Sandusky / Penn State", "Juan Orlando Hernandez / Honduras", "Wrongful Convictions", "Family Court / Parental Alienation"]
 ---
 
 # United States
 
-*place · 56 mentions · 2025–2026*
+*place · 58 mentions · 2024–2026*
 
-**Cases:** [[NXIVM — Case File|NXIVM]] · [[OneTaste — Case File|OneTaste]] · [[Jerry Sandusky / Penn State — Case File|Jerry Sandusky / Penn State]] · [[Wrongful Convictions — Case File|Wrongful Convictions]] · [[Family Court / Parental Alienation — Case File|Family Court / Parental Alienation]]
+**Cases:** [[NXIVM — Case File|NXIVM]] · [[OneTaste — Case File|OneTaste]] · [[Jerry Sandusky / Penn State — Case File|Jerry Sandusky / Penn State]] · [[Juan Orlando Hernandez / Honduras — Case File|Juan Orlando Hernandez / Honduras]] · [[Wrongful Convictions — Case File|Wrongful Convictions]] · [[Family Court / Parental Alienation — Case File|Family Court / Parental Alienation]]
 
-**Most connected to:** [[Donald Trump]] (20) · [[Biden]] (13) · [[Department of Justice]] (13) · [[Rachel Cherwitz]] (11) · [[Nicole Daedone]] (10) · [[Southern District of New York]] (10) · [[Los Angeles]] (8) · [[Frank Report]] (8)
+**Most connected to:** [[Donald Trump]] (20) · [[Biden]] (13) · [[Department of Justice]] (13) · [[Rachel Cherwitz]] (11) · [[Nicole Daedone]] (10) · [[Southern District of New York]] (10) · [[Los Angeles]] (9) · [[Frank Report]] (9)
 
 
 
@@ -71,9 +71,13 @@ cases: ["NXIVM", "OneTaste", "Jerry Sandusky / Penn State", "Wrongful Conviction
 
 - [[Petra vs. United A Woman Fighting Cancer, Stranded by an Airline]]
 
+- [[Renowned Academic, Authors, and Investigators Challenge Jerry Sandusky’s Conviction]]
+
 - [[SANDUSKY INVESTIGATION The First Prosecutors in American History to Directly Profit From Their Own Conviction]]
 
 - [[STEFANYA RAMIREZ OSPINA 309,000 Followers, One Federal File]]
+
+- [[Scientist Exposes Misconduct in Jerry Sandusky Wrongful Conviction]]
 
 - [[Second Circuit Rejects Keith Raniere’s Latest Appeal, Upholds NXIVM Convictions]]
 

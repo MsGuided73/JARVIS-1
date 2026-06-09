@@ -108,4 +108,4 @@ That’s his life, and ironically, he is in it for life.
 
 **Author:** [[Frank Parlato]]
 
-**Mentions:** [[Metropolitan Detention Center]] · [[Keith Raniere]] · [[Clare Bronfman]] · [[NXIVM]] · [[Bronfman]] · [[USP Tucson]] · [[Oklahoma City]] · [[Federal Transfer Center]]
+**Mentions:** [[Metropolitan Detention Center]] · [[Keith Raniere]] · [[Clare Bronfman]] · [[NXIVM]] · [[Bronfman]] · [[North Carolina]] · [[USP Tucson]] · [[Oklahoma City]] · [[Federal Transfer Center]]

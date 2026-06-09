@@ -103,4 +103,4 @@ In the Sandusky post-conviction proceedings, her logic has been adopted without 
 
 **Author:** [[Frank Parlato]]
 
-**Mentions:** [[Senior Judge Maureen Skerda]] · [[Jerry Sandusky]] · [[Penn State]] · [[General]] · [[Post Conviction Relief Act]] · [[John Cleland]]
+**Mentions:** [[Skerda]] · [[Jerry Sandusky]] · [[Penn State]] · [[General]] · [[Maureen Skerda]] · [[Post Conviction Relief Act]] · [[John Cleland]]

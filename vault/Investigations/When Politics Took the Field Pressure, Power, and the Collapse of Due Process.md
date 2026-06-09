@@ -43,8 +43,6 @@ On the other hand, it is known that the governor actively supported Second Mile,
 
 What I’m converging on is, although that same always-intentionally-inaccurate lawyer said that Jerry had abused Matt, actually in the tape recorded police interview that was leaked, what changed is, not that Matt started saying that he started remembering abuse, but rather, whereas all along Matt had said Jerry never touched him inappropriately in any way, now one little thing has changed. His recollections haven’t changed.
 
-Jerry and Matt Sandusky
-
 But what he says on the new tape recorded police interview is that he still has no recollection of any oral or anal sex *at this time. *
 
 What has changed in the last three words, and this makes a lot of sense, is that the lawyer is assuring Matt that the reason Jerry is guilty is that although Matt still, as always, has absolutely no recollections of abuse, the lawyer’s misguided therapist already knows things Matt has not yet started to remember, and she knows that Matt will remember them later on, in a subsequent meeting, which the lawyer has scheduled for him. Like for Sinisi, this is the crucial second meeting where “Do you remember X?” “No,” is scheduled to transform into “Guess what. I remember X.”
@@ -56,8 +54,6 @@ Mike Gillum
 If you remember about Simcisko, the incidental touching, and the things Simcisko was about to say when McGettigan interrupted his digression about porn videos, they also came from that same misguided lawyer.
 
 That same lawyer was Simcisko’s lawyer and that same misguided therapist was Simcisko’s therapist. McGettigan understood that a witness becoming confused or vulnerable after instructing an unreliable civil lawyer still deserves to be heard.
-
-Joe McGettigan
 
 As I mentioned, years after the trial, Ziegler finally organized for Dillen to act as the sort-of double agent to infiltrate into this law firm, but Matt had done that already on day one. Yet because McGettigan was rightfully wary about letting that strange lawyer influence justice, the only thing that anyone ever learned of Matt’s brilliance is the press reports from the lawyer saying Matt has accused his dad of abuse.
 
@@ -73,4 +69,4 @@ The police, when they interviewed 600 second mile kids, mainly got kids saying h
 
 **Author:** [[Guest View]]
 
-**Mentions:** [[Penn State]] · [[Joe Paterno]] · [[Second Mile]]
+**Mentions:** [[Penn State]] · [[Joe Paterno]] · [[Second Mile]] · [[Tom Corbett]] · [[Linda Kelly]]

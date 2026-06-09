@@ -75,13 +75,9 @@ The phrasing invoked recovered-memory theory—a theory that most courts have fo
 
 The Commonwealth does not address the statement.
 
-PA Attorney General Linda Kelly
-
 ## THE BARDEN REPORT — DISMISSED WITHOUT ENGAGEMENT
 
 In an earlier PCRA proceeding, the defense submitted an expert report by R. Christopher Barden, a lawyer and memory scientist.
-
-Dr. R. Chris Barden
 
 He holds a Ph.D. in clinical-child psychology from the University of Minnesota, summa cum laude. He earned a J.D. from Harvard Law School, cum laude. He has published in Developmental Psychology, Psychological Bulletin, and the Journal of the American Academy of Psychiatry and Law. He has testified in Frye and Daubert hearings in Minnesota, New Hampshire, Rhode Island, Nebraska, California, Texas, and Utah. He has trained FBI investigators and federal judges on memory science.
 
@@ -149,4 +145,4 @@ Great logic. A defendant could always have contacted a witness earlier. If accep
 
 **Author:** [[Frank Parlato]]
 
-**Mentions:** [[Jerry Sandusky]] · [[John Cleland]] · [[Sebastian Paden]] · [[Trust Protective Committee]] · [[Hilton Garden Inn]] · [[Prosecutors Frank Fina]]
+**Mentions:** [[Jerry Sandusky]] · [[Joseph Leiter]] · [[John Cleland]] · [[Sebastian Paden]] · [[Trust Protective Committee]] · [[Christopher Barden]] · [[Hilton Garden Inn]] · [[Prosecutors Frank Fina]] · [[General Linda Kelly]] · [[Pennsylvania Attorney General’s Office]] · [[Prosecutor Joseph McGettigan]]

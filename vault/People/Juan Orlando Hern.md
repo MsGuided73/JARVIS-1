@@ -4,14 +4,14 @@ type: person
 article_count: 6
 first_mention: 2026-04-30
 last_mention: 2026-05-28
-cases: ["Wrongful Convictions"]
+cases: ["Juan Orlando Hernandez / Honduras", "Wrongful Convictions"]
 ---
 
 # Juan Orlando Hern
 
 *person · 6 mentions · 2026*
 
-**Cases:** [[Wrongful Convictions — Case File|Wrongful Convictions]]
+**Cases:** [[Juan Orlando Hernandez / Honduras — Case File|Juan Orlando Hernandez / Honduras]] · [[Wrongful Convictions — Case File|Wrongful Convictions]]
 
 **Most connected to:** [[Biden]] (6) · [[Donald Trump]] (6) · [[United States]] (4) · [[Honduran President Juan Orlando]] (4) · [[Kevin Castel]] (4) · [[Biden DOJ]] (4) · [[Alexander Ard]] (4) · [[El Para]] (4)
 
