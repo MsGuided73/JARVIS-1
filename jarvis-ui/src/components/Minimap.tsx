@@ -101,7 +101,7 @@ export function Minimap({ nodes, cameraPosition, cameraTarget, onClickPosition }
         width: WIDTH,
         height: HEIGHT,
         zIndex: 150,
-        borderRadius: 4,
+        borderRadius: 'var(--radius-sm)',
         border: '1px solid var(--accent)',
         boxShadow: '0 0 8px rgba(0,212,255,0.3)',
         cursor: 'crosshair',

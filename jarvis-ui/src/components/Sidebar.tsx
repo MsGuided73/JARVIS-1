@@ -472,7 +472,7 @@ export function Sidebar({ node, fullView, allNodes, onClose, onNavigate, onTagFi
       }
       return (
         <pre
-          style={{ background: 'var(--surface-raised)', borderRadius: 6, padding: '12px 16px', overflowX: 'auto', margin: '12px 0', fontSize: 13 }}
+          style={{ background: 'var(--surface-raised)', borderRadius: 'var(--radius)', padding: '12px 16px', overflowX: 'auto', margin: '12px 0', fontSize: 13 }}
           {...props}
         >
           {children}
@@ -513,7 +513,7 @@ export function Sidebar({ node, fullView, allNodes, onClose, onNavigate, onTagFi
           {children}
         </code>
       ) : (
-        <code style={{ background: 'var(--surface-raised)', color: '#e06c75', padding: '2px 6px', borderRadius: 3, fontSize: '0.85em' }} {...props}>
+        <code style={{ background: 'var(--surface-raised)', color: '#e06c75', padding: '2px 6px', borderRadius: 'var(--radius-sm)', fontSize: '0.85em' }} {...props}>
           {children}
         </code>
       )
@@ -572,9 +572,11 @@ export function Sidebar({ node, fullView, allNodes, onClose, onNavigate, onTagFi
       width,
       height: '100%',
       background: 'var(--surface)',
+      backdropFilter: 'var(--panel-blur)',
+      WebkitBackdropFilter: 'var(--panel-blur)',
       borderLeft: '1px solid var(--border)',
       color: 'var(--text)',
-      fontFamily: '"Inter", "Segoe UI", sans-serif',
+      fontFamily: 'var(--font-body)',
       fontSize: 14,
       overflowY: 'scroll',
       scrollBehavior: 'smooth',
@@ -607,7 +609,7 @@ export function Sidebar({ node, fullView, allNodes, onClose, onNavigate, onTagFi
             height: `${scrollThumb.heightPct * 100}%`,
             width: 4,
             background: 'rgba(0,212,255,0.45)',
-            borderRadius: 4,
+            borderRadius: 'var(--radius-sm)',
             transition: 'top 0.08s ease, background 0.2s ease',
             boxShadow: '0 0 6px rgba(0,212,255,0.3)',
           }} />
@@ -682,9 +684,9 @@ export function Sidebar({ node, fullView, allNodes, onClose, onNavigate, onTagFi
                 cursor: 'pointer',
                 fontSize: 11,
                 padding: '3px 8px',
-                borderRadius: 4,
+                borderRadius: 'var(--radius-sm)',
                 lineHeight: 1.3,
-                fontFamily: '"Courier New", monospace',
+                fontFamily: 'var(--font-mono)',
                 letterSpacing: 1,
               }}
               onClick={exportNodePdf}
@@ -701,7 +703,7 @@ export function Sidebar({ node, fullView, allNodes, onClose, onNavigate, onTagFi
                 cursor: 'pointer',
                 fontSize: 18,
                 padding: '4px 8px',
-                borderRadius: 4,
+                borderRadius: 'var(--radius-sm)',
                 lineHeight: 1,
               }}
               onClick={onClose}
@@ -729,7 +731,7 @@ export function Sidebar({ node, fullView, allNodes, onClose, onNavigate, onTagFi
                   borderBottom: !editMode ? '2px solid var(--accent)' : '2px solid transparent',
                   color: !editMode ? 'var(--accent)' : 'var(--text-faint)',
                   cursor: 'pointer',
-                  fontFamily: '"Courier New", monospace',
+                  fontFamily: 'var(--font-mono)',
                   fontSize: 11,
                   letterSpacing: '0.08em',
                 }}
@@ -744,7 +746,7 @@ export function Sidebar({ node, fullView, allNodes, onClose, onNavigate, onTagFi
                   borderBottom: editMode ? '2px solid var(--accent)' : '2px solid transparent',
                   color: editMode ? 'var(--accent)' : 'var(--text-faint)',
                   cursor: 'pointer',
-                  fontFamily: '"Courier New", monospace',
+                  fontFamily: 'var(--font-mono)',
                   fontSize: 11,
                   letterSpacing: '0.08em',
                 }}
@@ -756,7 +758,7 @@ export function Sidebar({ node, fullView, allNodes, onClose, onNavigate, onTagFi
                   padding: '0 12px',
                   fontSize: 11,
                   color: saveStatus === 'saving' ? 'var(--text-faint)' : 'var(--success)',
-                  fontFamily: '"Courier New", monospace',
+                  fontFamily: 'var(--font-mono)',
                 }}>
                   {saveStatus === 'saving' ? 'Saving…' : 'Saved ✓'}
                 </div>
@@ -788,7 +790,7 @@ export function Sidebar({ node, fullView, allNodes, onClose, onNavigate, onTagFi
                         background: 'rgba(124,92,191,0.15)',
                         border: '1px solid rgba(124,92,191,0.4)',
                         color: 'var(--purple)',
-                        borderRadius: 12,
+                        borderRadius: 'var(--radius-lg)',
                         padding: '2px 10px',
                         fontSize: 12,
                         marginRight: 4,
@@ -837,7 +839,7 @@ export function Sidebar({ node, fullView, allNodes, onClose, onNavigate, onTagFi
                       borderRadius: '50%', background: 'var(--accent)', boxShadow: '0 0 5px var(--accent)',
                     }} />
                     <div style={{
-                      fontFamily: '"Courier New", monospace', fontSize: 11,
+                      fontFamily: 'var(--font-mono)', fontSize: 11,
                       color: ev.precision === 'day' ? 'var(--accent)' : '#7fb8c9', marginBottom: 2,
                     }}>
                       {ev.display}
@@ -904,7 +906,7 @@ export function Sidebar({ node, fullView, allNodes, onClose, onNavigate, onTagFi
                     fontSize: 10,
                     background: 'color-mix(in srgb, var(--purple) 7%, transparent)',
                     border: '1px solid color-mix(in srgb, var(--purple) 13%, transparent)',
-                    borderRadius: 3,
+                    borderRadius: 'var(--radius-sm)',
                     padding: '0 5px',
                     flexShrink: 0,
                     marginLeft: 8,
@@ -983,8 +985,8 @@ export function Sidebar({ node, fullView, allNodes, onClose, onNavigate, onTagFi
                   title="Export the full article text as PDF"
                   style={{
                     background: 'transparent', border: '1px solid rgb(var(--accent-rgb) / 0.33)', color: 'var(--accent)',
-                    borderRadius: 4, padding: '4px 10px', fontSize: 11, cursor: 'pointer',
-                    fontFamily: '"Courier New", monospace', letterSpacing: 1, marginBottom: 14,
+                    borderRadius: 'var(--radius-sm)', padding: '4px 10px', fontSize: 11, cursor: 'pointer',
+                    fontFamily: 'var(--font-mono)', letterSpacing: 1, marginBottom: 14,
                   }}
                 >⤓ EXPORT ARTICLE (PDF)</button>
               )}

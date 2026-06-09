@@ -52,8 +52,10 @@ function ShortcutRow({ keyName, label, desc }: { keyName: string; label: string;
           top: 0,
           marginRight: 10,
           background: 'var(--panel-strong)',
+          backdropFilter: 'var(--panel-blur)',
+          WebkitBackdropFilter: 'var(--panel-blur)',
           border: '1px solid var(--accent)',
-          borderRadius: 4,
+          borderRadius: 'var(--radius-sm)',
           padding: '4px 8px',
           color: 'var(--text)',
           fontSize: 10,
@@ -847,7 +849,7 @@ function App() {
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
-        fontFamily: '"Courier New", monospace',
+        fontFamily: 'var(--font-mono)',
         color: '#ff6b35',
       }}>
         <div>
@@ -864,7 +866,7 @@ function App() {
   if (!graphData?.nodes) {
     console.warn('[App] graphData has no nodes — rendering null. graphData:', graphData, 'loading:', loading, 'error:', error)
     return (
-      <div style={{ width: '100vw', height: '100vh', background: '#000', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--text-faint)', fontFamily: 'monospace', fontSize: 12 }}>
+      <div style={{ width: '100vw', height: '100vh', background: '#000', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--text-faint)', fontFamily: 'var(--font-mono)', fontSize: 12 }}>
         Waiting for graph data...
       </div>
     )
@@ -1058,10 +1060,12 @@ function App() {
           alignItems: 'center',
           gap: 6,
           background: 'var(--panel-strong)',
+          backdropFilter: 'var(--panel-blur)',
+          WebkitBackdropFilter: 'var(--panel-blur)',
           border: '1px solid var(--accent)',
-          borderRadius: 4,
+          borderRadius: 'var(--radius-sm)',
           padding: '5px 12px',
-          fontFamily: '"Courier New", monospace',
+          fontFamily: 'var(--font-mono)',
           fontSize: 11,
           boxShadow: '0 0 10px rgb(var(--accent-rgb) / 0.13)',
         }}>
@@ -1074,7 +1078,7 @@ function App() {
               background: '#1a2a1a',
               color: 'var(--success)',
               border: '1px solid color-mix(in srgb, var(--success) 20%, transparent)',
-              borderRadius: 3,
+              borderRadius: 'var(--radius-sm)',
               padding: '1px 6px',
             }}>
               <span>#{t}</span>
@@ -1110,9 +1114,11 @@ function App() {
           left: 16,
           zIndex: 200,
           background: 'var(--panel)',
+          backdropFilter: 'var(--panel-blur)',
+          WebkitBackdropFilter: 'var(--panel-blur)',
           border: '1px solid var(--border-accent)',
           color: 'var(--accent-dim)',
-          borderRadius: 4,
+          borderRadius: 'var(--radius-sm)',
           padding: '6px 10px',
           cursor: 'pointer',
           fontSize: 16,
@@ -1129,9 +1135,11 @@ function App() {
           left: 16,
           zIndex: 200,
           background: 'var(--panel)',
+          backdropFilter: 'var(--panel-blur)',
+          WebkitBackdropFilter: 'var(--panel-blur)',
           border: '1px solid var(--border-accent)',
           color: 'var(--accent-dim)',
-          borderRadius: 4,
+          borderRadius: 'var(--radius-sm)',
           padding: '6px 10px',
           cursor: 'pointer',
           fontSize: 16,
@@ -1158,11 +1166,13 @@ function App() {
           transform: 'translateX(-50%)',
           zIndex: 300,
           background: 'var(--panel-strong)',
+          backdropFilter: 'var(--panel-blur)',
+          WebkitBackdropFilter: 'var(--panel-blur)',
           border: '1px solid var(--accent)',
-          borderRadius: 6,
+          borderRadius: 'var(--radius)',
           padding: '8px 20px',
           color: 'var(--accent)',
-          fontFamily: '"Courier New", monospace',
+          fontFamily: 'var(--font-mono)',
           fontSize: 13,
           boxShadow: '0 0 12px rgb(var(--accent-rgb) / 0.2)',
           pointerEvents: 'none',
@@ -1177,7 +1187,7 @@ function App() {
         bottom: 80,
         right: 16,
         zIndex: 100,
-        fontFamily: '"Courier New", monospace',
+        fontFamily: 'var(--font-mono)',
         fontSize: 10,
       }}>
         <div style={{ textAlign: 'right', marginBottom: 4 }}>
@@ -1190,9 +1200,11 @@ function App() {
             }}
             style={{
               background: 'var(--panel)',
+              backdropFilter: 'var(--panel-blur)',
+              WebkitBackdropFilter: 'var(--panel-blur)',
               border: '1px solid var(--border-accent)',
               color: 'var(--accent-dim)',
-              borderRadius: 4,
+              borderRadius: 'var(--radius-sm)',
               padding: '2px 7px',
               cursor: 'pointer',
               fontFamily: 'inherit',
@@ -1203,8 +1215,10 @@ function App() {
         {shortcutsVisible && (
           <div style={{
             background: 'var(--panel-strong)',
+            backdropFilter: 'var(--panel-blur)',
+            WebkitBackdropFilter: 'var(--panel-blur)',
             border: '1px solid var(--accent)',
-            borderRadius: 4,
+            borderRadius: 'var(--radius-sm)',
             padding: '8px 12px',
             boxShadow: '0 0 10px rgb(var(--accent-rgb) / 0.13)',
             textAlign: 'right',

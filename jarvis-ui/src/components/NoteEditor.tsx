@@ -17,7 +17,7 @@ interface NoteEditorProps {
 const jarvisDark: Extension = EditorView.theme({
   '&': { background: 'var(--surface)', color: 'var(--text)', height: '100%' },
   '.cm-editor': { height: '100%' },
-  '.cm-scroller': { fontFamily: '"Inter", "Segoe UI", sans-serif', fontSize: '14px', lineHeight: '1.7' },
+  '.cm-scroller': { fontFamily: 'var(--font-body)', fontSize: '14px', lineHeight: '1.7' },
   '.cm-focused': { outline: 'none' },
   '.cm-gutters': { background: 'var(--surface-2)', color: 'var(--text-muted)', border: 'none' },
   '.cm-activeLineGutter': { background: 'var(--surface)' },

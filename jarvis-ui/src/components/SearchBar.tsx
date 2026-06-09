@@ -283,6 +283,8 @@ export function SearchBar({ visible, allNodes, allTags, onResults, onNavigate, o
     >
       <div style={{
         background: 'var(--panel-strong)',
+        backdropFilter: 'var(--panel-blur)',
+        WebkitBackdropFilter: 'var(--panel-blur)',
         border: '1px solid var(--accent)',
         borderRadius: hasDropdown ? '6px 6px 0 0' : 6,
         boxShadow: '0 0 20px rgb(var(--accent-rgb) / 0.2)',
@@ -302,7 +304,7 @@ export function SearchBar({ visible, allNodes, allTags, onResults, onNavigate, o
               border: 'none',
               outline: 'none',
               color: 'var(--text)',
-              fontFamily: '"Courier New", monospace',
+              fontFamily: 'var(--font-mono)',
               fontSize: 14,
               padding: '12px 0',
             }}
@@ -320,6 +322,8 @@ export function SearchBar({ visible, allNodes, allTags, onResults, onNavigate, o
       {hasDropdown && (
         <div style={{
           background: 'var(--panel-strong)',
+          backdropFilter: 'var(--panel-blur)',
+          WebkitBackdropFilter: 'var(--panel-blur)',
           border: '1px solid var(--accent)',
           borderTop: 'none',
           borderRadius: '0 0 6px 6px',
@@ -339,11 +343,11 @@ export function SearchBar({ visible, allNodes, allTags, onResults, onNavigate, o
                       background: i === 0 ? '#1a2d1a' : '#111820',
                       color: i === 0 ? 'var(--success)' : '#6b8a6b',
                       border: `1px solid ${i === 0 ? 'color-mix(in srgb, var(--success) 33%, transparent)' : '#2a3a2a'}`,
-                      borderRadius: 4,
+                      borderRadius: 'var(--radius-sm)',
                       padding: '3px 9px',
                       fontSize: 12,
                       cursor: 'pointer',
-                      fontFamily: '"Courier New", monospace',
+                      fontFamily: 'var(--font-mono)',
                       transition: 'all 0.1s',
                     }}
                     onMouseEnter={e => {
@@ -550,7 +554,7 @@ export function SearchBar({ visible, allNodes, allTags, onResults, onNavigate, o
                     background: 'color-mix(in srgb, var(--purple) 13%, transparent)',
                     color: 'var(--purple)',
                     border: '1px solid color-mix(in srgb, var(--purple) 20%, transparent)',
-                    borderRadius: 3,
+                    borderRadius: 'var(--radius-sm)',
                     padding: '1px 6px',
                     fontSize: 10,
                     marginLeft: 8,

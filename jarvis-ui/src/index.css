@@ -19,6 +19,16 @@
   --warn: #f38ba8;
   --purple: #c4a7e7;
   --bg: #000000;
+  /* Structural tokens (Jarvis HUD identity defaults) */
+  --font-display: "Inter", "Segoe UI", system-ui, sans-serif;
+  --font-body: "Inter", "Segoe UI", system-ui, sans-serif;
+  --font-mono: "Courier New", ui-monospace, SFMono-Regular, monospace;
+  --radius-sm: 4px;
+  --radius: 6px;
+  --radius-lg: 10px;
+  --panel-blur: none;
+  --shadow-panel: 0 0 15px rgb(var(--accent-rgb) / 0.13);
+  --scanline-alpha: 0.015;
 }
 
 *, *::before, *::after {
@@ -32,6 +42,10 @@ html, body, #root {
   height: 100%;
   background: var(--bg);
   overflow: hidden;
+}
+
+body {
+  font-family: var(--font-body);
 }
 
 /* Custom scrollbar — thin, always visible, accent on hover */
@@ -114,8 +128,8 @@ body::after {
     0deg,
     transparent,
     transparent 2px,
-    rgb(var(--accent-rgb) / 0.015) 2px,
-    rgb(var(--accent-rgb) / 0.015) 4px
+    rgb(var(--accent-rgb) / var(--scanline-alpha)) 2px,
+    rgb(var(--accent-rgb) / var(--scanline-alpha)) 4px
   );
   pointer-events: none;
   z-index: 9999;

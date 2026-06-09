@@ -35,8 +35,8 @@ const ACCENT_1f = 'color-mix(in srgb, var(--accent) 12%, transparent)'
 
 const pdfBtnStyle: CSSProperties = {
   background: 'transparent', border: `1px solid ${ACCENT_33}`, color: ACCENT,
-  borderRadius: 4, padding: '3px 9px', fontSize: 11, cursor: 'pointer',
-  fontFamily: '"Courier New", monospace', letterSpacing: 1,
+  borderRadius: 'var(--radius-sm)', padding: '3px 9px', fontSize: 11, cursor: 'pointer',
+  fontFamily: 'var(--font-mono)', letterSpacing: 1,
 }
 
 function yearOf(iso: string): string {
@@ -112,7 +112,7 @@ export function TimelinePanel({ open, initialCase, onClose, onNavigate }: Timeli
         position: 'fixed', inset: 0, zIndex: 500,
         background: 'rgba(0,0,0,0.55)', backdropFilter: 'blur(3px)',
         display: 'flex', alignItems: 'center', justifyContent: 'center',
-        fontFamily: '"Inter", "Segoe UI", sans-serif',
+        fontFamily: 'var(--font-body)',
       }}
     >
       <div
@@ -121,8 +121,10 @@ export function TimelinePanel({ open, initialCase, onClose, onNavigate }: Timeli
           width: 'min(720px, 92vw)', height: 'min(82vh, 900px)',
           display: 'flex', flexDirection: 'column',
           background: 'var(--panel-strong)',
+          backdropFilter: 'var(--panel-blur)',
+          WebkitBackdropFilter: 'var(--panel-blur)',
           border: `1px solid ${ACCENT_33}`,
-          borderRadius: 10,
+          borderRadius: 'var(--radius-lg)',
           boxShadow: `0 0 40px ${ACCENT_22}, 0 20px 60px rgba(0,0,0,0.6)`,
           overflow: 'hidden',
         }}
@@ -131,7 +133,7 @@ export function TimelinePanel({ open, initialCase, onClose, onNavigate }: Timeli
         <div style={{ padding: '16px 20px 12px', borderBottom: '1px solid var(--surface-raised)' }}>
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
             <div style={{
-              fontFamily: '"Courier New", monospace', fontSize: 12, letterSpacing: 2,
+              fontFamily: 'var(--font-mono)', fontSize: 12, letterSpacing: 2,
               color: ACCENT, textTransform: 'uppercase',
             }}>
               ⏱ Case Timeline
@@ -195,7 +197,7 @@ export function TimelinePanel({ open, initialCase, onClose, onNavigate }: Timeli
               >
                 {current.name}
               </span>
-              <span style={{ fontFamily: '"Courier New", monospace', fontSize: 12, color: 'var(--text-faint)' }}>
+              <span style={{ fontFamily: 'var(--font-mono)', fontSize: 12, color: 'var(--text-faint)' }}>
                 {current.span} · {current.events.length} dated events
               </span>
             </div>
@@ -219,7 +221,7 @@ export function TimelinePanel({ open, initialCase, onClose, onNavigate }: Timeli
           {!error && current && grouped.map(([year, events]) => (
             <div key={year} style={{ marginTop: 18 }}>
               <div style={{
-                fontFamily: '"Courier New", monospace', fontSize: 13, fontWeight: 700,
+                fontFamily: 'var(--font-mono)', fontSize: 13, fontWeight: 700,
                 color: ACCENT, letterSpacing: 1, marginBottom: 8,
                 position: 'sticky', top: 0, background: 'var(--panel-strong)', padding: '2px 0', zIndex: 1,
               }}>
@@ -236,7 +238,7 @@ export function TimelinePanel({ open, initialCase, onClose, onNavigate }: Timeli
                       borderRadius: '50%', background: ACCENT, boxShadow: `0 0 6px ${ACCENT}`,
                     }} />
                     <div style={{
-                      fontFamily: '"Courier New", monospace', fontSize: 11,
+                      fontFamily: 'var(--font-mono)', fontSize: 11,
                       color: ev.precision === 'day' ? ACCENT : '#7fb8c9', marginBottom: 2,
                     }}>
                       {ev.display}

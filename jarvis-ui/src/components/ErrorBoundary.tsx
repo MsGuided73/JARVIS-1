@@ -36,7 +36,7 @@ export class ErrorBoundary extends Component<Props, State> {
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
-          fontFamily: '"Courier New", monospace',
+          fontFamily: 'var(--font-mono)',
           color: 'var(--accent)',
           padding: '20px',
         }}>
@@ -63,7 +63,7 @@ export class ErrorBoundary extends Component<Props, State> {
               marginTop: 20,
               padding: '12px',
               background: 'rgba(0,0,0,0.5)',
-              borderRadius: 4,
+              borderRadius: 'var(--radius-sm)',
               border: '1px solid var(--border-accent)',
             }}>
               Error: {this.state.error?.message || 'Unknown error'}

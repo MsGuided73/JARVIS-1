@@ -58,7 +58,7 @@ export function GraphBuildProgress({ progress, embeddingProgress }: Props) {
       flexDirection: 'column',
       alignItems: 'center',
       justifyContent: 'center',
-      fontFamily: '"Courier New", monospace',
+      fontFamily: 'var(--font-mono)',
       color: 'var(--accent)',
       userSelect: 'none',
     }}>
@@ -100,7 +100,7 @@ export function GraphBuildProgress({ progress, embeddingProgress }: Props) {
         width: 320,
         height: 3,
         background: '#0a1a22',
-        borderRadius: 2,
+        borderRadius: 'var(--radius-sm)',
         overflow: 'hidden',
         position: 'relative',
         marginBottom: 14,
@@ -115,7 +115,7 @@ export function GraphBuildProgress({ progress, embeddingProgress }: Props) {
             height: '100%',
             width: `${pct}%`,
             background: 'linear-gradient(90deg, #006688, var(--accent))',
-            borderRadius: 2,
+            borderRadius: 'var(--radius-sm)',
             transition: 'width 0.3s ease-out',
             boxShadow: '0 0 8px rgb(var(--accent-rgb) / 0.53)',
           }} />
@@ -128,7 +128,7 @@ export function GraphBuildProgress({ progress, embeddingProgress }: Props) {
             height: '100%',
             width: `${linkPct}%`,
             background: 'linear-gradient(90deg, #005566, #00ccaa)',
-            borderRadius: 2,
+            borderRadius: 'var(--radius-sm)',
             transition: 'width 0.3s ease-out',
             boxShadow: '0 0 8px #00ccaa88',
           }} />
