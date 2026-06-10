@@ -5,6 +5,7 @@ content_type: Reporting
 reliability: medium
 categories: ["Criminal Justice"]
 author: "Frank Parlato"
+series: "The Framing of Juan Orlando Hernandez"
 event_years: [2022, 2023, 2024, 2025, 2026]
 source: https://frankreport.com/the-framing-of-honduran-president-juan-orlando-hernandez-by-bidens-doj-part-1
 slug: "the-framing-of-honduran-president-juan-orlando-hernandez-by-bidens-doj-part-1"
@@ -102,6 +103,8 @@ See more on [https://artvoice.com/](https://artvoice.com/)
 See also: [They Convicted OneTaste. Trump’s Communities Are Next](https://frankreport.com/2026/04/23/onetaste-precedent-trump-base/)
 
 ---
+
+**Series:** [[The Framing of Juan Orlando Hernandez — Series|The Framing of Juan Orlando Hernandez]]
 
 **Categories:** [[Criminal Justice]]
 

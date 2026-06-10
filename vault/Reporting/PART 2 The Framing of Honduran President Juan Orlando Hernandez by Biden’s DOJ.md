@@ -5,6 +5,7 @@ content_type: Reporting
 reliability: medium
 categories: ["Criminal Justice", "Wrongful Convictions"]
 author: "Frank Parlato"
+series: "The Framing of Juan Orlando Hernandez"
 event_years: [2004, 2013, 2014, 2015, 2018, 2019, 2022, 2024, 2025]
 source: https://frankreport.com/juan-orlando-hernandez-trial-trump-pardon
 slug: "juan-orlando-hernandez-trial-trump-pardon"
@@ -204,6 +205,8 @@ Prosecutors wisely incentivized Ardon to create his perjury about El Chapo. Othe
 Was it a kangaroo court?
 
 ---
+
+**Series:** [[The Framing of Juan Orlando Hernandez — Series|The Framing of Juan Orlando Hernandez]]
 
 **Categories:** [[Criminal Justice]] · [[Wrongful Convictions]]
 

@@ -3,7 +3,7 @@ title: "Frank Report — Dashboard"
 type: moc
 ---
 # Frank Report — Dashboard
-*385 articles · 391 entities · 4 series · 6 cases*
+*385 articles · 391 entities · 5 series · 6 cases*
 
 ## Cases
 - [[NXIVM — Case File|NXIVM]]

@@ -5,6 +5,7 @@ content_type: Reporting
 reliability: medium
 categories: ["Criminal Justice"]
 author: "Frank Parlato"
+series: "The Framing of Juan Orlando Hernandez"
 event_years: [2009, 2014, 2015, 2019, 2021, 2022, 2024, 2026]
 source: https://frankreport.com/hernandez-venue-lie-castel
 slug: "hernandez-venue-lie-castel"
@@ -184,6 +185,8 @@ We will cover more of them in the series.
 # [ARTVOICE ART](http://artvoice.com)
 
 ---
+
+**Series:** [[The Framing of Juan Orlando Hernandez — Series|The Framing of Juan Orlando Hernandez]]
 
 **Categories:** [[Criminal Justice]]
 

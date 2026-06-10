@@ -5,6 +5,7 @@ content_type: Reporting
 reliability: medium
 categories: ["General"]
 author: "Frank Parlato"
+series: "The Framing of Juan Orlando Hernandez"
 event_years: [2011, 2014, 2015, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024]
 source: https://frankreport.com/hernandez-eight-years-praise
 slug: "hernandez-eight-years-praise"
@@ -204,6 +205,8 @@ Maybe that was the point.
 # [ARTVOICE ART](http://artvoice.com/)
 
 ---
+
+**Series:** [[The Framing of Juan Orlando Hernandez — Series|The Framing of Juan Orlando Hernandez]]
 
 **Categories:** [[General]]
 

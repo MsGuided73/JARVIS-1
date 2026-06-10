@@ -5,6 +5,7 @@ content_type: Reporting
 reliability: medium
 categories: ["General"]
 author: "Frank Parlato"
+series: "The Framing of Juan Orlando Hernandez"
 event_years: [2008, 2010, 2013, 2014, 2017]
 source: https://frankreport.com/hernandez-four-cooperators-uncorroborated-testimony
 slug: "hernandez-four-cooperators-uncorroborated-testimony"
@@ -92,6 +93,8 @@ What we do know is that the testimony was uncorroborated, that the cooperators h
 Hernández’s innocence was irrelevant.
 
 ---
+
+**Series:** [[The Framing of Juan Orlando Hernandez — Series|The Framing of Juan Orlando Hernandez]]
 
 **Categories:** [[General]]
 

@@ -5,6 +5,7 @@ content_type: Reporting
 reliability: medium
 categories: ["General"]
 author: "Frank Parlato"
+series: "The Framing of Juan Orlando Hernandez"
 event_years: [2022]
 source: https://frankreport.com/part-3-the-framing-of-honduran-president-juan-orlando-hernandez-by-bidens-doj
 slug: "part-3-the-framing-of-honduran-president-juan-orlando-hernandez-by-bidens-doj"
@@ -88,6 +89,8 @@ He sentenced Hernández to 45 years.
 # [ARTVOICE ART](http://artvoice.com)
 
 ---
+
+**Series:** [[The Framing of Juan Orlando Hernandez — Series|The Framing of Juan Orlando Hernandez]]
 
 **Categories:** [[General]]
 

@@ -5,6 +5,7 @@ content_type: Reporting
 reliability: medium
 categories: ["Criminal Justice"]
 author: "Frank Parlato"
+series: "The Framing of Juan Orlando Hernandez"
 event_years: [2013, 2014, 2015, 2018, 2019]
 source: https://frankreport.com/the-show-trial-of-juan-orlando-hernandez-part-4-the-prosecutors-coached-the-lie
 slug: "the-show-trial-of-juan-orlando-hernandez-part-4-the-prosecutors-coached-the-lie"
@@ -114,6 +115,8 @@ We will present many more examples of inconvenient truths in this series.
 [PART #3: The Framing of Honduran President Juan Orlando Hernandez by Biden’s DOJ](https://frankreport.com/2026/05/04/part-3-the-framing-of-honduran-president-juan-orlando-hernandez-by-bidens-doj/)
 
 ---
+
+**Series:** [[The Framing of Juan Orlando Hernandez — Series|The Framing of Juan Orlando Hernandez]]
 
 **Categories:** [[Criminal Justice]]
 

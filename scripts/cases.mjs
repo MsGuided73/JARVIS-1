@@ -28,10 +28,34 @@ function seriesOf(title) {
   return { stem, part }
 }
 
+// Curated multi-part series whose titles are too irregular for auto-detection
+// (leading "PART #N:" yields an empty stem; stems also vary — "...by Biden's DOJ"
+// vs "The Show Trial of..."). Each entry maps member article slugs to reading
+// order. Curated parts override auto-detection for the same slugs.
+export const CURATED_SERIES = [
+  {
+    name: 'The Framing of Juan Orlando Hernandez',
+    parts: [
+      { part: 1, slug: 'the-framing-of-honduran-president-juan-orlando-hernandez-by-bidens-doj-part-1' },
+      { part: 2, slug: 'juan-orlando-hernandez-trial-trump-pardon' },
+      { part: 3, slug: 'part-3-the-framing-of-honduran-president-juan-orlando-hernandez-by-bidens-doj' },
+      { part: 4, slug: 'the-show-trial-of-juan-orlando-hernandez-part-4-the-prosecutors-coached-the-lie' },
+      { part: 5, slug: 'hernandez-four-cooperators-uncorroborated-testimony' },
+      { part: 6, slug: 'hernandez-eight-years-praise' },
+      { part: 7, slug: 'hernandez-venue-lie-castel' },
+    ],
+  },
+]
+
 // posts -> Map<stem, [{slug, title, part}]> (sorted by part), only stems with >=2 parts.
+// Auto-detected groups are layered with CURATED_SERIES (curated wins per slug).
 export function detectSeries(posts) {
+  const bySlug = new Map(posts.map((p) => [p.slug, p]))
+  const curatedSlugs = new Set(CURATED_SERIES.flatMap((s) => s.parts.map((p) => p.slug)))
+
   const groups = new Map()
   for (const p of posts) {
+    if (curatedSlugs.has(p.slug)) continue // curated series claims these slugs
     const s = seriesOf(p.title || '')
     if (!s) continue
     const key = s.stem.toLowerCase()
@@ -43,6 +67,18 @@ export function detectSeries(posts) {
     if (g.parts.length < 2) continue
     g.parts.sort((a, b) => a.part - b.part)
     out.set(g.name, g.parts)
+  }
+
+  // Layer in curated series, looking up live titles from the post set.
+  for (const cs of CURATED_SERIES) {
+    const parts = cs.parts
+      .map(({ part, slug }) => {
+        const post = bySlug.get(slug)
+        return post ? { slug, title: post.title, part } : null
+      })
+      .filter(Boolean)
+      .sort((a, b) => a.part - b.part)
+    if (parts.length) out.set(cs.name, parts)
   }
   return out
 }
