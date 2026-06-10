@@ -1,0 +1,44 @@
+---
+title: "Aaron Fisher — Where Are They Now"
+subject: "Aaron Fisher"
+type: research
+researched: 2026-06-10
+source_article_count: 52
+source_last_mention: 2026-05-20
+confidence: low
+status: unknown
+---
+
+> [!warning] AI-GENERATED — NOT FRANK REPORT REPORTING
+> Compiled by Claude Code from independent public sources on 2026-06-10. Every claim
+> links to its source. This is not primary Frank Report / Artvoice journalism and
+> has not been verified by their team. Treat it as a research lead, not fact.
+
+**Subject:** [[Aaron Fisher]]   ·   *"Victim 1" in the Jerry Sandusky / Penn State case — the teenager whose 2008 report triggered the investigation; now a private citizen whose current status is largely unverified.*
+
+## Current status (as of 2026-06-10)
+
+Aaron Fisher's current whereabouts and activities are **not reliably documented in recent independent sources**, so this note is set to `status: unknown` / `confidence: low`. The last substantive independent profile of his post-trial life is a January 2022 piece in which he is described as living publicly under his own name, no longer anonymous, after writing his 2012 book ([northcentralpa.com, Jan 10, 2022](https://www.northcentralpa.com/features/on-the-pulse/not-afraid-life-after-being-abused-by-jerry-sandusky/article_084e4fa6-7226-11ec-99f7-53beaccca563.html)). The most recent verifiable independent record placing him is a February 2024 local crime report: a then-30-year-old Aaron Fisher of Mill Hall, PA was stabbed during an early-morning street altercation in Jersey Shore, Pennsylvania, and treated in stable condition — that report does **not** identify him as the Sandusky witness ([Lock Haven Express, Feb 2024](https://www.lockhaven.com/news/local-news/2024/02/js-man-locked-up-after-stabbing-of-mh-man/); [Williamsport Sun-Gazette, Feb 2024](https://www.sungazette.com/news/top-news/2024/02/jersey-shore-man-locked-up-after-non-fatal-stabbing/)). Fisher is the author of *Silent No More: Victim 1's Fight for Justice Against Jerry Sandusky* (2012), written with psychologist Michael Gillum, and previously stated he wanted to speak in schools and study criminal justice ([ESPN, Oct 2012](https://www.espn.com/college-football/story/_/id/8521790/jerry-sandusky-accuser-speaks-publicly-1st-time); [CBS News, 2012](https://www.cbsnews.com/news/sandusky-victim-1-aaron-fisher-goes-public-for-the-first-time/)). He reportedly settled with Penn State for roughly $7.5 million following Sandusky's 2012 conviction ([Wikipedia — Penn State child sex abuse scandal](https://en.wikipedia.org/wiki/Penn_State_child_sex_abuse_scandal), orientation only). No independent post-2024 reporting on his career, residence, or advocacy could be found.
+
+## Timeline since last Frank Report coverage
+
+- **Oct 2012** — Goes public as "Victim 1," publishes *Silent No More* with Michael Gillum, and gives a 20/20 interview; says he plans to study criminal justice and speak in schools ([ESPN](https://www.espn.com/college-football/story/_/id/8521790/jerry-sandusky-accuser-speaks-publicly-1st-time)).
+- **2013** — Speaks publicly (e.g., in Dallas) urging young abuse victims to come forward ([WFAA](https://www.wfaa.com/article/news/local/dallas-county/sanduskys-victim-no-1-talks-about-preventing-child-sex-abuse/287-306092664)).
+- **Jul 2, 2023** — A judge denies Jerry Sandusky's appeal for a new trial built on a "repressed memory" argument, calling some of it "scattershot"; the ruling does not mention Fisher by name ([CBS News Philadelphia, Jul 2, 2023](https://www.cbsnews.com/philadelphia/news/jerry-sandusky-denied-new-trial-appeal-lawyers-claim-new-evidence/)).
+- **Feb 20, 2024** — An Aaron Fisher, 30, of Mill Hall is stabbed (~1:15 a.m.) during an altercation on South Lincoln Avenue, Jersey Shore, PA; a 22-year-old man is charged. Treated in stable condition at UPMC Williamsport. The local report does not tie him to the Sandusky case ([Lock Haven Express](https://www.lockhaven.com/news/local-news/2024/02/js-man-locked-up-after-stabbing-of-mh-man/)).
+- **May 5, 2024** — Frank Report/Artvoice report a DUI arrest of Fisher (pulled over in Lamar, PA), framing it as casting doubt on his credibility ([Frank Report, May 5, 2024](https://frankreport.com/2024/05/05/dui-arrest-of-aaron-fisher-victim-1-adds-new-twists-to-sandusky-case/) — vault-aligned, not independently confirmed here).
+- **Sep 19, 2024** — PA Superior Court affirms Sandusky's sentence; new prosecutorial-interaction declarations subsequently surface (per FR/Artvoice framing) ([Frank Report, Sep 28, 2025](https://frankreport.com/2025/09/28/from-prosecution-to-payday-how-sanduskys-prosecutors-gained-control-over-a-key-accusers-t12-million-fortune/)).
+- **Mar 21, 2026** — Frank Report publishes a fresh attack on Fisher's testimony as a "recovered memory" construction ([Frank Report, Mar 21, 2026](https://frankreport.com/2026/03/21/aaron-fisher-mike-gillum-sandusky-recovered-memory/) — vault-aligned, contested).
+
+## Sourcing notes
+
+This is the central conflict for this subject: **independent / mainstream sources** (CBS, ABC, ESPN, NBC10, and local Pennsylvania papers) treat Fisher as a genuine abuse victim whose report initiated a valid prosecution, and Sandusky's appeals on "repressed memory" grounds have been **denied by the courts** ([CBS News Philadelphia](https://www.cbsnews.com/philadelphia/news/jerry-sandusky-denied-new-trial-appeal-lawyers-claim-new-evidence/)). The vault's own aligned outlets — **Frank Report and Artvoice** — take a wrongful-conviction stance and argue Fisher lied, misled investigators, or was coached via recovered-memory therapy ([Artvoice, Jan 15, 2024](https://artvoice.com/2024/01/15/the-unheard-side-of-the-sandusky-story-did-aaron-fisher-lie/); [Artvoice, Jan 16, 2024](https://artvoice.com/2024/01/16/did-aaron-fisher-mislead-authorities-in-sandusky-case-looks-like-he-did/)). These credibility claims are **contested and rest primarily on FR/Artvoice**; they have not been adopted by mainstream press or sustained in court, and are labeled accordingly.
+
+Identity confirmation: the Feb 2024 stabbing victim matches Fisher's documented age (~30 in 2024) and home area (Mill Hall, Clinton County, PA, near the Central Mountain High School locus of the original case), but the **independent local reports do not name him as Victim 1** — only FR/Artvoice make that link. The reported **DUI arrest is sourced only to Frank Report/Artvoice** and could not be independently verified here; treat it as a vault-aligned, unconfirmed claim.
+
+Could not verify: Fisher's current employment, residence, marital/family status, whether he remains in advocacy, or any activity in 2025–2026 from independent sources. There is no public indication he is incarcerated, deceased, or under supervision. Given the absence of recent independent reporting, he appears to be living as a **private citizen**, and `status` is set to `unknown` rather than guessed.
+
+**Sources:** [CBS News — Sandusky Victim 1, Aaron Fisher, goes public](https://www.cbsnews.com/news/sandusky-victim-1-aaron-fisher-goes-public-for-the-first-time/) · [ESPN — Sandusky accuser speaks publicly](https://www.espn.com/college-football/story/_/id/8521790/jerry-sandusky-accuser-speaks-publicly-1st-time) · [WFAA — Victim No. 1 talks about preventing abuse](https://www.wfaa.com/article/news/local/dallas-county/sanduskys-victim-no-1-talks-about-preventing-child-sex-abuse/287-306092664) · [northcentralpa.com — Life after being abused by Jerry Sandusky (Jan 2022)](https://www.northcentralpa.com/features/on-the-pulse/not-afraid-life-after-being-abused-by-jerry-sandusky/article_084e4fa6-7226-11ec-99f7-53beaccca563.html) · [Lock Haven Express — JS man locked up after stabbing (Feb 2024)](https://www.lockhaven.com/news/local-news/2024/02/js-man-locked-up-after-stabbing-of-mh-man/) · [Williamsport Sun-Gazette — Jersey Shore man locked up after non-fatal stabbing (Feb 2024)](https://www.sungazette.com/news/top-news/2024/02/jersey-shore-man-locked-up-after-non-fatal-stabbing/) · [CBS News Philadelphia — Sandusky denied new trial (Jul 2023)](https://www.cbsnews.com/philadelphia/news/jerry-sandusky-denied-new-trial-appeal-lawyers-claim-new-evidence/) · [Wikipedia — Penn State child sex abuse scandal (orientation)](https://en.wikipedia.org/wiki/Penn_State_child_sex_abuse_scandal) · [Artvoice — Did Aaron Fisher Lie? (vault-aligned, contested)](https://artvoice.com/2024/01/15/the-unheard-side-of-the-sandusky-story-did-aaron-fisher-lie/) · [Frank Report — DUI Arrest of Aaron Fisher (vault-aligned, unconfirmed)](https://frankreport.com/2024/05/05/dui-arrest-of-aaron-fisher-victim-1-adds-new-twists-to-sandusky-case/) · [Frank Report — Recovered memory piece (Mar 2026, vault-aligned, contested)](https://frankreport.com/2026/03/21/aaron-fisher-mike-gillum-sandusky-recovered-memory/)
+
+---
+*Generated 2026-06-10 by the where-are-they-now skill. Re-run to refresh.*

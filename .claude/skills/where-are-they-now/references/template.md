@@ -51,6 +51,17 @@ carries an inline [source](url). Lead with primary and independent sources.>
 - **<date>** — <event> ([source](url))
 - **<date>** — <event> ([source](url))
 
+## Social presence
+
+<Only VERIFIED, public, on-topic accounts — confirmed via cross-reference to a
+known bio/affiliation, never "a profile with the same name." Link each and note
+how it was verified. For private citizens / non-public figures (especially crime
+victims), do NOT hunt personal accounts — write "not researched — privacy." For
+the deceased/incarcerated, list only official memorial/legal pages if any. Omit
+this section entirely when no verified account applies.>
+
+- **<platform>** — [<handle>](url) — verified via <linkage>
+
 ## Sourcing notes
 
 <Flag any conflict between independent sources and Frank Report / Artvoice
@@ -83,6 +94,14 @@ FR/Artvoice, say so.>
 - [ ] **Right person.** Common names cause mix-ups — confirm identity via case
       details (which case, role) from the subject's People note before trusting a
       hit.
+- [ ] **Social media — verified & on-topic only.** Check the major platforms (X,
+      Facebook, Instagram, LinkedIn, YouTube, TikTok), but record ONLY accounts
+      confirmed as the subject's via cross-reference to a known bio/affiliation —
+      never a same-name profile. Respect privacy: for private citizens /
+      non-public figures (especially crime victims) do not hunt personal
+      accounts — note "not researched — privacy." Skip the deceased/incarcerated
+      except official memorial/legal pages. Authenticated Firecrawl handles
+      login-walled platforms better than WebFetch.
 
 ## Worked reference
 
